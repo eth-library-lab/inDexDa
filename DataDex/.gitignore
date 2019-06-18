@@ -15,4 +15,4 @@ src/Visualization/Shader/Shader.h
 _build/
 doxygen/
 .vs/
-.pdf/
+*.pdf
