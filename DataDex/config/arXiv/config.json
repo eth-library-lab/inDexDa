@@ -1,0 +1,13 @@
+{
+	"_comment":"=========================================",
+	"_comment":" These parameters for web scraping arXiv",
+	"_comment":"=========================================",
+    "archive_html":"https://arxiv.org/list/cs/",
+    "topic":"Computer Science",
+
+    "start_year":"1993",
+    "start_month":"01",
+
+    "end_year":"2019",
+    "end_month":"06"
+}
