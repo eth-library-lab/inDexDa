@@ -1,34 +1,35 @@
+import urllib.request
 from requests import get
-from contextlib import closing
-from requests.exceptions import RequestException
 
 
 def get_url(url):
     '''
-    Open url
+    Checks that a given url is reachable and returns its contents
+    :param url: A URL string
+    :return: url contents or None
     '''
     try:
-        with get(url) as resp:
-            print(resp)
-            input("CHECK RESP")
-            if is_good_response(resp):
-                return resp.content
-            else:
-                return None
-
-    except RequestException as e:
-        log_error("Error during requests to {0} : {1}".format(url, str(e)))
+        urllib.request.urlopen(url)
+        return get(url)
+    except urllib.request.HTTPError:
+        print("Website does not exist")
+        return None
+    except urllib.request.URLError:
+        print("Website does not exist")
         return None
 
 
-def is_good_response(resp):
+def check_url(url):
     '''
-    Check url response, returns True is working
+    Checks that a given url is reachable and returns its contents
+    :param url: A URL string
+    :return: url contents or None
     '''
-    content_type = resp.headers['Content-Type'].lower()
-    return(resp.status_code == 200 and content_type is not None and
-           content_type.find('html') > -1)
-
-
-def log_error(e):
-    print(e)
+    try:
+        urllib.request.urlopen(url)
+        return True
+    except urllib.request.HTTPError:
+        return False
+    except urllib.request.URLError:
+        print("Website does not exist")
+        return False
