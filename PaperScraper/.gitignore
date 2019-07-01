@@ -16,3 +16,4 @@ _build/
 doxygen/
 .vs/
 *.pdf
+*.pyc
