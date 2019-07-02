@@ -5,14 +5,15 @@ from lib.paper_scrape import PaperScrape
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--database', type=str, default='arXiv', help='database used')
-parser.add_argument('--field', type=str, default=12, help='field of research')
+parser.add_argument('--field', type=str, default='Computer Science',
+                    help='field of research')
 options = parser.parse_args()
 
 
 CONFIG_DIR = os.path.join('..' + 'config' + options.database + 'config.json')
 OUTPUT_DIR = os.path.join('..' + 'data' + options.field + 'pdf_links.txt')
 
-with open(CONFIG_FILE) as config_json:
+with open(CONFIG_DIR) as config_json:
     config = json.load(config_json)
 
 arXiv = PaperScrape(config)
