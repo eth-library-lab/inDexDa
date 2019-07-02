@@ -10,3 +10,5 @@ pip install torchvision
 # Required Packages
 pip install beautifulsoup4
 pip install python-dateutil
+pip install -U scikit-learn
+pip install --upgrade gensim
