@@ -67,7 +67,7 @@ class PaperScrape:
 
         return links
 
-    def get_pdf_links(self, content):
+    def get_abstract_links(self, content):
         """
         Scrapes the given content of a webpage to extract all the pdf links
 
@@ -76,11 +76,12 @@ class PaperScrape:
         :return pdf_links: link to archive pages for all years and months of
                         the database
         """
-        pdf_links = []
-        for a in content.find_all(lambda tag: tag.name == "a" and "pdf"
-                                  in tag.text):
-            pdf_links.append('https://arxiv.org' + a.get('href'))
-        return pdf_links
+        abstract_links = []
+        # for a in content.find_all(lambda tag: tag.name == "a" and "pdf"
+        #                           in tag.text):
+        for a in content.find_all('a', title="Abstract"):
+            abstract_links.append('https://arxiv.org' + a.get('href'))
+        return abstract_links
 
     def search_archive(self):
         """
@@ -115,10 +116,10 @@ class PaperScrape:
 
                 # For each page, get links for all pdfs
                 if not next_page:
-                    links.extend(self.get_pdf_links(content))
+                    links.extend(self.get_abstract_links(content))
                 else:
                     for stack in next_page:
-                        links.extend(self.get_pdf_links(content))
+                        links.extend(self.get_abstract_links(content))
 
         return links
 

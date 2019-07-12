@@ -21,9 +21,9 @@ def get_url(url):
 
 def check_url(url):
     '''
-    Checks that a given url is reachable and returns its contents
+    Checks that a given url is reachable
     :param url: A URL string
-    :return: url contents or None
+    :return: True if site exists, False if otherwise
     '''
     try:
         urllib.request.urlopen(url)
