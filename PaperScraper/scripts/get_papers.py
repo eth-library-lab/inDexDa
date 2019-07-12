@@ -13,7 +13,7 @@ parser.add_argument('--field', type=str, default='Computer Science',
 options = parser.parse_args()
 
 CONFIG_DIR = os.path.join('../' + 'config/' + options.database + '/config.json')
-OUTPUT_DIR = os.path.join('../' + 'data/' + options.field + '/pdf_links.txt')
+OUTPUT_DIR = os.path.join('../' + 'data/' + options.field + '/abstract_links.txt')
 
 with open(CONFIG_DIR) as config_json:
     config = json.load(config_json)
