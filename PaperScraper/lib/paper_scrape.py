@@ -4,6 +4,7 @@ import utils.url_util as urlutil
 
 from bs4 import BeautifulSoup
 from dateutil.relativedelta import relativedelta
+from lib.get_json import json_write
 
 
 class PaperScrape:
@@ -19,7 +20,7 @@ class PaperScrape:
         self.topic = config['topic']
         self.archive_url = config['archive_html']
         self.page_links = self.get_page_links()
-        self.pdf_links = self.search_archive()
+        self.abstract_links = self.search_archive()
 
         # self.download_pdfs()
 
@@ -73,7 +74,7 @@ class PaperScrape:
 
         :param content: portion of webpage contained within the div "content"
                          tag
-        :return pdf_links: link to archive pages for all years and months of
+        :return abstract_links: link to archive pages for all years and months of
                         the database
         """
         abstract_links = []
@@ -93,14 +94,14 @@ class PaperScrape:
         links = []
 
         for page in self.page_links:
-            print(page)
+            print(page)             # show progress on command line
             if urlutil.check_url(page):
                 html = BeautifulSoup(urllib.request.urlopen(page),
                                      'html.parser')
                 content = html.find("div", {"id": "content"})
                 small_tags = []
 
-                # Find how many pages of pdfs the site has for specified date
+                # Find how many pages of abstratcs the site has for specified date
                 for small in content.find_all(lambda tag: tag.name ==
                                               "small" and "total of" in
                                               tag.text):
@@ -123,17 +124,14 @@ class PaperScrape:
 
         return links
 
-    def download_pdfs(self):
+    def compile_database(self):
         """
-        Opens pdfs as specified by links and downloads them
+        Opens links to Abstract sections and catalogues the abstract, paper name, DOI,
+          subject of the paper, and submission date
         """
 
-        for url in self.pdf_links:
-            response = urlutil.get_url(url)
-            if response is not None:
-                with open('data/arXiv/test.pdf', 'wb') as f:
-                    f.write(response.content)
-                    print("First pdf printed")
-                    input("TEST PDF PRINTING")
+        for url in self.abstract_links:
+            if urlutil.check_url(url):
+                json_write(url)
             else:
-                print("Failed to download: {}".format(url))
+                print("Error: url does not exist {}".format(url))
