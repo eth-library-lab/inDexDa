@@ -1,6 +1,7 @@
 import datetime
 import urllib.request
 import utils.url_util as urlutil
+import utils.command_line as progress
 
 from bs4 import BeautifulSoup
 from dateutil.relativedelta import relativedelta
@@ -92,9 +93,13 @@ class PaperScrape:
         """
         next_page = []
         links = []
+        length = len(self.page_links)
 
-        for page in self.page_links:
-            print(page)             # show progress on command line
+        print('\nScraping ArXiv for all {} papers'.format(self.topic))
+        for i, page in enumerate(self.page_links):
+            # Show progress on command line
+            progress.printProgressBar(i + 1, length, prefix='Progress:',
+                                      suffix='Complete', length=50)
             if urlutil.check_url(page):
                 html = BeautifulSoup(urllib.request.urlopen(page),
                                      'html.parser')

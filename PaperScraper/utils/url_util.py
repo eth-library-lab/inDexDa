@@ -28,8 +28,11 @@ def check_url(url):
     try:
         urllib.request.urlopen(url)
         return True
-    except urllib.request.HTTPError:
+    except urllib.request.HTTPError as e:
+        print('The server couldn\'t fulfill the request.')
+        print('Error code: ', e.code)
         return False
-    except urllib.request.URLError:
-        print("Website does not exist")
+    except urllib.request.URLError as e:
+        print('Failed to reach a server.')
+        print('Reason: ', e.reason)
         return False
