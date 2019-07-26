@@ -1,0 +1,512 @@
+<?xml version="1.0" ?>
+<author-retrieval-response status="found" xmlns:ait="http://www.elsevier.com/xml/ani/ait" xmlns:ce="http://www.elsevier.com/xml/ani/common" xmlns:cto="http://www.elsevier.com/xml/cto/dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns1="http://webservices.elsevier.com/schemas/search/fast/types/v4" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" xmlns:xocs="http://www.elsevier.com/xml/xocs/dtd" xmlns:xoe="http://www.elsevier.com/xml/xoe/dtd">
+	<coredata>
+		<prism:url>http://api.elsevier.com/content/author/author_id/22988279600</prism:url>
+		<dc:identifier>AUTHOR_ID:22988279600</dc:identifier>
+		<eid>9-s2.0-22988279600</eid>
+		<document-count>102</document-count>
+		<cited-by-count>20170</cited-by-count>
+		<citation-count>23018</citation-count>
+		<link href="https://www.scopus.com/authid/detail.uri?partnerID=HzOxMe3b&amp;authorId=22988279600&amp;origin=inward" rel="scopus-author"/>
+		<link href="http://api.elsevier.com/content/author/author_id/22988279600" rel="self"/>
+		<link href="http://api.elsevier.com/content/search/scopus?query=au-id%2822988279600%29" rel="search"/>
+	</coredata>
+	<affiliation-current href="http://api.elsevier.com/content/affiliation/affiliation_id/60027485" id="60027485"/>
+	<affiliation-history>
+		<affiliation href="http://api.elsevier.com/content/affiliation/affiliation_id/60027485" id="60027485"/>
+		<affiliation href="http://api.elsevier.com/content/affiliation/affiliation_id/60003269" id="60003269"/>
+		<affiliation href="http://api.elsevier.com/content/affiliation/affiliation_id/105286521" id="105286521"/>
+		<affiliation href="http://api.elsevier.com/content/affiliation/affiliation_id/100782158" id="100782158"/>
+		<affiliation href="http://api.elsevier.com/content/affiliation/affiliation_id/60031581" id="60031581"/>
+		<affiliation href="http://api.elsevier.com/content/affiliation/affiliation_id/112366015" id="112366015"/>
+	</affiliation-history>
+	<subject-areas>
+		<subject-area abbrev="PHYS" code="3100">Physics and Astronomy (all)</subject-area>
+		<subject-area abbrev="ENGI" code="2207">Control and Systems Engineering</subject-area>
+		<subject-area abbrev="PHYS" code="3106">Nuclear and High Energy Physics</subject-area>
+		<subject-area abbrev="MATE" code="2505">Materials Chemistry</subject-area>
+		<subject-area abbrev="BIOC" code="1300">Biochemistry, Genetics and Molecular Biology (all)</subject-area>
+		<subject-area abbrev="CHEM" code="1606">Physical and Theoretical Chemistry</subject-area>
+		<subject-area abbrev="DECI" code="1802">Information Systems and Management</subject-area>
+		<subject-area abbrev="CENG" code="1505">Colloid and Surface Chemistry</subject-area>
+		<subject-area abbrev="EART" code="1912">Space and Planetary Science</subject-area>
+		<subject-area abbrev="ENVI" code="2303">Ecology</subject-area>
+		<subject-area abbrev="MEDI" code="2700">Medicine (all)</subject-area>
+		<subject-area abbrev="MATH" code="2600">Mathematics (all)</subject-area>
+		<subject-area abbrev="MATH" code="2611">Modeling and Simulation</subject-area>
+		<subject-area abbrev="MULT" code="1000">Multidisciplinary</subject-area>
+		<subject-area abbrev="ARTS" code="1211">Philosophy</subject-area>
+		<subject-area abbrev="MATE" code="2507">Polymers and Plastics</subject-area>
+		<subject-area abbrev="PHYS" code="3103">Astronomy and Astrophysics</subject-area>
+		<subject-area abbrev="MATH" code="2606">Control and Optimization</subject-area>
+		<subject-area abbrev="ENGI" code="2208">Electrical and Electronic Engineering</subject-area>
+		<subject-area abbrev="COMP" code="1711">Signal Processing</subject-area>
+		<subject-area abbrev="MATH" code="2604">Applied Mathematics</subject-area>
+	</subject-areas>
+	<author-profile>
+		<status xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">update</status>
+		<date-created day="26" month="11" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" year="2007"/>
+		<preferred-name source="internal-ani" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+			<initials>A.</initials>
+
+			<indexed-name>Einstein A.</indexed-name>
+
+			<surname>Einstein</surname>
+
+			<given-name>Albert</given-name>
+
+		</preferred-name>
+		<name-variant doc-count="3" source="internal-ani" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+			<initials>A.</initials>
+
+			<indexed-name>EINSTEIN A.</indexed-name>
+
+			<surname>EINSTEIN</surname>
+
+			<given-name>A.</given-name>
+
+		</name-variant>
+		<name-variant doc-count="76" source="internal-ani" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+			<initials>A.</initials>
+
+			<indexed-name>Einstein A.</indexed-name>
+
+			<surname>Einstein</surname>
+
+			<given-name>A.</given-name>
+
+		</name-variant>
+		<classificationgroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+			<classifications type="ASJC">
+
+				<classification frequency="64">3100</classification>
+
+				<classification frequency="3">2207</classification>
+
+				<classification frequency="5">3106</classification>
+
+				<classification frequency="1">2505</classification>
+
+				<classification frequency="13">1300</classification>
+
+				<classification frequency="1">1606</classification>
+
+				<classification frequency="3">1802</classification>
+
+				<classification frequency="1">1505</classification>
+
+				<classification frequency="2">1912</classification>
+
+				<classification frequency="13">2303</classification>
+
+				<classification frequency="5">2700</classification>
+
+				<classification frequency="3">2600</classification>
+
+				<classification frequency="3">2611</classification>
+
+				<classification frequency="10">1000</classification>
+
+				<classification frequency="1">1211</classification>
+
+				<classification frequency="1">2507</classification>
+
+				<classification frequency="2">3103</classification>
+
+				<classification frequency="3">2606</classification>
+
+				<classification frequency="3">2208</classification>
+
+				<classification frequency="3">1711</classification>
+
+				<classification frequency="4">2604</classification>
+
+			</classifications>
+
+		</classificationgroup>
+		<publication-range end="1953" start="1901" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+		<journal-history type="author" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+			<journal type="j">
+
+				<sourcetitle>Physical Review</sourcetitle>
+
+				<issn>0031899X</issn>
+
+			</journal>
+
+			<journal type="j">
+
+				<sourcetitle>Zeitschrift für Physik</sourcetitle>
+
+				<sourcetitle-abbrev>Z. Physik</sourcetitle-abbrev>
+
+				<issn>14346001</issn>
+
+			</journal>
+
+			<journal type="j">
+
+				<sourcetitle>The Journal of the International College of Surgeons</sourcetitle>
+
+				<sourcetitle-abbrev>J Int Coll Surg</sourcetitle-abbrev>
+
+				<issn>0096557X</issn>
+
+			</journal>
+
+			<journal type="j">
+
+				<sourcetitle>Zeitschrift für Physik</sourcetitle>
+
+				<sourcetitle-abbrev>Z. Physik</sourcetitle-abbrev>
+
+				<issn>00443328</issn>
+
+			</journal>
+
+			<journal type="j">
+
+				<sourcetitle>Annalen der Physik</sourcetitle>
+
+				<sourcetitle-abbrev>Ann Phys Leipzig</sourcetitle-abbrev>
+
+				<issn>15213889</issn>
+
+			</journal>
+
+			<journal type="j">
+
+				<sourcetitle>Die Naturwissenschaften</sourcetitle>
+
+				<sourcetitle-abbrev>Naturwissenschaften</sourcetitle-abbrev>
+
+				<issn>00281042</issn>
+
+			</journal>
+
+			<journal type="d">
+
+				<sourcetitle>Physics Today</sourcetitle>
+
+				<sourcetitle-abbrev>Phys. Today</sourcetitle-abbrev>
+
+				<issn>19450699</issn>
+
+			</journal>
+
+			<journal type="j">
+
+				<sourcetitle>British Medical Journal</sourcetitle>
+
+				<sourcetitle-abbrev>Brit. Med. J.</sourcetitle-abbrev>
+
+				<issn>00071447</issn>
+
+			</journal>
+
+			<journal type="j">
+
+				<sourcetitle>The Bulletin of the atomic scientists</sourcetitle>
+
+				<sourcetitle-abbrev>Bull At Sci</sourcetitle-abbrev>
+
+				<issn>00963402</issn>
+
+			</journal>
+
+			<journal type="j">
+
+				<sourcetitle>Astronomische Nachrichten</sourcetitle>
+
+				<sourcetitle-abbrev>Astron. Nachr.</sourcetitle-abbrev>
+
+				<issn>15213994</issn>
+
+			</journal>
+
+			<journal type="j">
+
+				<sourcetitle>Deutsche Medizinische Wochenschrift</sourcetitle>
+
+				<sourcetitle-abbrev>Dtsch. Med. Wochenschr.</sourcetitle-abbrev>
+
+				<issn>14394413</issn>
+
+			</journal>
+
+			<journal type="j">
+
+				<sourcetitle>Reviews of Modern Physics</sourcetitle>
+
+				<issn>00346861</issn>
+
+			</journal>
+
+			<journal type="j">
+
+				<sourcetitle>Dialectica</sourcetitle>
+
+				<sourcetitle-abbrev>Dialectica</sourcetitle-abbrev>
+
+				<issn>17468361</issn>
+
+			</journal>
+
+			<journal type="j">
+
+				<sourcetitle>The Bulletin of the atomic scientists</sourcetitle>
+
+				<sourcetitle-abbrev>Bull At Sci</sourcetitle-abbrev>
+
+				<issn>00965243</issn>
+
+			</journal>
+
+			<journal type="j">
+
+				<sourcetitle>Science</sourcetitle>
+
+				<issn>00368075</issn>
+
+			</journal>
+
+			<journal type="j">
+
+				<sourcetitle>Journal of the Franklin Institute</sourcetitle>
+
+				<sourcetitle-abbrev>J Franklin Inst</sourcetitle-abbrev>
+
+				<issn>00160032</issn>
+
+			</journal>
+
+			<journal type="j">
+
+				<sourcetitle>Mathematische Annalen</sourcetitle>
+
+				<sourcetitle-abbrev>Math. Ann.</sourcetitle-abbrev>
+
+				<issn>00255831</issn>
+
+			</journal>
+
+			<journal type="j">
+
+				<sourcetitle>Bulletin of the American Mathematical Society</sourcetitle>
+
+				<sourcetitle-abbrev>Bull. Am. Math. Soc.</sourcetitle-abbrev>
+
+				<issn>02730979</issn>
+
+			</journal>
+
+			<journal type="j">
+
+				<sourcetitle>Nature</sourcetitle>
+
+				<issn>00280836</issn>
+
+			</journal>
+
+			<journal type="j">
+
+				<sourcetitle>Kolloid-Zeitschrift</sourcetitle>
+
+				<sourcetitle-abbrev>Kolloid-Zeitschrift</sourcetitle-abbrev>
+
+				<issn>0303402X</issn>
+
+			</journal>
+
+		</journal-history>
+		<affiliation-current xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<affiliation affiliation-id="60027485" source="internal-ani">
+				<ip-doc id="60027485" relationship="author" type="parent">
+					<afnameid>Institute for Advanced Studies#60027485</afnameid>
+					<afdispname>Institute for Advanced Studies</afdispname>
+					<preferred-name source="internal-ani">Institute for Advanced Studies</preferred-name>
+					<sort-name>Institute for Advanced Studies</sort-name>
+					<address country="usa">
+
+						<address-part>Einstein Drive</address-part>
+
+						<city>Princeton</city>
+
+						<state>NJ</state>
+
+						<postal-code>8540</postal-code>
+
+						<country>United States</country>
+					</address>
+					<org-domain>ias.edu</org-domain>
+					<org-URL>http://www.ias.edu/</org-URL>
+				</ip-doc>
+			</affiliation>
+		</affiliation-current>
+		<affiliation-history xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<affiliation affiliation-id="60027485" source="internal-ani">
+				<ip-doc id="60027485" relationship="author" type="parent">
+					<afnameid>Institute for Advanced Studies#60027485</afnameid>
+					<afdispname>Institute for Advanced Studies</afdispname>
+					<preferred-name source="internal-ani">Institute for Advanced Studies</preferred-name>
+					<sort-name>Institute for Advanced Studies</sort-name>
+					<address country="usa">
+
+						<address-part>Einstein Drive</address-part>
+
+						<city>Princeton</city>
+
+						<state>NJ</state>
+
+						<postal-code>8540</postal-code>
+
+						<country>United States</country>
+					</address>
+					<org-domain>ias.edu</org-domain>
+					<org-URL>http://www.ias.edu/</org-URL>
+				</ip-doc>
+			</affiliation>
+			<affiliation affiliation-id="60003269" source="internal-ani">
+				<ip-doc id="60003269" relationship="author" type="parent">
+					<afnameid>Princeton University#60003269</afnameid>
+					<afdispname>Princeton University</afdispname>
+					<preferred-name source="internal-ani">Princeton University</preferred-name>
+					<sort-name>Princeton University</sort-name>
+					<address country="usa">
+
+						<city>Princeton</city>
+
+						<state>NJ</state>
+
+						<postal-code>8544</postal-code>
+
+						<country>United States</country>
+					</address>
+					<org-domain>princeton.edu</org-domain>
+					<org-URL>http://www.princeton.edu/main/</org-URL>
+				</ip-doc>
+			</affiliation>
+			<affiliation affiliation-id="105286521" source="internal-ani">
+				<ip-doc id="105286521" relationship="author" type="parent">
+					<afnameid>Committee of the Federation of American Scientists#105286521</afnameid>
+					<afdispname>Committee of the Federation of American Scientists</afdispname>
+					<preferred-name source="internal-ani">Committee of the Federation of American Scientists</preferred-name>
+					<sort-name>Committee of the Federation of American Scientists</sort-name>
+					<address country="usa">
+
+						<address-part>14 Battle Road</address-part>
+
+						<city>Princeton</city>
+
+						<state>NJ</state>
+
+						<country>United States</country>
+					</address>
+				</ip-doc>
+			</affiliation>
+			<affiliation affiliation-id="106217279" parent="60003269" source="internal-ani">
+				<ip-doc id="106217279" relationship="author" type="dept">
+					<afdispname>Princeton University, Institute for Advanced Study</afdispname>
+					<preferred-name source="internal-ani">Institute for Advanced Study</preferred-name>
+					<parent-preferred-name source="internal-ani">Princeton University</parent-preferred-name>
+					<sort-name>Institute for Advanced Study</sort-name>
+					<address country="usa">
+
+						<city>Princeton</city>
+
+						<state>NJ</state>
+
+						<postal-code>8544</postal-code>
+
+						<country>United States</country>
+					</address>
+					<org-domain>princeton.edu</org-domain>
+					<org-URL>http://www.princeton.edu/main/</org-URL>
+				</ip-doc>
+			</affiliation>
+			<affiliation affiliation-id="100782158" source="internal-ani">
+				<ip-doc id="100782158" relationship="author" type="parent">
+					<afnameid>Institute for Advanced Study#100782158</afnameid>
+					<afdispname>Institute for Advanced Study</afdispname>
+					<preferred-name source="internal-ani">Institute for Advanced Study</preferred-name>
+					<sort-name>Institute for Advanced Study</sort-name>
+					<address country="usa">
+
+
+
+						<address-part>Princeton, NJ, null08540</address-part>
+
+
+
+						<city>Princeton</city>
+
+
+
+						<state>NJ</state>
+
+
+
+						<postal-code>08540</postal-code>
+
+
+
+						<country>United States</country>
+					</address>
+				</ip-doc>
+			</affiliation>
+			<affiliation affiliation-id="60031581" source="internal-ani">
+				<ip-doc id="60031581" relationship="author" type="parent">
+					<afnameid>California Institute of Technology#60031581</afnameid>
+					<afdispname>California Institute of Technology</afdispname>
+					<preferred-name source="internal-ani">California Institute of Technology</preferred-name>
+					<sort-name>California Institute of Technology</sort-name>
+					<address country="usa">
+
+
+
+						<address-part>1200 East California Blvd.</address-part>
+
+
+
+						<city>Pasadena</city>
+
+
+
+						<state>CA</state>
+
+
+
+						<postal-code>91125</postal-code>
+
+
+
+						<country>United States</country>
+					</address>
+					<org-domain>caltech.edu</org-domain>
+					<org-URL>http://www.caltech.edu/</org-URL>
+				</ip-doc>
+			</affiliation>
+			<affiliation affiliation-id="112366015" source="internal-ani">
+				<ip-doc id="112366015" relationship="author" type="parent">
+					<afnameid>Dahlem#112366015</afnameid>
+					<afdispname>Dahlem</afdispname>
+					<preferred-name source="internal-ani">Dahlem</preferred-name>
+					<sort-name>Dahlem</sort-name>
+					<address country="deu">
+
+						<address-part>33 Reichensteiner Weg 21</address-part>
+
+						<city>Berlin</city>
+
+						<country>Germany</country>
+					</address>
+				</ip-doc>
+			</affiliation>
+		</affiliation-history>
+	</author-profile>
+</author-retrieval-response>

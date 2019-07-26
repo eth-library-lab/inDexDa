@@ -1,0 +1,14 @@
+{
+	"_comment":"=========================================",
+	"_comment":" These parameters for web scraping ScienceDirect",
+	"_comment":"=========================================",
+    "archive_html":"https://www.sciencedirect.com/",
+    "domain":"Computer Science",
+    "subdomain":"Computer Vision and Pattern Detection",
+
+    "start_year":"1993",
+    "start_month":"01",
+
+    "end_year":"2019",
+    "end_month":"06"
+}
