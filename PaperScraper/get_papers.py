@@ -1,5 +1,7 @@
 from lib.paper_scrape import PaperScrape
+from lib.paper_scrape_sciencedirect import PaperScrapeScienceDirect
 import os
+import sys
 import json
 import argparse
 
@@ -10,15 +12,31 @@ parser.add_argument('--field', type=str, default='Computer Science',
 options = parser.parse_args()
 
 CONFIG_DIR = os.path.join('config', options.database, 'config.json')
-OUTPUT_DIR = os.path.join('data', options.field, 'abstract_links.txt')
+OUTPUT_DIR = os.path.join('data', options.database, options.field.replace(' ', ''))
+OUTPUT_FILE = os.path.join('data', options.database, options.field.replace(' ', ''),
+                           'abstract_links.txt')
 
-with open(CONFIG_DIR) as config_json:
-    config = json.load(config_json)
+if os.path.exists(CONFIG_DIR):
+    with open(CONFIG_DIR) as config_json:
+        config = json.load(config_json)
+    print('Using {} database'.format(options.database))
+else:
+    print('No config file found at {}'.format(CONFIG_DIR), file=sys.stderr)
 
-arXiv = PaperScrape(config)
+if options.database == 'arXiv':
+    arXiv = PaperScrape(config)
 
-with open(OUTPUT_DIR, 'w') as f:
-    for item in arXiv.pdf_links:
-        f.write(item + '\n')
+    if os.path.exists(OUTPUT_DIR):
+        with open(OUTPUT_FILE, 'w') as f:
+            for item in arXiv.abstract_links:
+                f.write(item + '\n')
+    else:
+        os.mkdir(OUTPUT_DIR)
+        with open(OUTPUT_FILE, 'w') as f:
+            for item in arXiv.abstract_links:
+                f.write(item + '\n')
+
+elif options.database == 'sciencedirect':
+    sciencedirect = PaperScrapeScienceDirect(config)
 
 # arXiv.download_papers()
