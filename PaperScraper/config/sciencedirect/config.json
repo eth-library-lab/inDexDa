@@ -2,13 +2,11 @@
 	"_comment":"=========================================",
 	"_comment":" These parameters for web scraping ScienceDirect",
 	"_comment":"=========================================",
-    "archive_html":"https://www.sciencedirect.com/",
-    "domain":"Computer Science",
-    "subdomain":"Computer Vision and Pattern Detection",
 
-    "start_year":"1993",
-    "start_month":"01",
+    "search":"dataset",
 
-    "end_year":"2019",
-    "end_month":"06"
+    "apiKey": "8195584e9a1784037041888ba25292ee",
+
+    "start_year":"2000",
+    "end_year":"2019"
 }

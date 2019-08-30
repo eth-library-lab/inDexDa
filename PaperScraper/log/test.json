@@ -1,0 +1,746 @@
+{
+    "resultsFound": 640,
+    "results": [
+        {
+            "authors": [
+                {
+                    "order": 0,
+                    "name": "A. B Tait"
+                },
+                {
+                    "order": 1,
+                    "name": "D. K Hall"
+                },
+                {
+                    "order": 2,
+                    "name": "J. L Foster"
+                },
+                {
+                    "order": 3,
+                    "name": "R. L Armstrong"
+                }
+            ],
+            "doi": "10.1016/S0034-4257(99)00099-1",
+            "loadDate": "2000-03-09T00:00:00Z",
+            "openAccess": false,
+            "pages": {
+                "first": "111",
+                "last": "126"
+            },
+            "pii": "S0034425799000991",
+            "publicationDate": "2000-04-30",
+            "sourceTitle": "Remote Sensing of Environment",
+            "title": "Utilizing Multiple Datasets for Snow-Cover Mapping",
+            "uri": "https://www.sciencedirect.com/science/article/pii/S0034425799000991?dgcid=api_sd_search-api-endpoint",
+            "volumeIssue": "Volume 72, Issue 1"
+        },
+        {
+            "authors": [
+                {
+                    "order": 0,
+                    "name": "G. L. Harris"
+                },
+                {
+                    "order": 1,
+                    "name": "J. A. Catt"
+                },
+                {
+                    "order": 2,
+                    "name": "R. H. Bromilow"
+                },
+                {
+                    "order": 3,
+                    "name": "A. C. Armstrong"
+                }
+            ],
+            "doi": "10.1016/S0378-3774(99)00085-2",
+            "loadDate": "2000-03-20T00:00:00Z",
+            "openAccess": false,
+            "pages": {
+                "first": "75",
+                "last": "83"
+            },
+            "pii": "S0378377499000852",
+            "publicationDate": "2000-05-31",
+            "sourceTitle": "Agricultural Water Management",
+            "title": "Evaluating pesticide leaching models: the Brimstone Farm dataset",
+            "uri": "https://www.sciencedirect.com/science/article/pii/S0378377499000852?dgcid=api_sd_search-api-endpoint",
+            "volumeIssue": "Volume 44, Issues 1\u20133"
+        },
+        {
+            "authors": [
+                {
+                    "order": 0,
+                    "name": "Mark J. Chopping"
+                }
+            ],
+            "doi": "10.1016/S0034-4257(00)00120-6",
+            "loadDate": "2000-08-16T00:00:00Z",
+            "openAccess": false,
+            "pages": {
+                "first": "163",
+                "last": "191"
+            },
+            "pii": "S0034425700001206",
+            "publicationDate": "2000-10-31",
+            "sourceTitle": "Remote Sensing of Environment",
+            "title": "Large-Scale BRDF Retrieval over New Mexico with a Multiangular NOAA AVHRR Dataset",
+            "uri": "https://www.sciencedirect.com/science/article/pii/S0034425700001206?dgcid=api_sd_search-api-endpoint",
+            "volumeIssue": "Volume 74, Issue 1"
+        },
+        {
+            "authors": [
+                {
+                    "order": 0,
+                    "name": "K. E Kohfeld"
+                },
+                {
+                    "order": 1,
+                    "name": "S. P Harrison"
+                }
+            ],
+            "doi": "10.1016/S0277-3791(99)00068-2",
+            "loadDate": "2000-04-21T00:00:00Z",
+            "openAccess": false,
+            "pages": {
+                "first": "321",
+                "last": "346"
+            },
+            "pii": "S0277379199000682",
+            "publicationDate": "2000-01-01",
+            "sourceTitle": "Quaternary Science Reviews",
+            "title": "How well can we simulate past climates? Evaluating the models using global palaeoenvironmental datasets",
+            "uri": "https://www.sciencedirect.com/science/article/pii/S0277379199000682?dgcid=api_sd_search-api-endpoint",
+            "volumeIssue": "Volume 19, Issues 1\u20135"
+        },
+        {
+            "authors": [
+                {
+                    "order": 0,
+                    "name": "Adrian Armstrong"
+                },
+                {
+                    "order": 1,
+                    "name": "Karin Aden"
+                },
+                {
+                    "order": 2,
+                    "name": "Nadia Amraoui"
+                },
+                {
+                    "order": 3,
+                    "name": "Bernd Diekkr\u00fcger"
+                },
+                {
+                    "order": 7,
+                    "name": "Caroline Wittwer"
+                }
+            ],
+            "doi": "10.1016/S0378-3774(99)00086-4",
+            "loadDate": "2000-03-20T00:00:00Z",
+            "openAccess": false,
+            "pages": {
+                "first": "85",
+                "last": "104"
+            },
+            "pii": "S0378377499000864",
+            "publicationDate": "2000-05-31",
+            "sourceTitle": "Agricultural Water Management",
+            "title": "Comparison of the performance of pesticide-leaching models on a cracking clay soil: results using the Brimstone Farm dataset",
+            "uri": "https://www.sciencedirect.com/science/article/pii/S0378377499000864?dgcid=api_sd_search-api-endpoint",
+            "volumeIssue": "Volume 44, Issues 1\u20133"
+        },
+        {
+            "authors": [
+                {
+                    "order": 0,
+                    "name": "Aaldrik Tiktak"
+                }
+            ],
+            "doi": "10.1016/S0378-3774(99)00088-8",
+            "loadDate": "2000-03-20T00:00:00Z",
+            "openAccess": false,
+            "pages": {
+                "first": "119",
+                "last": "134"
+            },
+            "pii": "S0378377499000888",
+            "publicationDate": "2000-05-31",
+            "sourceTitle": "Agricultural Water Management",
+            "title": "Application of pesticide leaching models to the Vredepeel dataset: II Pesticide fate",
+            "uri": "https://www.sciencedirect.com/science/article/pii/S0378377499000888?dgcid=api_sd_search-api-endpoint",
+            "volumeIssue": "Volume 44, Issues 1\u20133"
+        },
+        {
+            "authors": [
+                {
+                    "order": 0,
+                    "name": "M Vanclooster"
+                },
+                {
+                    "order": 1,
+                    "name": "J. J. T. I Boesten"
+                }
+            ],
+            "doi": "10.1016/S0378-3774(99)00087-6",
+            "loadDate": "2000-03-20T00:00:00Z",
+            "openAccess": false,
+            "pages": {
+                "first": "105",
+                "last": "117"
+            },
+            "pii": "S0378377499000876",
+            "publicationDate": "2000-05-31",
+            "sourceTitle": "Agricultural Water Management",
+            "title": "Application of pesticide simulation models to the Vredepeel dataset: I. Water, solute and heat transport",
+            "uri": "https://www.sciencedirect.com/science/article/pii/S0378377499000876?dgcid=api_sd_search-api-endpoint",
+            "volumeIssue": "Volume 44, Issues 1\u20133"
+        },
+        {
+            "authors": [
+                {
+                    "order": 0,
+                    "name": "M. Vanclooster"
+                },
+                {
+                    "order": 1,
+                    "name": "J. J. T. I. Boesten"
+                },
+                {
+                    "order": 2,
+                    "name": "M. Trevisan"
+                },
+                {
+                    "order": 3,
+                    "name": "C. D. Brown"
+                },
+                {
+                    "order": 8,
+                    "name": "A. M. A. van der Linden"
+                }
+            ],
+            "doi": "10.1016/S0378-3774(99)00081-5",
+            "loadDate": "2000-03-20T00:00:00Z",
+            "openAccess": false,
+            "pages": {
+                "first": "1",
+                "last": "19"
+            },
+            "pii": "S0378377499000815",
+            "publicationDate": "2000-05-31",
+            "sourceTitle": "Agricultural Water Management",
+            "title": "A European test of pesticide-leaching models: methodology and major recommendations",
+            "uri": "https://www.sciencedirect.com/science/article/pii/S0378377499000815?dgcid=api_sd_search-api-endpoint",
+            "volumeIssue": "Volume 44, Issues 1\u20133"
+        },
+        {
+            "authors": [
+                {
+                    "order": 0,
+                    "name": "Richard K. H. Wyse"
+                },
+                {
+                    "order": 1,
+                    "name": "Kenneth M. Taylor"
+                }
+            ],
+            "doi": "10.1046/j.1444-2892.2000.009001023.x",
+            "loadDate": "2004-02-25T00:00:00Z",
+            "openAccess": false,
+            "pages": {
+                "first": "23",
+                "last": "26"
+            },
+            "pii": "S1443950600905420",
+            "publicationDate": "2000-05-31",
+            "sourceTitle": "Heart, Lung and Circulation",
+            "title": "Prospective development of a cardiac surgical registry",
+            "uri": "https://www.sciencedirect.com/science/article/pii/S1443950600905420?dgcid=api_sd_search-api-endpoint",
+            "volumeIssue": "Volume 9, Issue 1"
+        },
+        {
+            "authors": [
+                {
+                    "order": 0,
+                    "name": "F. C Crawford"
+                },
+                {
+                    "order": 1,
+                    "name": "M. J Freeman"
+                },
+                {
+                    "order": 2,
+                    "name": "J Schinka"
+                },
+                {
+                    "order": 3,
+                    "name": "L. I Abdullah"
+                },
+                {
+                    "order": 7,
+                    "name": "M. J Mullan"
+                }
+            ],
+            "doi": "10.1016/S0304-3940(00)01260-X",
+            "loadDate": "2000-07-13T00:00:00Z",
+            "openAccess": false,
+            "pages": {
+                "first": "61",
+                "last": "65"
+            },
+            "pii": "S030439400001260X",
+            "publicationDate": "2000-07-28",
+            "sourceTitle": "Neuroscience Letters",
+            "title": "The genetic association between Cathepsin D and Alzheimer's disease",
+            "uri": "https://www.sciencedirect.com/science/article/pii/S030439400001260X?dgcid=api_sd_search-api-endpoint",
+            "volumeIssue": "Volume 289, Issue 1"
+        },
+        {
+            "authors": [
+                {
+                    "order": 0,
+                    "name": "Jianying Hu"
+                },
+                {
+                    "order": 1,
+                    "name": "Sok Gek Lim"
+                },
+                {
+                    "order": 2,
+                    "name": "Michael K. Brown"
+                }
+            ],
+            "doi": "10.1016/S0031-3203(99)00043-6",
+            "loadDate": "2001-06-07T00:00:00Z",
+            "openAccess": false,
+            "pages": {
+                "first": "133",
+                "last": "147"
+            },
+            "pii": "S0031320399000436",
+            "publicationDate": "2000-01-31",
+            "sourceTitle": "Pattern Recognition",
+            "title": "Writer independent on-line handwriting recognition using an HMM approach",
+            "uri": "https://www.sciencedirect.com/science/article/pii/S0031320399000436?dgcid=api_sd_search-api-endpoint",
+            "volumeIssue": "Volume 33, Issue 1"
+        },
+        {
+            "authors": [
+                {
+                    "order": 0,
+                    "name": "G. Y. Patlewicz"
+                },
+                {
+                    "order": 1,
+                    "name": "R. A. Rodford"
+                },
+                {
+                    "order": 2,
+                    "name": "G. Ellis"
+                },
+                {
+                    "order": 3,
+                    "name": "M. D. Barratt"
+                }
+            ],
+            "doi": "10.1016/S0887-2333(99)00086-7",
+            "loadDate": "2000-02-25T00:00:00Z",
+            "openAccess": false,
+            "pages": {
+                "first": "79",
+                "last": "84"
+            },
+            "pii": "S0887233399000867",
+            "publicationDate": "2000-02-29",
+            "sourceTitle": "Toxicology in Vitro",
+            "title": "A QSAR model for the eye irritation of cationic surfactants",
+            "uri": "https://www.sciencedirect.com/science/article/pii/S0887233399000867?dgcid=api_sd_search-api-endpoint",
+            "volumeIssue": "Volume 14, Issue 1"
+        },
+        {
+            "authors": [
+                {
+                    "order": 0,
+                    "name": "Jukka Horppila"
+                }
+            ],
+            "doi": "10.1016/S0165-7836(99)00099-5",
+            "loadDate": "1999-12-27T00:00:00Z",
+            "openAccess": false,
+            "pages": {
+                "first": "21",
+                "last": "29"
+            },
+            "pii": "S0165783699000995",
+            "publicationDate": "2000-02-29",
+            "sourceTitle": "Fisheries Research",
+            "title": "The effect of length frequency ranges on the back-calculated lengths of roach, <ce:italic>Rutilus rutilus</ce:italic> (L.)",
+            "uri": "https://www.sciencedirect.com/science/article/pii/S0165783699000995?dgcid=api_sd_search-api-endpoint",
+            "volumeIssue": "Volume 45, Issue 1"
+        },
+        {
+            "authors": [
+                {
+                    "order": 0,
+                    "name": "Jos J. M. Westenberg"
+                },
+                {
+                    "order": 1,
+                    "name": "Rob J. van der Geest"
+                },
+                {
+                    "order": 2,
+                    "name": "Martin N. J. M. Wasser"
+                },
+                {
+                    "order": 3,
+                    "name": "Edwin L. van der Linden"
+                },
+                {
+                    "order": 8,
+                    "name": "Johan H. C. Reiber"
+                }
+            ],
+            "doi": "10.1016/S0730-725X(99)00099-5",
+            "loadDate": "2000-01-04T00:00:00Z",
+            "openAccess": false,
+            "pages": {
+                "first": "13",
+                "last": "22"
+            },
+            "pii": "S0730725X99000995",
+            "publicationDate": "2000-01-31",
+            "sourceTitle": "Magnetic Resonance Imaging",
+            "title": "Vessel diameter measurements in gadolinium contrast-enhanced three-dimensional MRA of peripheral arteries",
+            "uri": "https://www.sciencedirect.com/science/article/pii/S0730725X99000995?dgcid=api_sd_search-api-endpoint",
+            "volumeIssue": "Volume 18, Issue 1"
+        },
+        {
+            "authors": [
+                {
+                    "order": 0,
+                    "name": "Eirik Malinen"
+                },
+                {
+                    "order": 1,
+                    "name": "Sabine Freykowski"
+                },
+                {
+                    "order": 2,
+                    "name": "Johann Kummermehr"
+                }
+            ],
+            "doi": "10.1016/S0360-3016(99)00423-X",
+            "loadDate": "2000-01-07T00:00:00Z",
+            "openAccess": false,
+            "pages": {
+                "first": "173",
+                "last": "177"
+            },
+            "pii": "S036030169900423X",
+            "publicationDate": "2000-01-01",
+            "sourceTitle": "International Journal of Radiation Oncology*Biology*Physics",
+            "title": "Regrowth delay analysis of irradiated tumors in the curative dose region",
+            "uri": "https://www.sciencedirect.com/science/article/pii/S036030169900423X?dgcid=api_sd_search-api-endpoint",
+            "volumeIssue": "Volume 46, Issue 1"
+        },
+        {
+            "authors": [
+                {
+                    "order": 0,
+                    "name": "Wim P Cofino"
+                },
+                {
+                    "order": 1,
+                    "name": "Ivo H. M van Stokkum"
+                },
+                {
+                    "order": 2,
+                    "name": "David E Wells"
+                },
+                {
+                    "order": 3,
+                    "name": "Freek Ariese"
+                },
+                {
+                    "order": 5,
+                    "name": "Rene\u00e9 A. L Peerboom"
+                }
+            ],
+            "doi": "10.1016/S0169-7439(00)00093-9",
+            "loadDate": "2000-10-26T00:00:00Z",
+            "openAccess": false,
+            "pages": {
+                "first": "37",
+                "last": "55"
+            },
+            "pii": "S0169743900000939",
+            "publicationDate": "2000-11-13",
+            "sourceTitle": "Chemometrics and Intelligent Laboratory Systems",
+            "title": "A new model for the inference of population characteristics from experimental data using uncertainties. Application to interlaboratory studies",
+            "uri": "https://www.sciencedirect.com/science/article/pii/S0169743900000939?dgcid=api_sd_search-api-endpoint",
+            "volumeIssue": "Volume 53, Issues 1\u20132"
+        },
+        {
+            "authors": [
+                {
+                    "order": 0,
+                    "name": "Boo-Sik Kang"
+                },
+                {
+                    "order": 1,
+                    "name": "Sang-Chan Park"
+                }
+            ],
+            "doi": "10.1016/S0167-9236(00)00063-4",
+            "loadDate": "2000-06-01T00:00:00Z",
+            "openAccess": false,
+            "pages": {
+                "first": "59",
+                "last": "72"
+            },
+            "pii": "S0167923600000634",
+            "publicationDate": "2000-07-31",
+            "sourceTitle": "Decision Support Systems",
+            "title": "Integrated machine learning approaches for complementing statistical process control procedures",
+            "uri": "https://www.sciencedirect.com/science/article/pii/S0167923600000634?dgcid=api_sd_search-api-endpoint",
+            "volumeIssue": "Volume 29, Issue 1"
+        },
+        {
+            "authors": [
+                {
+                    "order": 0,
+                    "name": "P. A. M Berry"
+                },
+                {
+                    "order": 1,
+                    "name": "J. E Hoogerboord"
+                },
+                {
+                    "order": 2,
+                    "name": "R. A Pinnock"
+                }
+            ],
+            "doi": "10.1016/S1464-1895(00)00016-8",
+            "loadDate": "2000-04-06T00:00:00Z",
+            "openAccess": false,
+            "pages": {
+                "first": "95",
+                "last": "99"
+            },
+            "pii": "S1464189500000168",
+            "publicationDate": "2000-12-31",
+            "sourceTitle": "Physics and Chemistry of the Earth, Part A: Solid Earth and Geodesy",
+            "title": "Identification of common error signatures in global digital elevation models based on satellite altimeter reference data",
+            "uri": "https://www.sciencedirect.com/science/article/pii/S1464189500000168?dgcid=api_sd_search-api-endpoint",
+            "volumeIssue": "Volume 25, Issue 1"
+        },
+        {
+            "authors": [
+                {
+                    "order": 0,
+                    "name": "R Francaviglia"
+                },
+                {
+                    "order": 1,
+                    "name": "E Capri"
+                }
+            ],
+            "doi": "10.1016/S0378-3774(99)00084-0",
+            "loadDate": "2000-03-20T00:00:00Z",
+            "openAccess": false,
+            "pages": {
+                "first": "63",
+                "last": "74"
+            },
+            "pii": "S0378377499000840",
+            "publicationDate": "2000-05-31",
+            "sourceTitle": "Agricultural Water Management",
+            "title": "Lysimeter experiments with metolachlor in Tor Mancina (Italy)",
+            "uri": "https://www.sciencedirect.com/science/article/pii/S0378377499000840?dgcid=api_sd_search-api-endpoint",
+            "volumeIssue": "Volume 44, Issues 1\u20133"
+        },
+        {
+            "authors": [
+                {
+                    "order": 0,
+                    "name": "L. Vandekerckhove"
+                },
+                {
+                    "order": 1,
+                    "name": "J. Poesen"
+                },
+                {
+                    "order": 2,
+                    "name": "D. Oostwoud Wijdenes"
+                },
+                {
+                    "order": 3,
+                    "name": "G. Gyssels"
+                },
+                {
+                    "order": 5,
+                    "name": "E. de Luna"
+                }
+            ],
+            "doi": "10.1016/S0169-555X(99)00109-9",
+            "loadDate": "2000-05-19T00:00:00Z",
+            "openAccess": false,
+            "pages": {
+                "first": "37",
+                "last": "58"
+            },
+            "pii": "S0169555X99001099",
+            "publicationDate": "2000-05-31",
+            "sourceTitle": "Geomorphology",
+            "title": "Characteristics and controlling factors of bank gullies in two semi-arid mediterranean environments",
+            "uri": "https://www.sciencedirect.com/science/article/pii/S0169555X99001099?dgcid=api_sd_search-api-endpoint",
+            "volumeIssue": "Volume 33, Issues 1\u20132"
+        },
+        {
+            "authors": [
+                {
+                    "order": 0,
+                    "name": "J. Austin"
+                },
+                {
+                    "order": 1,
+                    "name": "K. Lees"
+                }
+            ],
+            "doi": "10.1016/S0925-2312(00)00309-X",
+            "loadDate": "2000-10-30T00:00:00Z",
+            "openAccess": false,
+            "pages": {
+                "first": "55",
+                "last": "72"
+            },
+            "pii": "S092523120000309X",
+            "publicationDate": "2000-11-30",
+            "sourceTitle": "Neurocomputing",
+            "title": "A search engine based on neural correlation matrix memories",
+            "uri": "https://www.sciencedirect.com/science/article/pii/S092523120000309X?dgcid=api_sd_search-api-endpoint",
+            "volumeIssue": "Volume 35, Issues 1\u20134"
+        },
+        {
+            "authors": [
+                {
+                    "order": 0,
+                    "name": "Ludovic Br\u00e9ger"
+                },
+                {
+                    "order": 1,
+                    "name": "Hrvoje Tkal\u010di\u0107"
+                },
+                {
+                    "order": 2,
+                    "name": "Barbara Romanowicz"
+                }
+            ],
+            "doi": "10.1016/S0012-821X(99)00286-1",
+            "loadDate": "2000-01-12T00:00:00Z",
+            "openAccess": false,
+            "pages": {
+                "first": "133",
+                "last": "143"
+            },
+            "pii": "S0012821X99002861",
+            "publicationDate": "2000-01-30",
+            "sourceTitle": "Earth and Planetary Science Letters",
+            "title": "The effect of D\u2033 on PKP(AB\u2212DF) travel time residuals and possible implications for inner core structure",
+            "uri": "https://www.sciencedirect.com/science/article/pii/S0012821X99002861?dgcid=api_sd_search-api-endpoint",
+            "volumeIssue": "Volume 175, Issues 1\u20132"
+        },
+        {
+            "authors": [
+                {
+                    "order": 0,
+                    "name": "D Dierickx"
+                },
+                {
+                    "order": 1,
+                    "name": "B Basu"
+                },
+                {
+                    "order": 2,
+                    "name": "J Vleugels"
+                },
+                {
+                    "order": 3,
+                    "name": "O Van der Biest"
+                }
+            ],
+            "doi": "10.1016/S1044-5803(00)00049-8",
+            "loadDate": "2001-01-24T00:00:00Z",
+            "openAccess": false,
+            "pages": {
+                "first": "61",
+                "last": "70"
+            },
+            "pii": "S1044580300000498",
+            "publicationDate": "2000-07-31",
+            "sourceTitle": "Materials Characterization",
+            "title": "Statistical extreme value modeling of particle size distributions: experimental grain size distribution type estimation and parameterization of sintered zirconia",
+            "uri": "https://www.sciencedirect.com/science/article/pii/S1044580300000498?dgcid=api_sd_search-api-endpoint",
+            "volumeIssue": "Volume 45, Issue 1"
+        },
+        {
+            "authors": [
+                {
+                    "order": 0,
+                    "name": "Carlos Alberto Montanari"
+                },
+                {
+                    "order": 1,
+                    "name": "Quezia Bezerra Cass"
+                },
+                {
+                    "order": 2,
+                    "name": "Maria Elizabeth Tiritan"
+                },
+                {
+                    "order": 3,
+                    "name": "Adriano Luis Soares de Souza"
+                }
+            ],
+            "doi": "10.1016/S0003-2670(00)00962-4",
+            "loadDate": "2000-08-07T00:00:00Z",
+            "openAccess": false,
+            "pages": {
+                "first": "93",
+                "last": "100"
+            },
+            "pii": "S0003267000009624",
+            "publicationDate": "2000-08-15",
+            "sourceTitle": "Analytica Chimica Acta",
+            "title": "A QSERR study on enantioselective separation of enantiomeric sulphoxides",
+            "uri": "https://www.sciencedirect.com/science/article/pii/S0003267000009624?dgcid=api_sd_search-api-endpoint",
+            "volumeIssue": "Volume 419, Issue 1"
+        },
+        {
+            "authors": [
+                {
+                    "order": 0,
+                    "name": "Andrew E. Czeizel"
+                },
+                {
+                    "order": 1,
+                    "name": "Magda Rockenbauer"
+                }
+            ],
+            "doi": "10.1016/S0301-2115(99)00112-8",
+            "loadDate": "2000-01-03T00:00:00Z",
+            "openAccess": false,
+            "pages": {
+                "first": "27",
+                "last": "33"
+            },
+            "pii": "S0301211599001128",
+            "publicationDate": "2000-01-31",
+            "sourceTitle": "European Journal of Obstetrics & Gynecology and Reproductive Biology",
+            "title": "A population-based case-control teratologic study of oral oxytetracycline treatment during pregnancy",
+            "uri": "https://www.sciencedirect.com/science/article/pii/S0301211599001128?dgcid=api_sd_search-api-endpoint",
+            "volumeIssue": "Volume 88, Issue 1"
+        }
+    ]
+}

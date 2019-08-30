@@ -5,7 +5,6 @@ import utils.command_line as progress
 
 from bs4 import BeautifulSoup
 from dateutil.relativedelta import relativedelta
-from lib.get_json import json_write
 
 
 class PaperScrape:
@@ -128,15 +127,3 @@ class PaperScrape:
                         links.extend(self.get_abstract_links(content))
 
         return links
-
-    def compile_database(self):
-        """
-        Opens links to Abstract sections and catalogues the abstract, paper name, DOI,
-          subject of the paper, and submission date
-        """
-
-        for url in self.abstract_links:
-            if urlutil.check_url(url):
-                json_write(url)
-            else:
-                print("Error: url does not exist {}".format(url))

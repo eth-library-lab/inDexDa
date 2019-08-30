@@ -1,14 +1,11 @@
-# import re
-import datetime
-import urllib.request
+import os
+import json
+import math
+import time
+import requests
+import numpy as np
 import utils.url_util as urlutil
 import utils.command_line as progress
-import xml.etree.ElementTree as ET
-import xml.dom.minidom
-
-from bs4 import BeautifulSoup
-from dateutil.relativedelta import relativedelta
-from lib.get_json import json_write
 
 
 class PaperScrapeScienceDirect:
@@ -21,138 +18,126 @@ class PaperScrapeScienceDirect:
         """
 
         self.config = config
-        self.domain = config['domain']
-        self.subdomain = config['subdomain']
-        self.url = config['archive_html']
-        self.get_journals()
-        # self.page_links = self.get_page_links()
-        # self.abstract_links = self.search_archive()
+        self.apikey = config['apiKey']
+        self.search = config['search']
+        self.papers = self.scrape4papers()
 
-        # self.download_pdfs()
 
-    def get_journals(self):
-        xml_data = '''https://api.elsevier.com/content/author/eid/9-s2.0-22988279600?apiKey=7f59af901d2d86f78a1fd60c1bf9426a&httpAccept=text%2Fxml'''
-        url = urllib.request.urlopen(xml_data)
-        data = url.read()
-        check = str(data, 'utf-8')
-        dom = xml.dom.minidom.parseString(check)
-        pretty_xml_as_string = dom.toprettyxml()
+    def scrape4papers(self):
+        papers = []
+        date_range = self.get_dates()
+        issue_range = np.arange(1, 100)
 
-        with open("data/xml_test.xml", "w") as f:
-            f.write(pretty_xml_as_string)
+        for year in np.nditer(date_range):
+            stop_counter = 0    # If 3 consecutive issues have 0 results, go to next year
+            for issue in np.nditer(issue_range):
+                if stop_counter == 3:
+                    break
+
+                data = self.SD_search(year, issue)
+
+                if data == 0:
+                    stop_counter += 1
+                else:
+                    for page in data:
+                        for result in page["results"]:
+                            try:
+                                authors = [d['name'] for d in result["authors"]]
+                            except KeyError:
+                                authors = []
+                            try:
+                                doi = result["doi"]
+                            except KeyError:
+                                doi = []
+                            try:
+                                title = result["title"]
+                            except KeyError:
+                                title = []
+
+                            papers.append({"title": title,
+                                           "authors": authors,
+                                           "doi": doi})
+        return papers
+
 
     def get_dates(self):
-        """
-        Get dates in YYMM configuration between date when database started
-            publishing the papers and current month and year
-        :return result: list of eligible years and months that the database
-                            has papers for (YYMM)
-        """
-        date_list = []
-        date = []
-        result = []
-
-        start_month = int(self.config['start_month'])
         start_year = int(self.config['start_year'])
-        end_month = int(self.config['end_month'])
         end_year = int(self.config['end_year'])
 
-        end = datetime.date(end_year, end_month, 1)
-        current = datetime.date(start_year, start_month, 1)
+        if start_year == end_year:
+            return start_year
+        else:
+            return np.arange(start_year, end_year)
 
-        while current <= end:
-            date_list.append(current)
-            current += relativedelta(months=1)
 
-        for date in date_list:
-            result.append(str(date.year % 100).zfill(2) +
-                          str(date.month).zfill(2))
-
-        return result
-
-    def get_page_links(self):
+    def SD_search(self, date, issue):
         """
-        Get links based on dates (YYMM) which point towards the archived
-            webpage
-        :return links: link to archive pages for all years and months of the
-                        database
-        """
-        links = []
-        dates = self.get_dates()
+        Uses ScienceDirect Search API v2 to find possible matches over the entire database.
+        The API mandates a limit of 3 queries per second, so a delay must be used.
 
-        for date in dates:
-            links.append(self.archive_url + date + '?skip=0&show=2000')
-
-        return links
-
-    def get_abstract_links(self, content):
-        """
-        Scrapes the given content of a webpage to extract all the pdf links
-
-        :param content: portion of webpage contained within the div "content"
-                         tag
-        :return abstract_links: link to archive pages for all years and months of
-                        the database
-        """
-        abstract_links = []
-        # for a in content.find_all(lambda tag: tag.name == "a" and "pdf"
-        #                           in tag.text):
-        for a in content.find_all('a', title="Abstract"):
-            abstract_links.append('https://arxiv.org' + a.get('href'))
-        return abstract_links
-
-    def search_archive(self):
-        """
-        Scrapes the given content of a webpage to extract all the pdf links
-
-        :return links: links to all the pdfs of a given year and month
-        """
-        next_page = []
-        links = []
-        length = len(self.page_links)
-
-        print('\nScraping ArXiv for all {} papers'.format(self.topic))
-        for i, page in enumerate(self.page_links):
-            # Show progress on command line
-            progress.printProgressBar(i + 1, length, prefix='Progress:',
-                                      suffix='Complete', length=50)
-            if urlutil.check_url(page):
-                html = BeautifulSoup(urllib.request.urlopen(page),
-                                     'html.parser')
-                content = html.find("div", {"id": "content"})
-                small_tags = []
-
-                # Find how many pages of abstratcs the site has for specified date
-                for small in content.find_all(lambda tag: tag.name ==
-                                              "small" and "total of" in
-                                              tag.text):
-                    small_tags.append(small)
-
-                # If site has no papers available for specified date
-                if not small_tags:
-                    continue
-
-                # Compile list of all pages with pdfs
-                for a in small_tags[0].find_all("a"):
-                    next_page.append("https://arxiv.org" + a.get('href'))
-
-                # For each page, get links for all pdfs
-                if not next_page:
-                    links.extend(self.get_abstract_links(content))
-                else:
-                    for stack in next_page:
-                        links.extend(self.get_abstract_links(content))
-
-        return links
-
-    def compile_database(self):
-        """
-        Opens links to Abstract sections and catalogues the abstract, paper name, DOI,
-          subject of the paper, and submission date
+        :params  date: year to search over (string)
+                 issue: issue number to search over (string)
+        :return
         """
 
-        for url in self.abstract_links:
-            if urlutil.check_url(url):
-                json_write(url)
-            else:
-                print("Error: url does not exist {}".format(url))
+        results = []
+
+        while True:
+            try:
+                data = self.APIRequest(date, issue, 0)
+                time.sleep(.5)
+                totalResults = data['resultsFound']
+                break
+            except json.JSONDecodeError:
+                time.sleep(1)
+
+        if totalResults > 0:
+            for pagenum in range(math.ceil(totalResults/100)):
+                progress.printProgressBar(pagenum + 1, math.ceil(totalResults/100),
+                                          prefix='Progress [Year:{}, Issue:{}]:'.format(date, issue),
+                                          suffix='Complete', length=30)
+                start_idx = pagenum * 100
+
+                while True:
+                    try:
+                        results.append(self.APIRequest(date, issue, start_idx))
+                        time.sleep(.5)
+                        break
+                    except json.JSONDecodeError:
+                        time.sleep(1)
+
+            return results
+        else:
+            return 0
+
+
+    def APIRequest(self, date, issue, start_idx):
+
+        if not isinstance(date, str):
+            date = str(date)
+        if not isinstance(issue, str):
+            issue = str(issue)
+        if not isinstance(start_idx, str):
+            start_idx = str(start_idx)
+
+        key = self.apikey
+        search = self.search
+        url = 'https://api.elsevier.com/content/search/sciencedirect'
+
+        headers = {"Accept": "application/json",
+                   "X-ELS-APIKey": key,
+                   "content-type": "application/json"}
+
+        body = json.dumps({"qs": search,
+                           "display": {
+                                "offset": start_idx,
+                                "show": "100",
+                                "sortBy": "relevance"
+                                      },
+                           "date": date,
+                           "openAccess": "true",
+                           "issue": issue})
+
+        r = requests.put(url, headers=headers, data=body)
+        return json.loads(str(r.text))
+

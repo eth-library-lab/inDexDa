@@ -17,15 +17,29 @@ To install the virtual environment and all required dependencies, run:
 ./install.sh
 ```
 
+## Setup
+This project uses several config files in order to run.
+
+* PaperScraper/config/repository/config.json
+* PaperScraper/data/repository/field/links.txt
+
+The first of these contains information specific to scraping arXiv such as what topic, the starting year and month for the papers you want to scrape, and the ending
+year and month
+
 ## Usage
 
-This project is divided into multiple sections to make it more modular and easier to use/modify.
+This project is divided into multiple sections to make it more modular and easier to use/modify. The first section involves gathering information about publications
+from online repositories and storing it in a MongoDB database. The second portion trains a neural network to read paper abstracts and determine whether or not a
+new dataset was created. If it was, the paper entry within the MongoDB database is updated with an entry indicating as such.
 
 ### Scrape Papers
 
-Scrape papers from an online archive in order to be able to scan them to determine whether a dataset was created or not. PaperScraper folder contains the get_papers.py script to run.
+PaperScraper folder contains the run.py script. The script will confirm which repository you wish to use followed by a series of questions. The first is a confirmation
+as to whether the user wishes to scrape the given repository (yes by default) followed by whether the user wants to update the database. The database uses the links to
+the webpage containing information on the paper (located in /PaperScraper/data/) as the means of updating. The following example will use the arXiv online repository and find the links to all papers within the Computer Science field.
 
 Example:
 ```shell
-python get_papers.py --database arXiv --field ComputerScience
+python run.py --database arXiv --field ComputerScience
 ```
+
