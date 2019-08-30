@@ -9,7 +9,12 @@ pip install torchvision
 
 # Required Packages
 pip install beautifulsoup4
+pip install requests
 pip install python-dateutil
 pip install scikit-learn
 pip install --upgrade gensim
 pip install nltk
+
+# MongoDB or find a way to link with Library Lab server
+# sudo apt-get install build-essential python-dev
+# pip install pymongo
