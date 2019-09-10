@@ -1,25 +1,35 @@
-from lib.paper_scrape import PaperScrape
-from lib.paper_scrape_sciencedirect import PaperScrapeScienceDirect
-from utils.command_line import query_yes_no
-
-import os
+# import os
 import json
+
+from lib.paper_scrape_arxiv import PaperScrapeArXiv
+from lib.paper_scrape_ieeexplore import PaperScrapeIEEEXplore
+from lib.paper_scrape_sciencedirect import PaperScrapeScienceDirect
 
 
 def scrape_database(config, options, CONFIG_DIR, OUTPUT_DIR, OUTPUT_FILE):
-    if not os.path.exists(OUTPUT_DIR):
-        os.mkdir(OUTPUT_DIR)
+    # if options.database == 'arXiv':
+    #     arXiv = PaperScrapeArXiv(config)
 
-    if options.database == 'arXiv':
-        arXiv = PaperScrape(config)
+    #     with open(OUTPUT_FILE, 'w') as f:
+    #         json.dump(arXiv.papers, f, indent=4)
 
-        with open(OUTPUT_FILE, 'w') as f:
-            for item in arXiv.abstract_links:
-                f.write(item + '\n')
+    # elif options.database == 'sciencedirect':
+    #     sciencedirect = PaperScrapeScienceDirect(config)
 
+    #     with open(OUTPUT_FILE, 'w') as f:
+    #         json.dump(sciencedirect.papers, f, indent=4)
 
-    elif options.database == 'sciencedirect':
-        sciencedirect = PaperScrapeScienceDirect(config)
+    # elif options.database == 'ieeexplore':
+    #     ieeexplore = PaperScrapeIEEEXplore(config)
 
-        with open(OUTPUT_FILE, 'w') as f:
-            json.dump(sciencedirect.papers, f, indent=4)
+    #     with open(OUTPUT_FILE, 'w') as f:
+    #         json.dump(ieeexplore.papers, f, indent=4)
+
+    databases = {'arxiv': PaperScrapeArXiv,
+                 'ieeexplore': PaperScrapeIEEEXplore,
+                 'sciencedirect': PaperScrapeScienceDirect}
+
+    scraper = databases[options.database.lower()](config)
+
+    with open(OUTPUT_FILE, 'w') as f:
+            json.dump(scraper.papers, f, indent=4)
