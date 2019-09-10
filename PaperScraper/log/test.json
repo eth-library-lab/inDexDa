@@ -1,746 +1,2122 @@
 {
-    "resultsFound": 640,
-    "results": [
-        {
-            "authors": [
+    "abstracts-retrieval-response": {
+        "item": {
+            "ait:process-info": {
+                "ait:status": {
+                    "@state": "update",
+                    "@type": "core",
+                    "@stage": "S300"
+                },
+                "ait:date-delivered": {
+                    "@day": "07",
+                    "@year": "2017",
+                    "@timestamp": "2017-12-07T02:43:30.000030-05:00",
+                    "@month": "12"
+                },
+                "ait:date-sort": {
+                    "@day": "01",
+                    "@year": "2000",
+                    "@month": "04"
+                }
+            },
+            "xocs:meta": {
+                "xocs:funding-list": {
+                    "@pui-match": "primary",
+                    "@has-funding-info": "1",
+                    "xocs:funding-source-document": {
+                        "@source-document-type": "pii",
+                        "$": "S0034425799000991"
+                    },
+                    "xocs:funding": [
+                        {
+                            "xocs:funding-agency-matched-string": "NCDC"
+                        },
+                        {
+                            "xocs:funding-agency-matched-string": "Atmospheric Environment Service",
+                            "xocs:funding-id": "AES"
+                        },
+                        {
+                            "xocs:funding-agency-matched-string": "National Climatic Data Center"
+                        }
+                    ],
+                    "xocs:funding-addon-generated-timestamp": "2019-03-30T03:33:35Z",
+                    "xocs:funding-text": "The authors would like to acknowledge the following people and organizations from which data were collected for this study: U.S. climate station snow-depth data were provided by the National Climatic Data Center (NCDC), Asheville, NC, and by the Atmospheric Environment Service (AES), Quebec, for Canada. Thanks go to Dr. Ross Brown, AES, for his help with the Canadian data. Mary-Jo Brodzik, Diana Starr, and Ken Knowles helped with the procurement of the EASE-grid Weekly Snow Cover and Sea Ice Extent CDs, the EASE-grid Brightness Temperature CDs, and the forest cover data. These data are distributed by the EOS Distributed Active Archive Center (DAAC) at the NSIDC, University of Colorado, Boulder, CO. Air temperature data were downloaded from the NOAA Climatic Diagnostics Center, Boulder, CO. The surface elevation data were obtained from the Global Change Master Directory, NASA/GSFC, Greenbelt, MD. In addition, thanks go to Janet Chien, General Sciences Corporation, Lanham, Maryland for her software expertise. This work is supported by the EOS/MODIS Snow and Ice Project.",
+                    "xocs:funding-addon-type": "http://vtw.elsevier.com/data/voc/AddOnTypes/50.7/nlp"
+                }
+            },
+            "bibrecord": {
+                "head": {
+                    "author-group": [
+                        {
+                            "affiliation": {
+                                "city-group": "Lanham, MD",
+                                "country": "United States",
+                                "@afid": "60002442",
+                                "@country": "usa",
+                                "organization": {
+                                    "$": "Universities Space Res. Association"
+                                },
+                                "affiliation-id": {
+                                    "@afid": "60002442"
+                                }
+                            },
+                            "author": [
+                                {
+                                    "preferred-name": {
+                                        "ce:given-name": "A. B.",
+                                        "ce:initials": "A.B.",
+                                        "ce:surname": "Tait",
+                                        "ce:indexed-name": "Tait A."
+                                    },
+                                    "@seq": "1",
+                                    "ce:initials": "A.B.",
+                                    "@_fa": "true",
+                                    "ce:surname": "Tait",
+                                    "@auid": "55337551400",
+                                    "ce:indexed-name": "Tait A.B."
+                                }
+                            ]
+                        },
+                        {
+                            "affiliation": {
+                                "city-group": "Greenbelt, MD",
+                                "country": "United States",
+                                "@afid": "60006337",
+                                "@country": "usa",
+                                "organization": [
+                                    {
+                                        "$": "Hydrological Sciences Branch"
+                                    },
+                                    {
+                                        "$": "Goddard Space Flight Center"
+                                    }
+                                ],
+                                "affiliation-id": {
+                                    "@afid": "60006337",
+                                    "@dptid": "103361156"
+                                },
+                                "@dptid": "103361156"
+                            },
+                            "author": [
+                                {
+                                    "preferred-name": {
+                                        "ce:given-name": "D. K.",
+                                        "ce:initials": "D.K.",
+                                        "ce:surname": "Hall",
+                                        "ce:indexed-name": "Hall D."
+                                    },
+                                    "@seq": "2",
+                                    "ce:initials": "D.K.",
+                                    "@_fa": "true",
+                                    "ce:surname": "Hall",
+                                    "@auid": "35546736600",
+                                    "ce:indexed-name": "Hall D.K."
+                                },
+                                {
+                                    "preferred-name": {
+                                        "ce:given-name": "J. L.",
+                                        "ce:initials": "J.L.",
+                                        "ce:surname": "Foster",
+                                        "ce:indexed-name": "Foster J."
+                                    },
+                                    "@seq": "3",
+                                    "ce:initials": "J.L.",
+                                    "@_fa": "true",
+                                    "ce:surname": "Foster",
+                                    "@auid": "56528811300",
+                                    "ce:indexed-name": "Foster J.L."
+                                }
+                            ]
+                        },
+                        {
+                            "affiliation": {
+                                "city-group": "Boulder, CO",
+                                "country": "United States",
+                                "@afid": "60000221",
+                                "@country": "usa",
+                                "organization": [
+                                    {
+                                        "$": "National Snow and Ice Data Center"
+                                    },
+                                    {
+                                        "$": "University of Colorado"
+                                    }
+                                ],
+                                "affiliation-id": {
+                                    "@afid": "60000221",
+                                    "@dptid": "103047161"
+                                },
+                                "@dptid": "103047161"
+                            },
+                            "author": [
+                                {
+                                    "preferred-name": {
+                                        "ce:given-name": "R. L.",
+                                        "ce:initials": "R.L.",
+                                        "ce:surname": "Armstrong",
+                                        "ce:indexed-name": "Armstrong R."
+                                    },
+                                    "@seq": "4",
+                                    "ce:initials": "R.L.",
+                                    "@_fa": "true",
+                                    "ce:surname": "Armstrong",
+                                    "@auid": "56673482900",
+                                    "ce:indexed-name": "Armstrong R.L."
+                                }
+                            ]
+                        }
+                    ],
+                    "citation-title": "Utilizing multiple datasets for snow-cover mapping",
+                    "abstracts": "Snow-cover maps generated from surface data are based on direct measurements. However, they are prone to interpolation errors where climate stations are sparsely distributed. Snow cover is clearly discernible using satellite-obtained optical data because of the high albedo of snow, yet the surface is often obscured by cloud cover. Satellite-obtained passive microwave data, compared with optical data, is relatively unaffected by clouds; however, the snow-cover signature is significantly affected by melting snow and the microwaves may be transparent to thin snow (<3 cm). Both optical and microwave sensors have problems discerning snow beneath forest canopies. This paper describes a method that combines ground and satellite-derived optical and passive microwave data to produce a multiple-dataset snow-cover product. Comparisons with current snow-cover products show that the multiple-dataset product draws together the advantages of each of its component products while minimizing the potential errors. Improved estimates of the snow-covered area are derived through the addition of two snow-cover classes ('thin or patchy' and 'high elevation' snow cover) and from the analysis of the climate station data within each class. The compatibility of this method for use with Moderate Resolution Imaging Spectroradiometer data, which will be available in 1999, and with Advanced Microwave Scanning Radiometer data, available in 2000, is also discussed. With the assimilation of these data, the resolution of the multiple-dataset product would be improved both spatially and temporally and the analysis would become completely automated. (C) Elsevier Science Inc., 2000.Snow-cover maps generated from surface data are based on direct measurements. However, they are prone to interpolation errors where climate stations are sparsely distributed. Snow cover is clearly discernible using satellite-obtained optical data because of the high albedo of snow, yet the surface is often obscured by cloud cover. Satellite-obtained passive microwave data, compared with optical data, is relatively unaffected by clouds; however, the snow-cover signature is significantly affected by melting snow and the microwaves may be transparent to thin snow (<3 cm). Both optical and microwave sensors have problems discerning snow beneath forest canopies. This paper describes a method that combines ground and satellite-derived optical and passive microwave data to produce a multiple-dataset snow-cover product. Comparisons with current snow-cover products show that the multiple-dataset product draws together the advantages of each of its component products while minimizing the potential errors. Improved estimates of the snow-covered area are derived through the addition of two snow-cover classes (`thin or patchy' and `high elevation' snow cover) and from the analysis of the climate station data within each class. The compatibility of this method for use with Moderate Resolution Imaging Spectroradiometer data, which will be available in 1999, and with Advanced Microwave Scanning Radiometer data, available in 2000, is also discussed. With the assimilation of these data, the resolution of the multiple-dataset product would be improved both spatially and temporally and the analysis would become completely automated.",
+                    "correspondence": {
+                        "affiliation": {
+                            "city-group": "Greenbelt, MD 20771",
+                            "country": "United States",
+                            "@country": "usa",
+                            "organization": [
+                                {
+                                    "$": "NASA Goddard Space Flight Center"
+                                },
+                                {
+                                    "$": "Hydrological Sciences Branch"
+                                },
+                                {
+                                    "$": "Mail Code 974"
+                                }
+                            ]
+                        },
+                        "person": {
+                            "ce:initials": "A.B.",
+                            "ce:surname": "Tait",
+                            "ce:indexed-name": "Tait A.B."
+                        }
+                    },
+                    "citation-info": {
+                        "citation-type": {
+                            "@code": "ar"
+                        },
+                        "citation-language": {
+                            "@language": "English",
+                            "@xml:lang": "eng"
+                        },
+                        "abstract-language": {
+                            "@language": "English",
+                            "@xml:lang": "eng"
+                        }
+                    },
+                    "source": {
+                        "codencode": "RSEEA",
+                        "sourcetitle-abbrev": "Remote Sens. Environ.",
+                        "@country": "usa",
+                        "issn": "00344257",
+                        "volisspag": {
+                            "voliss": {
+                                "@volume": "72",
+                                "@issue": "1"
+                            },
+                            "pagerange": {
+                                "@first": "111",
+                                "@last": "126"
+                            }
+                        },
+                        "@type": "j",
+                        "publicationyear": {
+                            "@first": "2000"
+                        },
+                        "publisher": {
+                            "publishername": "Elsevier Science Inc",
+                            "publisheraddress": "New York, NY, United States"
+                        },
+                        "sourcetitle": "Remote Sensing of Environment",
+                        "@srcid": "12503",
+                        "publicationdate": {
+                            "month": "04",
+                            "year": "2000",
+                            "date-text": {
+                                "@xfab-added": "true",
+                                "$": "April 2000"
+                            }
+                        }
+                    },
+                    "enhancement": {
+                        "classificationgroup": {
+                            "classifications": [
+                                {
+                                    "@type": "CABSCLASS",
+                                    "classification": "91.9.5"
+                                },
+                                {
+                                    "@type": "CPXCLASS",
+                                    "classification": [
+                                        {
+                                            "$": "443.3"
+                                        },
+                                        {
+                                            "$": "655.2"
+                                        },
+                                        {
+                                            "$": "711"
+                                        },
+                                        {
+                                            "$": "723.2"
+                                        },
+                                        {
+                                            "$": "921.6"
+                                        },
+                                        {
+                                            "$": "922"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "@type": "GEOCLASS",
+                                    "classification": "71.8.8.4.7"
+                                },
+                                {
+                                    "@type": "SUBJECT",
+                                    "classification": [
+                                        {
+                                            "$": "Agriculture, Biology and Environmental Sciences"
+                                        },
+                                        {
+                                            "$": "Earth Science and Geography"
+                                        },
+                                        {
+                                            "$": "Engineering and Technology"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "@type": "ASJC",
+                                    "classification": [
+                                        {
+                                            "$": "1111"
+                                        },
+                                        {
+                                            "$": "1907"
+                                        },
+                                        {
+                                            "$": "1903"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "@type": "SUBJABBR",
+                                    "classification": [
+                                        {
+                                            "$": "AGRI"
+                                        },
+                                        {
+                                            "$": "EART"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                "item-info": {
+                    "copyright": {
+                        "$": "Copyright 2004 Elsevier Science B.V., Amsterdam. All rights reserved.",
+                        "@type": "Elsevier"
+                    },
+                    "dbcollection": [
+                        {
+                            "$": "CABS"
+                        },
+                        {
+                            "$": "GEO"
+                        },
+                        {
+                            "$": "CPX"
+                        },
+                        {
+                            "$": "Scopusbase"
+                        }
+                    ],
+                    "history": {
+                        "date-created": {
+                            "@day": "04",
+                            "@year": "2000",
+                            "@month": "04"
+                        }
+                    },
+                    "itemidlist": {
+                        "itemid": [
+                            {
+                                "$": "30166183",
+                                "@idtype": "PUI"
+                            },
+                            {
+                                "$": "2000073703",
+                                "@idtype": "CABS"
+                            },
+                            {
+                                "$": "2250268",
+                                "@idtype": "GEO"
+                            },
+                            {
+                                "$": "2000225144050",
+                                "@idtype": "CPX"
+                            },
+                            {
+                                "$": "0034108005",
+                                "@idtype": "SCP"
+                            },
+                            {
+                                "$": "0034108005",
+                                "@idtype": "SGR"
+                            }
+                        ],
+                        "ce:pii": "S0034425799000991",
+                        "ce:doi": "10.1016/S0034-4257(99)00099-1"
+                    }
+                },
+                "tail": {
+                    "bibliography": {
+                        "@refcount": "31",
+                        "reference": [
+                            {
+                                "ref-fulltext": "Barry, R. G. (1985), The cryosphere and climate change. In Detecting the Climatic Effects of Increasing Carbon Dioxide, US Department of Energy, DOE/ER 0235, pp. 109-148.",
+                                "@id": "16831763",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1985"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "The cryosphere and climate change"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0005161780",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-volisspag": {
+                                        "pagerange": {
+                                            "@first": "109",
+                                            "@last": "148"
+                                        }
+                                    },
+                                    "ref-text": "US Department of Energy, DOE/ER 0235",
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "R.G.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Barry",
+                                                "ce:indexed-name": "Barry R.G."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "In Detecting the Climatic Effects of Increasing Carbon Dioxide"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Barry R.G., Fallot J.-M., Armstrong R.L. Twentieth-century variability in snowcover conditions and approaches to detecting and monitoring changes. status and prospects Progress in Physical Geography. 19(4):1995;520-532.",
+                                "@id": "16831764",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1995"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "Twentieth-century variability in snowcover conditions and approaches to detecting and monitoring changes: Status and prospects"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0029520258",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-volisspag": {
+                                        "voliss": {
+                                            "@volume": "19",
+                                            "@issue": "4"
+                                        },
+                                        "pagerange": {
+                                            "@first": "520",
+                                            "@last": "532"
+                                        }
+                                    },
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "R.G.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Barry",
+                                                "ce:indexed-name": "Barry R.G."
+                                            },
+                                            {
+                                                "@seq": "2",
+                                                "ce:initials": "J.-M.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Fallot",
+                                                "ce:indexed-name": "Fallot J.-M."
+                                            },
+                                            {
+                                                "@seq": "3",
+                                                "ce:initials": "R.L.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Armstrong",
+                                                "ce:indexed-name": "Armstrong R.L."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "Progress in Physical Geography"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Basist A., Garrett D., Ferraro R., Grody N., Mitchell K. A comparison between snow-cover products derived from visible and microwave satellite observations. Journal of Applied Meteorology. 35:1996;163-177.",
+                                "@id": "16831765",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1996"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "A comparison between snow-cover products derived from visible and microwave satellite observations"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0029729081",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-volisspag": {
+                                        "voliss": {
+                                            "@volume": "35"
+                                        },
+                                        "pagerange": {
+                                            "@first": "163",
+                                            "@last": "177"
+                                        }
+                                    },
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "A.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Basist",
+                                                "ce:indexed-name": "Basist A."
+                                            },
+                                            {
+                                                "@seq": "2",
+                                                "ce:initials": "D.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Garrett",
+                                                "ce:indexed-name": "Garrett D."
+                                            },
+                                            {
+                                                "@seq": "3",
+                                                "ce:initials": "R.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Ferraro",
+                                                "ce:indexed-name": "Ferraro R."
+                                            },
+                                            {
+                                                "@seq": "4",
+                                                "ce:initials": "N.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Grody",
+                                                "ce:indexed-name": "Grody N."
+                                            },
+                                            {
+                                                "@seq": "5",
+                                                "ce:initials": "K.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Mitchell",
+                                                "ce:indexed-name": "Mitchell K."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "Journal of Applied Meteorology"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Brown R.D., Braaten R.O. Spatial and temporal variability of Canadian monthly snow depths, 1946-1995. Atmosphere-Ocean. 36(1):1998;37-54.",
+                                "@id": "16831766",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1998"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "Spatial and temporal variability of Canadian monthly snow depths, 1946-1995"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0032376227",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-volisspag": {
+                                        "voliss": {
+                                            "@volume": "36",
+                                            "@issue": "1"
+                                        },
+                                        "pagerange": {
+                                            "@first": "37",
+                                            "@last": "54"
+                                        }
+                                    },
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "R.D.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Brown",
+                                                "ce:indexed-name": "Brown R.D."
+                                            },
+                                            {
+                                                "@seq": "2",
+                                                "ce:initials": "R.O.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Braaten",
+                                                "ce:indexed-name": "Braaten R.O."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "Atmosphere-Ocean"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Carroll, T. R. (1995), Operational remote sensing of snow: United States. Presented at the International Union of Geodesy and Geophysics, XXI General Assembly, Boulder, Colorado, July 2-14, 1995.",
+                                "@id": "16831767",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1995"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "Operational remote sensing of snow: United States"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0343259223",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-text": "XXI General Assembly, Boulder, Colorado, July 2-14, 1995",
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "T.R.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Carroll",
+                                                "ce:indexed-name": "Carroll T.R."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "Presented at the International Union of Geodesy and Geophysics"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Chang A.T.C., Foster J.L., Hall D.K., Goodison B.E., Walker A.E., Metcalfe J.R., Harby A. Snow parameters derived from microwave measurements during the BOREAS winter field campaign. Journal of Geophysical Research. 102(D24):1997;29,663-29,671.",
+                                "@id": "16831768",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1997"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "Snow parameters derived from microwave measurements during the BOREAS winter field campaign"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0031433411",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-volisspag": {
+                                        "voliss": {
+                                            "@volume": "102",
+                                            "@issue": "D24"
+                                        },
+                                        "pagerange": {
+                                            "@first": "29"
+                                        }
+                                    },
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "A.T.C.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Chang",
+                                                "ce:indexed-name": "Chang A.T.C."
+                                            },
+                                            {
+                                                "@seq": "2",
+                                                "ce:initials": "J.L.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Foster",
+                                                "ce:indexed-name": "Foster J.L."
+                                            },
+                                            {
+                                                "@seq": "3",
+                                                "ce:initials": "D.K.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Hall",
+                                                "ce:indexed-name": "Hall D.K."
+                                            },
+                                            {
+                                                "@seq": "4",
+                                                "ce:initials": "B.E.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Goodison",
+                                                "ce:indexed-name": "Goodison B.E."
+                                            },
+                                            {
+                                                "@seq": "5",
+                                                "ce:initials": "A.E.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Walker",
+                                                "ce:indexed-name": "Walker A.E."
+                                            },
+                                            {
+                                                "@seq": "6",
+                                                "ce:initials": "J.R.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Metcalfe",
+                                                "ce:indexed-name": "Metcalfe J.R."
+                                            },
+                                            {
+                                                "@seq": "7",
+                                                "ce:initials": "A.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Harby",
+                                                "ce:indexed-name": "Harby A."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "Journal of Geophysical Research"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Chang A.T.C., Foster J.L., Owe M., Hall D.K., Rango A. Passive and active microwave studies of wet snowpack properties. Nordic Hydrology. 16:1985;57-66.",
+                                "@id": "16831769",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1985"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "Passive and active microwave studies of wet snowpack properties"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0022266450",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-volisspag": {
+                                        "voliss": {
+                                            "@volume": "16"
+                                        },
+                                        "pagerange": {
+                                            "@first": "57",
+                                            "@last": "66"
+                                        }
+                                    },
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "A.T.C.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Chang",
+                                                "ce:indexed-name": "Chang A.T.C."
+                                            },
+                                            {
+                                                "@seq": "2",
+                                                "ce:initials": "J.L.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Foster",
+                                                "ce:indexed-name": "Foster J.L."
+                                            },
+                                            {
+                                                "@seq": "3",
+                                                "ce:initials": "M.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Owe",
+                                                "ce:indexed-name": "Owe M."
+                                            },
+                                            {
+                                                "@seq": "4",
+                                                "ce:initials": "D.K.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Hall",
+                                                "ce:indexed-name": "Hall D.K."
+                                            },
+                                            {
+                                                "@seq": "5",
+                                                "ce:initials": "A.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Rango",
+                                                "ce:indexed-name": "Rango A."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "Nordic Hydrology"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Chang A.T.C., Gloersen P., Schmugge T.J., Wilheit T., Zwally J. Microwave emission from snow and glacier ice. Journal of Glaciology. 16(74):1976;23-39.",
+                                "@id": "16831770",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1976"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "Microwave emission from snow and glacier ice"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0002727065",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-volisspag": {
+                                        "voliss": {
+                                            "@volume": "16",
+                                            "@issue": "74"
+                                        },
+                                        "pagerange": {
+                                            "@first": "23",
+                                            "@last": "39"
+                                        }
+                                    },
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "A.T.C.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Chang",
+                                                "ce:indexed-name": "Chang A.T.C."
+                                            },
+                                            {
+                                                "@seq": "2",
+                                                "ce:initials": "P.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Gloersen",
+                                                "ce:indexed-name": "Gloersen P."
+                                            },
+                                            {
+                                                "@seq": "3",
+                                                "ce:initials": "T.J.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Schmugge",
+                                                "ce:indexed-name": "Schmugge T.J."
+                                            },
+                                            {
+                                                "@seq": "4",
+                                                "ce:initials": "T.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Wilheit",
+                                                "ce:indexed-name": "Wilheit T."
+                                            },
+                                            {
+                                                "@seq": "5",
+                                                "ce:initials": "J.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Zwally",
+                                                "ce:indexed-name": "Zwally J."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "Journal of Glaciology"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Foster, J. L., Chang, A. T. C., and Hall, D. K. (1994), Snow mass in boreal forests derived from a modified passive microwave algorithm. In Multispectral and Microwave Sensing of Forestry, Hydrology, and Natural Resources (E. Mougin, K. J. Ranson, and J. A. Smith, eds.), September 26-30, 1994, Rome, Italy, pp. 605-617.",
+                                "@id": "16831771",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1994"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "Snow mass in boreal forests derived from a modified passive microwave algorithm"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0001058493",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-volisspag": {
+                                        "pagerange": {
+                                            "@first": "605",
+                                            "@last": "617"
+                                        }
+                                    },
+                                    "ref-text": "(E. Mougin, K. J. Ranson, and J. A. Smith, eds.), September 26-30, 1994, Rome, Italy",
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "J.L.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Foster",
+                                                "ce:indexed-name": "Foster J.L."
+                                            },
+                                            {
+                                                "@seq": "2",
+                                                "ce:initials": "A.T.C.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Chang",
+                                                "ce:indexed-name": "Chang A.T.C."
+                                            },
+                                            {
+                                                "@seq": "3",
+                                                "ce:initials": "D.K.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Hall",
+                                                "ce:indexed-name": "Hall D.K."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "In Multispectral and Microwave Sensing of Forestry, Hydrology, and Natural Resources"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Foster J.L., Hall D.K., Chang A.T.C., Rango A. An overview of passive microwave snow research and results. Reviews of Geophysics and Space Physics. 22(2):1984;195-208.",
+                                "@id": "16831772",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1984"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "An overview of passive microwave snow research and results"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0021288424",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-volisspag": {
+                                        "voliss": {
+                                            "@volume": "22",
+                                            "@issue": "2"
+                                        },
+                                        "pagerange": {
+                                            "@first": "195",
+                                            "@last": "208"
+                                        }
+                                    },
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "J.L.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Foster",
+                                                "ce:indexed-name": "Foster J.L."
+                                            },
+                                            {
+                                                "@seq": "2",
+                                                "ce:initials": "D.K.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Hall",
+                                                "ce:indexed-name": "Hall D.K."
+                                            },
+                                            {
+                                                "@seq": "3",
+                                                "ce:initials": "A.T.C.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Chang",
+                                                "ce:indexed-name": "Chang A.T.C."
+                                            },
+                                            {
+                                                "@seq": "4",
+                                                "ce:initials": "A.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Rango",
+                                                "ce:indexed-name": "Rango A."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "Reviews of Geophysics and Space Physics"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Grody N.C. Classification of snowcover and precipitation using the special sensor microwave imager. Journal of Geophysical Research. 96:1991;7423-7435.",
+                                "@id": "16831773",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1991"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "Classification of snowcover and precipitation using the special sensor microwave imager"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0026298553",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-volisspag": {
+                                        "voliss": {
+                                            "@volume": "96"
+                                        },
+                                        "pagerange": {
+                                            "@first": "7423",
+                                            "@last": "7435"
+                                        }
+                                    },
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "N.C.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Grody",
+                                                "ce:indexed-name": "Grody N.C."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "Journal of Geophysical Research"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Grody N.C., Basist A.N. Global identification of snowcover using SSM/I measurements. IEEE Transactions on Geoscience and Remote Sensing. 34(1):1996;237-249.",
+                                "@id": "16831774",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1996"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "Global identification of snowcover using SSM/I measurements"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0029762513",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-volisspag": {
+                                        "voliss": {
+                                            "@volume": "34",
+                                            "@issue": "1"
+                                        },
+                                        "pagerange": {
+                                            "@first": "237",
+                                            "@last": "249"
+                                        }
+                                    },
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "N.C.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Grody",
+                                                "ce:indexed-name": "Grody N.C."
+                                            },
+                                            {
+                                                "@seq": "2",
+                                                "ce:initials": "A.N.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Basist",
+                                                "ce:indexed-name": "Basist A.N."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "IEEE Transactions on Geoscience and Remote Sensing"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Hahn D.G., Shukla J. An apparent relationship between Eurasian snow cover and Indian monsoon rainfall. Journal of Applied Sciences. 33(12):1976;2461-2462.",
+                                "@id": "16831775",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1976"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "An apparent relationship between Eurasian snow cover and Indian monsoon rainfall"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0000113230",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-volisspag": {
+                                        "voliss": {
+                                            "@volume": "33",
+                                            "@issue": "12"
+                                        },
+                                        "pagerange": {
+                                            "@first": "2461",
+                                            "@last": "2462"
+                                        }
+                                    },
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "D.G.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Hahn",
+                                                "ce:indexed-name": "Hahn D.G."
+                                            },
+                                            {
+                                                "@seq": "2",
+                                                "ce:initials": "J.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Shukla",
+                                                "ce:indexed-name": "Shukla J."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "Journal of Applied Sciences"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Hall D.K., Foster J.L., Chang A.T.C. Nimbus-7 SMMR polarization responses to snow depth in the mid-western U.S. Nordic Hydrology. 15:1984;1-8.",
+                                "@id": "16831776",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1984"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "Nimbus-7 SMMR polarization responses to snow depth in the mid-western U.S"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0021639520",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-volisspag": {
+                                        "voliss": {
+                                            "@volume": "15"
+                                        },
+                                        "pagerange": {
+                                            "@first": "1",
+                                            "@last": "8"
+                                        }
+                                    },
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "D.K.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Hall",
+                                                "ce:indexed-name": "Hall D.K."
+                                            },
+                                            {
+                                                "@seq": "2",
+                                                "ce:initials": "J.L.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Foster",
+                                                "ce:indexed-name": "Foster J.L."
+                                            },
+                                            {
+                                                "@seq": "3",
+                                                "ce:initials": "A.T.C.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Chang",
+                                                "ce:indexed-name": "Chang A.T.C."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "Nordic Hydrology"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Hall, D. K., Tait, A. B., Foster, J. L., Chang, A. T. C., and Allen, M. (in press), Intercomparison of satellite-derived snow-cover maps. Annals of Glaciology.",
+                                "@id": "16831777",
+                                "ref-info": {
+                                    "ref-title": {
+                                        "ref-titletext": "Intercomparison of satellite-derived snow-cover maps"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0034504717",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-text": "(in press)",
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "D.K.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Hall",
+                                                "ce:indexed-name": "Hall D.K."
+                                            },
+                                            {
+                                                "@seq": "2",
+                                                "ce:initials": "A.B.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Tait",
+                                                "ce:indexed-name": "Tait A.B."
+                                            },
+                                            {
+                                                "@seq": "3",
+                                                "ce:initials": "J.L.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Foster",
+                                                "ce:indexed-name": "Foster J.L."
+                                            },
+                                            {
+                                                "@seq": "4",
+                                                "ce:initials": "A.T.C.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Chang",
+                                                "ce:indexed-name": "Chang A.T.C."
+                                            },
+                                            {
+                                                "@seq": "5",
+                                                "ce:initials": "M.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Allen",
+                                                "ce:indexed-name": "Allen M."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "Annals of Glaciology"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Hall, D. K., Tait, A. B., Riggs, G. A., and Solomonson, V. V. (1998), Algorithm Theoretical Basis Document (ATBD) for the MODIS Snow-, Lake Ice- and Sea Ice-Mapping Algorithms, Version 4.0. Available from the MODIS web site: http://ltpwww.gsfc.nasa.gov/MODIS/MODIS.html .",
+                                "@id": "16831778",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1998"
+                                    },
+                                    "ref-website": {
+                                        "ce:e-address": {
+                                            "$": "http://ltpwww.gsfc.nasa.gov/MODIS/MODIS.html",
+                                            "@type": "url"
+                                        }
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0003686713",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-text": "Version 4.0. Available from the MODIS web site",
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "D.K.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Hall",
+                                                "ce:indexed-name": "Hall D.K."
+                                            },
+                                            {
+                                                "@seq": "2",
+                                                "ce:initials": "A.B.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Tait",
+                                                "ce:indexed-name": "Tait A.B."
+                                            },
+                                            {
+                                                "@seq": "3",
+                                                "ce:initials": "G.A.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Riggs",
+                                                "ce:indexed-name": "Riggs G.A."
+                                            },
+                                            {
+                                                "@seq": "4",
+                                                "ce:initials": "V.V.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Solomonson",
+                                                "ce:indexed-name": "Solomonson V.V."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "Algorithm Theoretical Basis Document (ATBD) for the MODIS Snow-, Lake Ice- And Sea Ice-Mapping Algorithms"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Klein A.G., Hall D.K., Riggs G.A. Improving snow cover mapping in forests through the use of a canopy reflectance model. Hydrological Processes. 12:1998;1723-1744.",
+                                "@id": "16831779",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1998"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "Improving snow cover mapping in forests through the use of a canopy reflectance model"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0032147736",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-volisspag": {
+                                        "voliss": {
+                                            "@volume": "12"
+                                        },
+                                        "pagerange": {
+                                            "@first": "1723",
+                                            "@last": "1744"
+                                        }
+                                    },
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "A.G.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Klein",
+                                                "ce:indexed-name": "Klein A.G."
+                                            },
+                                            {
+                                                "@seq": "2",
+                                                "ce:initials": "D.K.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Hall",
+                                                "ce:indexed-name": "Hall D.K."
+                                            },
+                                            {
+                                                "@seq": "3",
+                                                "ce:initials": "G.A.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Riggs",
+                                                "ce:indexed-name": "Riggs G.A."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "Hydrological Processes"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Matson M., Ropelewski C.F., Varnadore M.S. An Atlas of Satellite-Derived Northern Hemispheric Snow Cover Frequency. 1986;U.S. Department of Commerce, Washington, DC.",
+                                "@id": "16831780",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1986"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0003435520",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-text": "Washington, DC: U.S. Department of Commerce",
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "M.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Matson",
+                                                "ce:indexed-name": "Matson M."
+                                            },
+                                            {
+                                                "@seq": "2",
+                                                "ce:initials": "C.F.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Ropelewski",
+                                                "ce:indexed-name": "Ropelewski C.F."
+                                            },
+                                            {
+                                                "@seq": "3",
+                                                "ce:initials": "M.S.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Varnadore",
+                                                "ce:indexed-name": "Varnadore M.S."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "An Atlas of Satellite-Derived Northern Hemispheric Snow Cover Frequency"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "M\u00e4tzler C.H., Huppi R. Review of signature studies for microwave remote sensing of snowpacks. Advances in Space Research. 9:1989;253-265.",
+                                "@id": "16831781",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1989"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "Review of signature studies for microwave remote sensing of snowpacks"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0001673858",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-volisspag": {
+                                        "voliss": {
+                                            "@volume": "9"
+                                        },
+                                        "pagerange": {
+                                            "@first": "253",
+                                            "@last": "265"
+                                        }
+                                    },
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "C.H.",
+                                                "@_fa": "true",
+                                                "ce:surname": "M\u00e4tzler",
+                                                "ce:indexed-name": "Matzler C.H."
+                                            },
+                                            {
+                                                "@seq": "2",
+                                                "ce:initials": "R.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Huppi",
+                                                "ce:indexed-name": "Huppi R."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "Advances in Space Research"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Neale M.U., McFarland M.J., Chang K. Land-surface classification using microwave brightness temperatures from the special sensor microwave imager. IEEE Transactions on Geoscience and Remote Sensing. 28:1990;307-311.",
+                                "@id": "16831782",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1990"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "Land-surface classification using microwave brightness temperatures from the special sensor microwave imager"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0025489274",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-volisspag": {
+                                        "voliss": {
+                                            "@volume": "28"
+                                        },
+                                        "pagerange": {
+                                            "@first": "307",
+                                            "@last": "311"
+                                        }
+                                    },
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "M.U.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Neale",
+                                                "ce:indexed-name": "Neale M.U."
+                                            },
+                                            {
+                                                "@seq": "2",
+                                                "ce:initials": "M.J.",
+                                                "@_fa": "true",
+                                                "ce:surname": "McFarland",
+                                                "ce:indexed-name": "McFarland M.J."
+                                            },
+                                            {
+                                                "@seq": "3",
+                                                "ce:initials": "K.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Chang",
+                                                "ce:indexed-name": "Chang K."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "IEEE Transactions on Geoscience and Remote Sensing"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Ramsay B. The interactive multisensor snow and ice mapping system. Hydrological Processes. 12:1998;1537-1546.",
+                                "@id": "16831783",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1998"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "The interactive multisensor snow and ice mapping system"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0032221831",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-volisspag": {
+                                        "voliss": {
+                                            "@volume": "12"
+                                        },
+                                        "pagerange": {
+                                            "@first": "1537",
+                                            "@last": "1546"
+                                        }
+                                    },
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "B.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Ramsay",
+                                                "ce:indexed-name": "Ramsay B."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "Hydrological Processes"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Rango A. An international perspective on large-scale snow studies. Hydrological Sciences Journal. 30:1985;225-238.",
+                                "@id": "16831784",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1985"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "An international perspective on large-scale snow studies"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0022190487",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-volisspag": {
+                                        "voliss": {
+                                            "@volume": "30"
+                                        },
+                                        "pagerange": {
+                                            "@first": "225",
+                                            "@last": "238"
+                                        }
+                                    },
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "A.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Rango",
+                                                "ce:indexed-name": "Rango A."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "Hydrological Sciences Journal"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Rango A., Chang A.T.C., Foster J.L. The utilization of space-borne microwave radiometers for monitoring snowpack properties. Nordic Hydrology. 10:1979;25-40.",
+                                "@id": "16831785",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1979"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "The utilization of space-borne microwave radiometers for monitoring snowpack properties"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0018298503",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-volisspag": {
+                                        "voliss": {
+                                            "@volume": "10"
+                                        },
+                                        "pagerange": {
+                                            "@first": "25",
+                                            "@last": "40"
+                                        }
+                                    },
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "A.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Rango",
+                                                "ce:indexed-name": "Rango A."
+                                            },
+                                            {
+                                                "@seq": "2",
+                                                "ce:initials": "A.T.C.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Chang",
+                                                "ce:indexed-name": "Chang A.T.C."
+                                            },
+                                            {
+                                                "@seq": "3",
+                                                "ce:initials": "J.L.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Foster",
+                                                "ce:indexed-name": "Foster J.L."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "Nordic Hydrology"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Robinson D.A., Dewey K.F., Heim R.R. Jr. Global snow cover monitoring. An update Bulletin of the American Meteorological Society. 74(9):1993;1689-1696.",
+                                "@id": "16831786",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1993"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "Global snow cover monitoring: An update"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0027866279",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-volisspag": {
+                                        "voliss": {
+                                            "@volume": "74",
+                                            "@issue": "9"
+                                        },
+                                        "pagerange": {
+                                            "@first": "1689",
+                                            "@last": "1696"
+                                        }
+                                    },
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "D.A.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Robinson",
+                                                "ce:indexed-name": "Robinson D.A."
+                                            },
+                                            {
+                                                "@seq": "2",
+                                                "ce:initials": "K.F.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Dewey",
+                                                "ce:indexed-name": "Dewey K.F."
+                                            },
+                                            {
+                                                "@seq": "3",
+                                                "ce:initials": "Jr.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Heim R.R.",
+                                                "ce:indexed-name": "Heim R.R. Jr."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "Bulletin of the American Meteorological Society"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Salomonson, V. V., Hall, D. K., and Chien, J. Y. L. (1995), Use of passive microwave and optical data for large-scale snow cover mapping. In Proceedings of the 2d Topical Symposium on Combined Optical-Microwave Earth and Atmosphere Sensing, Atlanta, GA, April 3-6, 1995, pp. 35-37.",
+                                "@id": "16831787",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1995"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "Use of passive microwave and optical data for large-scale snow cover mapping"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0029213415",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-volisspag": {
+                                        "pagerange": {
+                                            "@first": "35",
+                                            "@last": "37"
+                                        }
+                                    },
+                                    "ref-text": "Atlanta, GA, April 3-6, 1995",
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "V.V.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Salomonson",
+                                                "ce:indexed-name": "Salomonson V.V."
+                                            },
+                                            {
+                                                "@seq": "2",
+                                                "ce:initials": "D.K.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Hall",
+                                                "ce:indexed-name": "Hall D.K."
+                                            },
+                                            {
+                                                "@seq": "3",
+                                                "ce:initials": "J.Y.L.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Chien",
+                                                "ce:indexed-name": "Chien J.Y.L."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "In Proceedings of the 2d Topical Symposium on Combined Optical-Microwave Earth and Atmosphere Sensing"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Stogryn A. A study of the microwave brightness temperature of snow from the point of view of strong fluctuation theory. IEEE Transactions on Geoscience and Remote Sensing. GRS-2:1986;220-231.",
+                                "@id": "16831788",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1986"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "A study of the microwave brightness temperature of snow from the point of view of strong fluctuation theory"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0022685875",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-volisspag": {
+                                        "voliss": {
+                                            "@volume": "2"
+                                        },
+                                        "pagerange": {
+                                            "@first": "220",
+                                            "@last": "231"
+                                        }
+                                    },
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "A.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Stogryn",
+                                                "ce:indexed-name": "Stogryn A."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "IEEE Transactions on Geoscience and Remote Sensing"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Tait, A. B., Barton, J. S., and Hall, D. K. (submitted), A prototype MODIS-SSM/I snow-mapping algorithm. International Journal of Remote Sensing.",
+                                "@id": "16831789",
+                                "ref-info": {
+                                    "ref-title": {
+                                        "ref-titletext": "A prototype MODIS-SSM/I snow-mapping algorithm"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0035923268",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-text": "(submitted)",
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "A.B.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Tait",
+                                                "ce:indexed-name": "Tait A.B."
+                                            },
+                                            {
+                                                "@seq": "2",
+                                                "ce:initials": "J.S.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Barton",
+                                                "ce:indexed-name": "Barton J.S."
+                                            },
+                                            {
+                                                "@seq": "3",
+                                                "ce:initials": "D.K.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Hall",
+                                                "ce:indexed-name": "Hall D.K."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "International Journal of Remote Sensing"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Ulaby F.T., Moore R.K., Fung A.K. Microwave Remote Sensing. Active and Passive, Vol. 2:1982;Addison-Wesley, Reading, MA.",
+                                "@id": "16831790",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1982"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0003432723",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-text": "Reading, MA: Addison-Wesley",
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "F.T.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Ulaby",
+                                                "ce:indexed-name": "Ulaby F.T."
+                                            },
+                                            {
+                                                "@seq": "2",
+                                                "ce:initials": "R.K.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Moore",
+                                                "ce:indexed-name": "Moore R.K."
+                                            },
+                                            {
+                                                "@seq": "3",
+                                                "ce:initials": "A.K.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Fung",
+                                                "ce:indexed-name": "Fung A.K."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "Microwave Remote Sensing: Active and Passive, Vol. 2"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Ulaby, F. T., and Stiles, W. H. (1980), Microwave radiometric observations of snowpacks, NASA CP-2153. In NASA Workshop on the Microwave Remote Sensing of Snowpack Properties, Ft. Collins, CO, May 20-22, 1980, pp. 187-201.",
+                                "@id": "16831791",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1980"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "Microwave radiometric observations of snowpacks, NASA CP-2153"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0019111683",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-volisspag": {
+                                        "pagerange": {
+                                            "@first": "187",
+                                            "@last": "201"
+                                        }
+                                    },
+                                    "ref-text": "Ft. Collins, CO, May 20-22, 1980",
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "F.T.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Ulaby",
+                                                "ce:indexed-name": "Ulaby F.T."
+                                            },
+                                            {
+                                                "@seq": "2",
+                                                "ce:initials": "W.H.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Stiles",
+                                                "ce:indexed-name": "Stiles W.H."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "In NASA Workshop on the Microwave Remote Sensing of Snowpack Properties"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Walsh J.E., Ross B. Sensitivity of 30-day forecasts to continental snow cover. Journal of Climatology. 1:1988;739-754.",
+                                "@id": "16831792",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1988"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "Sensitivity of 30-day forecasts to continental snow cover"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0001514457",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-volisspag": {
+                                        "voliss": {
+                                            "@volume": "1"
+                                        },
+                                        "pagerange": {
+                                            "@first": "739",
+                                            "@last": "754"
+                                        }
+                                    },
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "J.E.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Walsh",
+                                                "ce:indexed-name": "Walsh J.E."
+                                            },
+                                            {
+                                                "@seq": "2",
+                                                "ce:initials": "B.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Ross",
+                                                "ce:indexed-name": "Ross B."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "Journal of Climatology"
+                                }
+                            },
+                            {
+                                "ref-fulltext": "Wentz, F. J. (1992), Final report, production of SSM/I datasets. Remote Sensing Systems Technical Report 090192, Santa Rosa, CA.",
+                                "@id": "16831793",
+                                "ref-info": {
+                                    "ref-publicationyear": {
+                                        "@first": "1992"
+                                    },
+                                    "ref-title": {
+                                        "ref-titletext": "Final report, production of SSM/I datasets"
+                                    },
+                                    "refd-itemidlist": {
+                                        "itemid": {
+                                            "$": "0342824407",
+                                            "@idtype": "SGR"
+                                        }
+                                    },
+                                    "ref-text": "Santa Rosa, CA",
+                                    "ref-authors": {
+                                        "author": [
+                                            {
+                                                "@seq": "1",
+                                                "ce:initials": "F.J.",
+                                                "@_fa": "true",
+                                                "ce:surname": "Wentz",
+                                                "ce:indexed-name": "Wentz F.J."
+                                            }
+                                        ]
+                                    },
+                                    "ref-sourcetitle": "Remote Sensing Systems Technical Report 090192"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "affiliation": [
+            {
+                "affiliation-city": "Greenbelt",
+                "@id": "60006337",
+                "affilname": "NASA Goddard Space Flight Center",
+                "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60006337",
+                "affiliation-country": "United States"
+            },
+            {
+                "affiliation-city": "Columbia",
+                "@id": "60002442",
+                "affilname": "Universities Space Research Association",
+                "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60002442",
+                "affiliation-country": "United States"
+            },
+            {
+                "affiliation-city": "Boulder",
+                "@id": "60000221",
+                "affilname": "University of Colorado at Boulder",
+                "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60000221",
+                "affiliation-country": "United States"
+            }
+        ],
+        "coredata": {
+            "srctype": "j",
+            "eid": "2-s2.0-0034108005",
+            "dc:description": "Snow-cover maps generated from surface data are based on direct measurements. However, they are prone to interpolation errors where climate stations are sparsely distributed. Snow cover is clearly discernible using satellite-obtained optical data because of the high albedo of snow, yet the surface is often obscured by cloud cover. Satellite-obtained passive microwave data, compared with optical data, is relatively unaffected by clouds; however, the snow-cover signature is significantly affected by melting snow and the microwaves may be transparent to thin snow (<3 cm). Both optical and microwave sensors have problems discerning snow beneath forest canopies. This paper describes a method that combines ground and satellite-derived optical and passive microwave data to produce a multiple-dataset snow-cover product. Comparisons with current snow-cover products show that the multiple-dataset product draws together the advantages of each of its component products while minimizing the potential errors. Improved estimates of the snow-covered area are derived through the addition of two snow-cover classes ('thin or patchy' and 'high elevation' snow cover) and from the analysis of the climate station data within each class. The compatibility of this method for use with Moderate Resolution Imaging Spectroradiometer data, which will be available in 1999, and with Advanced Microwave Scanning Radiometer data, available in 2000, is also discussed. With the assimilation of these data, the resolution of the multiple-dataset product would be improved both spatially and temporally and the analysis would become completely automated. (C) Elsevier Science Inc., 2000. Snow-cover maps generated from surface data are based on direct measurements. However, they are prone to interpolation errors where climate stations are sparsely distributed. Snow cover is clearly discernible using satellite-obtained optical data because of the high albedo of snow, yet the surface is often obscured by cloud cover. Satellite-obtained passive microwave data, compared with optical data, is relatively unaffected by clouds; however, the snow-cover signature is significantly affected by melting snow and the microwaves may be transparent to thin snow (<3 cm). Both optical and microwave sensors have problems discerning snow beneath forest canopies. This paper describes a method that combines ground and satellite-derived optical and passive microwave data to produce a multiple-dataset snow-cover product. Comparisons with current snow-cover products show that the multiple-dataset product draws together the advantages of each of its component products while minimizing the potential errors. Improved estimates of the snow-covered area are derived through the addition of two snow-cover classes (`thin or patchy' and `high elevation' snow cover) and from the analysis of the climate station data within each class. The compatibility of this method for use with Moderate Resolution Imaging Spectroradiometer data, which will be available in 1999, and with Advanced Microwave Scanning Radiometer data, available in 2000, is also discussed. With the assimilation of these data, the resolution of the multiple-dataset product would be improved both spatially and temporally and the analysis would become completely automated.",
+            "prism:coverDate": "2000-04-01",
+            "prism:aggregationType": "Journal",
+            "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/0034108005",
+            "dc:creator": {
+                "author": [
+                    {
+                        "preferred-name": {
+                            "ce:given-name": "A. B.",
+                            "ce:initials": "A.B.",
+                            "ce:surname": "Tait",
+                            "ce:indexed-name": "Tait A."
+                        },
+                        "@seq": "1",
+                        "ce:initials": "A.B.",
+                        "@_fa": "true",
+                        "affiliation": {
+                            "@id": "60002442",
+                            "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60002442"
+                        },
+                        "ce:surname": "Tait",
+                        "@auid": "55337551400",
+                        "author-url": "https://api.elsevier.com/content/author/author_id/55337551400",
+                        "ce:indexed-name": "Tait A.B."
+                    }
+                ]
+            },
+            "link": [
                 {
-                    "order": 0,
-                    "name": "A. B Tait"
+                    "@_fa": "true",
+                    "@rel": "self",
+                    "@href": "https://api.elsevier.com/content/abstract/scopus_id/0034108005"
                 },
                 {
-                    "order": 1,
-                    "name": "D. K Hall"
+                    "@_fa": "true",
+                    "@rel": "scopus",
+                    "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=0034108005&origin=inward"
                 },
                 {
-                    "order": 2,
-                    "name": "J. L Foster"
-                },
-                {
-                    "order": 3,
-                    "name": "R. L Armstrong"
+                    "@_fa": "true",
+                    "@rel": "scopus-citedby",
+                    "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=0034108005&origin=inward"
                 }
             ],
-            "doi": "10.1016/S0034-4257(99)00099-1",
-            "loadDate": "2000-03-09T00:00:00Z",
-            "openAccess": false,
-            "pages": {
-                "first": "111",
-                "last": "126"
-            },
+            "source-id": "12503",
             "pii": "S0034425799000991",
-            "publicationDate": "2000-04-30",
-            "sourceTitle": "Remote Sensing of Environment",
-            "title": "Utilizing Multiple Datasets for Snow-Cover Mapping",
-            "uri": "https://www.sciencedirect.com/science/article/pii/S0034425799000991?dgcid=api_sd_search-api-endpoint",
-            "volumeIssue": "Volume 72, Issue 1"
+            "citedby-count": "34",
+            "prism:volume": "72",
+            "subtype": "ar",
+            "dc:title": "Utilizing multiple datasets for snow-cover mapping",
+            "openaccess": "2",
+            "prism:issn": "00344257",
+            "prism:issueIdentifier": "1",
+            "subtypeDescription": "Article",
+            "prism:publicationName": "Remote Sensing of Environment",
+            "prism:pageRange": "111-126",
+            "prism:endingPage": "126",
+            "openaccessFlag": null,
+            "prism:doi": "10.1016/S0034-4257(99)00099-1",
+            "prism:startingPage": "111",
+            "dc:identifier": "SCOPUS_ID:0034108005",
+            "dc:publisher": "Elsevier Science IncNew York, NY, United States"
         },
-        {
-            "authors": [
-                {
-                    "order": 0,
-                    "name": "G. L. Harris"
-                },
-                {
-                    "order": 1,
-                    "name": "J. A. Catt"
-                },
-                {
-                    "order": 2,
-                    "name": "R. H. Bromilow"
-                },
-                {
-                    "order": 3,
-                    "name": "A. C. Armstrong"
-                }
-            ],
-            "doi": "10.1016/S0378-3774(99)00085-2",
-            "loadDate": "2000-03-20T00:00:00Z",
-            "openAccess": false,
-            "pages": {
-                "first": "75",
-                "last": "83"
-            },
-            "pii": "S0378377499000852",
-            "publicationDate": "2000-05-31",
-            "sourceTitle": "Agricultural Water Management",
-            "title": "Evaluating pesticide leaching models: the Brimstone Farm dataset",
-            "uri": "https://www.sciencedirect.com/science/article/pii/S0378377499000852?dgcid=api_sd_search-api-endpoint",
-            "volumeIssue": "Volume 44, Issues 1\u20133"
+        "idxterms": {
+            "mainterm": {
+                "$": "Snow-cover products",
+                "@weight": "a",
+                "@candidate": "n"
+            }
         },
-        {
-            "authors": [
-                {
-                    "order": 0,
-                    "name": "Mark J. Chopping"
-                }
-            ],
-            "doi": "10.1016/S0034-4257(00)00120-6",
-            "loadDate": "2000-08-16T00:00:00Z",
-            "openAccess": false,
-            "pages": {
-                "first": "163",
-                "last": "191"
-            },
-            "pii": "S0034425700001206",
-            "publicationDate": "2000-10-31",
-            "sourceTitle": "Remote Sensing of Environment",
-            "title": "Large-Scale BRDF Retrieval over New Mexico with a Multiangular NOAA AVHRR Dataset",
-            "uri": "https://www.sciencedirect.com/science/article/pii/S0034425700001206?dgcid=api_sd_search-api-endpoint",
-            "volumeIssue": "Volume 74, Issue 1"
+        "language": {
+            "@xml:lang": "eng"
         },
-        {
-            "authors": [
+        "authkeywords": null,
+        "subject-areas": {
+            "subject-area": [
                 {
-                    "order": 0,
-                    "name": "K. E Kohfeld"
+                    "@_fa": "true",
+                    "$": "Soil Science",
+                    "@code": "1111",
+                    "@abbrev": "AGRI"
                 },
                 {
-                    "order": 1,
-                    "name": "S. P Harrison"
+                    "@_fa": "true",
+                    "$": "Geology",
+                    "@code": "1907",
+                    "@abbrev": "EART"
+                },
+                {
+                    "@_fa": "true",
+                    "$": "Computers in Earth Sciences",
+                    "@code": "1903",
+                    "@abbrev": "EART"
                 }
-            ],
-            "doi": "10.1016/S0277-3791(99)00068-2",
-            "loadDate": "2000-04-21T00:00:00Z",
-            "openAccess": false,
-            "pages": {
-                "first": "321",
-                "last": "346"
-            },
-            "pii": "S0277379199000682",
-            "publicationDate": "2000-01-01",
-            "sourceTitle": "Quaternary Science Reviews",
-            "title": "How well can we simulate past climates? Evaluating the models using global palaeoenvironmental datasets",
-            "uri": "https://www.sciencedirect.com/science/article/pii/S0277379199000682?dgcid=api_sd_search-api-endpoint",
-            "volumeIssue": "Volume 19, Issues 1\u20135"
+            ]
         },
-        {
-            "authors": [
+        "authors": {
+            "author": [
                 {
-                    "order": 0,
-                    "name": "Adrian Armstrong"
+                    "preferred-name": {
+                        "ce:given-name": "A. B.",
+                        "ce:initials": "A.B.",
+                        "ce:surname": "Tait",
+                        "ce:indexed-name": "Tait A."
+                    },
+                    "@seq": "1",
+                    "ce:initials": "A.B.",
+                    "@_fa": "true",
+                    "affiliation": {
+                        "@id": "60002442",
+                        "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60002442"
+                    },
+                    "ce:surname": "Tait",
+                    "@auid": "55337551400",
+                    "author-url": "https://api.elsevier.com/content/author/author_id/55337551400",
+                    "ce:indexed-name": "Tait A.B."
                 },
                 {
-                    "order": 1,
-                    "name": "Karin Aden"
+                    "preferred-name": {
+                        "ce:given-name": "D. K.",
+                        "ce:initials": "D.K.",
+                        "ce:surname": "Hall",
+                        "ce:indexed-name": "Hall D."
+                    },
+                    "@seq": "2",
+                    "ce:initials": "D.K.",
+                    "@_fa": "true",
+                    "affiliation": {
+                        "@id": "60006337",
+                        "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60006337"
+                    },
+                    "ce:surname": "Hall",
+                    "@auid": "35546736600",
+                    "author-url": "https://api.elsevier.com/content/author/author_id/35546736600",
+                    "ce:indexed-name": "Hall D.K."
                 },
                 {
-                    "order": 2,
-                    "name": "Nadia Amraoui"
+                    "preferred-name": {
+                        "ce:given-name": "J. L.",
+                        "ce:initials": "J.L.",
+                        "ce:surname": "Foster",
+                        "ce:indexed-name": "Foster J."
+                    },
+                    "@seq": "3",
+                    "ce:initials": "J.L.",
+                    "@_fa": "true",
+                    "affiliation": {
+                        "@id": "60006337",
+                        "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60006337"
+                    },
+                    "ce:surname": "Foster",
+                    "@auid": "56528811300",
+                    "author-url": "https://api.elsevier.com/content/author/author_id/56528811300",
+                    "ce:indexed-name": "Foster J.L."
                 },
                 {
-                    "order": 3,
-                    "name": "Bernd Diekkr\u00fcger"
-                },
-                {
-                    "order": 7,
-                    "name": "Caroline Wittwer"
+                    "preferred-name": {
+                        "ce:given-name": "R. L.",
+                        "ce:initials": "R.L.",
+                        "ce:surname": "Armstrong",
+                        "ce:indexed-name": "Armstrong R."
+                    },
+                    "@seq": "4",
+                    "ce:initials": "R.L.",
+                    "@_fa": "true",
+                    "affiliation": {
+                        "@id": "60000221",
+                        "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60000221"
+                    },
+                    "ce:surname": "Armstrong",
+                    "@auid": "56673482900",
+                    "author-url": "https://api.elsevier.com/content/author/author_id/56673482900",
+                    "ce:indexed-name": "Armstrong R.L."
                 }
-            ],
-            "doi": "10.1016/S0378-3774(99)00086-4",
-            "loadDate": "2000-03-20T00:00:00Z",
-            "openAccess": false,
-            "pages": {
-                "first": "85",
-                "last": "104"
-            },
-            "pii": "S0378377499000864",
-            "publicationDate": "2000-05-31",
-            "sourceTitle": "Agricultural Water Management",
-            "title": "Comparison of the performance of pesticide-leaching models on a cracking clay soil: results using the Brimstone Farm dataset",
-            "uri": "https://www.sciencedirect.com/science/article/pii/S0378377499000864?dgcid=api_sd_search-api-endpoint",
-            "volumeIssue": "Volume 44, Issues 1\u20133"
-        },
-        {
-            "authors": [
-                {
-                    "order": 0,
-                    "name": "Aaldrik Tiktak"
-                }
-            ],
-            "doi": "10.1016/S0378-3774(99)00088-8",
-            "loadDate": "2000-03-20T00:00:00Z",
-            "openAccess": false,
-            "pages": {
-                "first": "119",
-                "last": "134"
-            },
-            "pii": "S0378377499000888",
-            "publicationDate": "2000-05-31",
-            "sourceTitle": "Agricultural Water Management",
-            "title": "Application of pesticide leaching models to the Vredepeel dataset: II Pesticide fate",
-            "uri": "https://www.sciencedirect.com/science/article/pii/S0378377499000888?dgcid=api_sd_search-api-endpoint",
-            "volumeIssue": "Volume 44, Issues 1\u20133"
-        },
-        {
-            "authors": [
-                {
-                    "order": 0,
-                    "name": "M Vanclooster"
-                },
-                {
-                    "order": 1,
-                    "name": "J. J. T. I Boesten"
-                }
-            ],
-            "doi": "10.1016/S0378-3774(99)00087-6",
-            "loadDate": "2000-03-20T00:00:00Z",
-            "openAccess": false,
-            "pages": {
-                "first": "105",
-                "last": "117"
-            },
-            "pii": "S0378377499000876",
-            "publicationDate": "2000-05-31",
-            "sourceTitle": "Agricultural Water Management",
-            "title": "Application of pesticide simulation models to the Vredepeel dataset: I. Water, solute and heat transport",
-            "uri": "https://www.sciencedirect.com/science/article/pii/S0378377499000876?dgcid=api_sd_search-api-endpoint",
-            "volumeIssue": "Volume 44, Issues 1\u20133"
-        },
-        {
-            "authors": [
-                {
-                    "order": 0,
-                    "name": "M. Vanclooster"
-                },
-                {
-                    "order": 1,
-                    "name": "J. J. T. I. Boesten"
-                },
-                {
-                    "order": 2,
-                    "name": "M. Trevisan"
-                },
-                {
-                    "order": 3,
-                    "name": "C. D. Brown"
-                },
-                {
-                    "order": 8,
-                    "name": "A. M. A. van der Linden"
-                }
-            ],
-            "doi": "10.1016/S0378-3774(99)00081-5",
-            "loadDate": "2000-03-20T00:00:00Z",
-            "openAccess": false,
-            "pages": {
-                "first": "1",
-                "last": "19"
-            },
-            "pii": "S0378377499000815",
-            "publicationDate": "2000-05-31",
-            "sourceTitle": "Agricultural Water Management",
-            "title": "A European test of pesticide-leaching models: methodology and major recommendations",
-            "uri": "https://www.sciencedirect.com/science/article/pii/S0378377499000815?dgcid=api_sd_search-api-endpoint",
-            "volumeIssue": "Volume 44, Issues 1\u20133"
-        },
-        {
-            "authors": [
-                {
-                    "order": 0,
-                    "name": "Richard K. H. Wyse"
-                },
-                {
-                    "order": 1,
-                    "name": "Kenneth M. Taylor"
-                }
-            ],
-            "doi": "10.1046/j.1444-2892.2000.009001023.x",
-            "loadDate": "2004-02-25T00:00:00Z",
-            "openAccess": false,
-            "pages": {
-                "first": "23",
-                "last": "26"
-            },
-            "pii": "S1443950600905420",
-            "publicationDate": "2000-05-31",
-            "sourceTitle": "Heart, Lung and Circulation",
-            "title": "Prospective development of a cardiac surgical registry",
-            "uri": "https://www.sciencedirect.com/science/article/pii/S1443950600905420?dgcid=api_sd_search-api-endpoint",
-            "volumeIssue": "Volume 9, Issue 1"
-        },
-        {
-            "authors": [
-                {
-                    "order": 0,
-                    "name": "F. C Crawford"
-                },
-                {
-                    "order": 1,
-                    "name": "M. J Freeman"
-                },
-                {
-                    "order": 2,
-                    "name": "J Schinka"
-                },
-                {
-                    "order": 3,
-                    "name": "L. I Abdullah"
-                },
-                {
-                    "order": 7,
-                    "name": "M. J Mullan"
-                }
-            ],
-            "doi": "10.1016/S0304-3940(00)01260-X",
-            "loadDate": "2000-07-13T00:00:00Z",
-            "openAccess": false,
-            "pages": {
-                "first": "61",
-                "last": "65"
-            },
-            "pii": "S030439400001260X",
-            "publicationDate": "2000-07-28",
-            "sourceTitle": "Neuroscience Letters",
-            "title": "The genetic association between Cathepsin D and Alzheimer's disease",
-            "uri": "https://www.sciencedirect.com/science/article/pii/S030439400001260X?dgcid=api_sd_search-api-endpoint",
-            "volumeIssue": "Volume 289, Issue 1"
-        },
-        {
-            "authors": [
-                {
-                    "order": 0,
-                    "name": "Jianying Hu"
-                },
-                {
-                    "order": 1,
-                    "name": "Sok Gek Lim"
-                },
-                {
-                    "order": 2,
-                    "name": "Michael K. Brown"
-                }
-            ],
-            "doi": "10.1016/S0031-3203(99)00043-6",
-            "loadDate": "2001-06-07T00:00:00Z",
-            "openAccess": false,
-            "pages": {
-                "first": "133",
-                "last": "147"
-            },
-            "pii": "S0031320399000436",
-            "publicationDate": "2000-01-31",
-            "sourceTitle": "Pattern Recognition",
-            "title": "Writer independent on-line handwriting recognition using an HMM approach",
-            "uri": "https://www.sciencedirect.com/science/article/pii/S0031320399000436?dgcid=api_sd_search-api-endpoint",
-            "volumeIssue": "Volume 33, Issue 1"
-        },
-        {
-            "authors": [
-                {
-                    "order": 0,
-                    "name": "G. Y. Patlewicz"
-                },
-                {
-                    "order": 1,
-                    "name": "R. A. Rodford"
-                },
-                {
-                    "order": 2,
-                    "name": "G. Ellis"
-                },
-                {
-                    "order": 3,
-                    "name": "M. D. Barratt"
-                }
-            ],
-            "doi": "10.1016/S0887-2333(99)00086-7",
-            "loadDate": "2000-02-25T00:00:00Z",
-            "openAccess": false,
-            "pages": {
-                "first": "79",
-                "last": "84"
-            },
-            "pii": "S0887233399000867",
-            "publicationDate": "2000-02-29",
-            "sourceTitle": "Toxicology in Vitro",
-            "title": "A QSAR model for the eye irritation of cationic surfactants",
-            "uri": "https://www.sciencedirect.com/science/article/pii/S0887233399000867?dgcid=api_sd_search-api-endpoint",
-            "volumeIssue": "Volume 14, Issue 1"
-        },
-        {
-            "authors": [
-                {
-                    "order": 0,
-                    "name": "Jukka Horppila"
-                }
-            ],
-            "doi": "10.1016/S0165-7836(99)00099-5",
-            "loadDate": "1999-12-27T00:00:00Z",
-            "openAccess": false,
-            "pages": {
-                "first": "21",
-                "last": "29"
-            },
-            "pii": "S0165783699000995",
-            "publicationDate": "2000-02-29",
-            "sourceTitle": "Fisheries Research",
-            "title": "The effect of length frequency ranges on the back-calculated lengths of roach, <ce:italic>Rutilus rutilus</ce:italic> (L.)",
-            "uri": "https://www.sciencedirect.com/science/article/pii/S0165783699000995?dgcid=api_sd_search-api-endpoint",
-            "volumeIssue": "Volume 45, Issue 1"
-        },
-        {
-            "authors": [
-                {
-                    "order": 0,
-                    "name": "Jos J. M. Westenberg"
-                },
-                {
-                    "order": 1,
-                    "name": "Rob J. van der Geest"
-                },
-                {
-                    "order": 2,
-                    "name": "Martin N. J. M. Wasser"
-                },
-                {
-                    "order": 3,
-                    "name": "Edwin L. van der Linden"
-                },
-                {
-                    "order": 8,
-                    "name": "Johan H. C. Reiber"
-                }
-            ],
-            "doi": "10.1016/S0730-725X(99)00099-5",
-            "loadDate": "2000-01-04T00:00:00Z",
-            "openAccess": false,
-            "pages": {
-                "first": "13",
-                "last": "22"
-            },
-            "pii": "S0730725X99000995",
-            "publicationDate": "2000-01-31",
-            "sourceTitle": "Magnetic Resonance Imaging",
-            "title": "Vessel diameter measurements in gadolinium contrast-enhanced three-dimensional MRA of peripheral arteries",
-            "uri": "https://www.sciencedirect.com/science/article/pii/S0730725X99000995?dgcid=api_sd_search-api-endpoint",
-            "volumeIssue": "Volume 18, Issue 1"
-        },
-        {
-            "authors": [
-                {
-                    "order": 0,
-                    "name": "Eirik Malinen"
-                },
-                {
-                    "order": 1,
-                    "name": "Sabine Freykowski"
-                },
-                {
-                    "order": 2,
-                    "name": "Johann Kummermehr"
-                }
-            ],
-            "doi": "10.1016/S0360-3016(99)00423-X",
-            "loadDate": "2000-01-07T00:00:00Z",
-            "openAccess": false,
-            "pages": {
-                "first": "173",
-                "last": "177"
-            },
-            "pii": "S036030169900423X",
-            "publicationDate": "2000-01-01",
-            "sourceTitle": "International Journal of Radiation Oncology*Biology*Physics",
-            "title": "Regrowth delay analysis of irradiated tumors in the curative dose region",
-            "uri": "https://www.sciencedirect.com/science/article/pii/S036030169900423X?dgcid=api_sd_search-api-endpoint",
-            "volumeIssue": "Volume 46, Issue 1"
-        },
-        {
-            "authors": [
-                {
-                    "order": 0,
-                    "name": "Wim P Cofino"
-                },
-                {
-                    "order": 1,
-                    "name": "Ivo H. M van Stokkum"
-                },
-                {
-                    "order": 2,
-                    "name": "David E Wells"
-                },
-                {
-                    "order": 3,
-                    "name": "Freek Ariese"
-                },
-                {
-                    "order": 5,
-                    "name": "Rene\u00e9 A. L Peerboom"
-                }
-            ],
-            "doi": "10.1016/S0169-7439(00)00093-9",
-            "loadDate": "2000-10-26T00:00:00Z",
-            "openAccess": false,
-            "pages": {
-                "first": "37",
-                "last": "55"
-            },
-            "pii": "S0169743900000939",
-            "publicationDate": "2000-11-13",
-            "sourceTitle": "Chemometrics and Intelligent Laboratory Systems",
-            "title": "A new model for the inference of population characteristics from experimental data using uncertainties. Application to interlaboratory studies",
-            "uri": "https://www.sciencedirect.com/science/article/pii/S0169743900000939?dgcid=api_sd_search-api-endpoint",
-            "volumeIssue": "Volume 53, Issues 1\u20132"
-        },
-        {
-            "authors": [
-                {
-                    "order": 0,
-                    "name": "Boo-Sik Kang"
-                },
-                {
-                    "order": 1,
-                    "name": "Sang-Chan Park"
-                }
-            ],
-            "doi": "10.1016/S0167-9236(00)00063-4",
-            "loadDate": "2000-06-01T00:00:00Z",
-            "openAccess": false,
-            "pages": {
-                "first": "59",
-                "last": "72"
-            },
-            "pii": "S0167923600000634",
-            "publicationDate": "2000-07-31",
-            "sourceTitle": "Decision Support Systems",
-            "title": "Integrated machine learning approaches for complementing statistical process control procedures",
-            "uri": "https://www.sciencedirect.com/science/article/pii/S0167923600000634?dgcid=api_sd_search-api-endpoint",
-            "volumeIssue": "Volume 29, Issue 1"
-        },
-        {
-            "authors": [
-                {
-                    "order": 0,
-                    "name": "P. A. M Berry"
-                },
-                {
-                    "order": 1,
-                    "name": "J. E Hoogerboord"
-                },
-                {
-                    "order": 2,
-                    "name": "R. A Pinnock"
-                }
-            ],
-            "doi": "10.1016/S1464-1895(00)00016-8",
-            "loadDate": "2000-04-06T00:00:00Z",
-            "openAccess": false,
-            "pages": {
-                "first": "95",
-                "last": "99"
-            },
-            "pii": "S1464189500000168",
-            "publicationDate": "2000-12-31",
-            "sourceTitle": "Physics and Chemistry of the Earth, Part A: Solid Earth and Geodesy",
-            "title": "Identification of common error signatures in global digital elevation models based on satellite altimeter reference data",
-            "uri": "https://www.sciencedirect.com/science/article/pii/S1464189500000168?dgcid=api_sd_search-api-endpoint",
-            "volumeIssue": "Volume 25, Issue 1"
-        },
-        {
-            "authors": [
-                {
-                    "order": 0,
-                    "name": "R Francaviglia"
-                },
-                {
-                    "order": 1,
-                    "name": "E Capri"
-                }
-            ],
-            "doi": "10.1016/S0378-3774(99)00084-0",
-            "loadDate": "2000-03-20T00:00:00Z",
-            "openAccess": false,
-            "pages": {
-                "first": "63",
-                "last": "74"
-            },
-            "pii": "S0378377499000840",
-            "publicationDate": "2000-05-31",
-            "sourceTitle": "Agricultural Water Management",
-            "title": "Lysimeter experiments with metolachlor in Tor Mancina (Italy)",
-            "uri": "https://www.sciencedirect.com/science/article/pii/S0378377499000840?dgcid=api_sd_search-api-endpoint",
-            "volumeIssue": "Volume 44, Issues 1\u20133"
-        },
-        {
-            "authors": [
-                {
-                    "order": 0,
-                    "name": "L. Vandekerckhove"
-                },
-                {
-                    "order": 1,
-                    "name": "J. Poesen"
-                },
-                {
-                    "order": 2,
-                    "name": "D. Oostwoud Wijdenes"
-                },
-                {
-                    "order": 3,
-                    "name": "G. Gyssels"
-                },
-                {
-                    "order": 5,
-                    "name": "E. de Luna"
-                }
-            ],
-            "doi": "10.1016/S0169-555X(99)00109-9",
-            "loadDate": "2000-05-19T00:00:00Z",
-            "openAccess": false,
-            "pages": {
-                "first": "37",
-                "last": "58"
-            },
-            "pii": "S0169555X99001099",
-            "publicationDate": "2000-05-31",
-            "sourceTitle": "Geomorphology",
-            "title": "Characteristics and controlling factors of bank gullies in two semi-arid mediterranean environments",
-            "uri": "https://www.sciencedirect.com/science/article/pii/S0169555X99001099?dgcid=api_sd_search-api-endpoint",
-            "volumeIssue": "Volume 33, Issues 1\u20132"
-        },
-        {
-            "authors": [
-                {
-                    "order": 0,
-                    "name": "J. Austin"
-                },
-                {
-                    "order": 1,
-                    "name": "K. Lees"
-                }
-            ],
-            "doi": "10.1016/S0925-2312(00)00309-X",
-            "loadDate": "2000-10-30T00:00:00Z",
-            "openAccess": false,
-            "pages": {
-                "first": "55",
-                "last": "72"
-            },
-            "pii": "S092523120000309X",
-            "publicationDate": "2000-11-30",
-            "sourceTitle": "Neurocomputing",
-            "title": "A search engine based on neural correlation matrix memories",
-            "uri": "https://www.sciencedirect.com/science/article/pii/S092523120000309X?dgcid=api_sd_search-api-endpoint",
-            "volumeIssue": "Volume 35, Issues 1\u20134"
-        },
-        {
-            "authors": [
-                {
-                    "order": 0,
-                    "name": "Ludovic Br\u00e9ger"
-                },
-                {
-                    "order": 1,
-                    "name": "Hrvoje Tkal\u010di\u0107"
-                },
-                {
-                    "order": 2,
-                    "name": "Barbara Romanowicz"
-                }
-            ],
-            "doi": "10.1016/S0012-821X(99)00286-1",
-            "loadDate": "2000-01-12T00:00:00Z",
-            "openAccess": false,
-            "pages": {
-                "first": "133",
-                "last": "143"
-            },
-            "pii": "S0012821X99002861",
-            "publicationDate": "2000-01-30",
-            "sourceTitle": "Earth and Planetary Science Letters",
-            "title": "The effect of D\u2033 on PKP(AB\u2212DF) travel time residuals and possible implications for inner core structure",
-            "uri": "https://www.sciencedirect.com/science/article/pii/S0012821X99002861?dgcid=api_sd_search-api-endpoint",
-            "volumeIssue": "Volume 175, Issues 1\u20132"
-        },
-        {
-            "authors": [
-                {
-                    "order": 0,
-                    "name": "D Dierickx"
-                },
-                {
-                    "order": 1,
-                    "name": "B Basu"
-                },
-                {
-                    "order": 2,
-                    "name": "J Vleugels"
-                },
-                {
-                    "order": 3,
-                    "name": "O Van der Biest"
-                }
-            ],
-            "doi": "10.1016/S1044-5803(00)00049-8",
-            "loadDate": "2001-01-24T00:00:00Z",
-            "openAccess": false,
-            "pages": {
-                "first": "61",
-                "last": "70"
-            },
-            "pii": "S1044580300000498",
-            "publicationDate": "2000-07-31",
-            "sourceTitle": "Materials Characterization",
-            "title": "Statistical extreme value modeling of particle size distributions: experimental grain size distribution type estimation and parameterization of sintered zirconia",
-            "uri": "https://www.sciencedirect.com/science/article/pii/S1044580300000498?dgcid=api_sd_search-api-endpoint",
-            "volumeIssue": "Volume 45, Issue 1"
-        },
-        {
-            "authors": [
-                {
-                    "order": 0,
-                    "name": "Carlos Alberto Montanari"
-                },
-                {
-                    "order": 1,
-                    "name": "Quezia Bezerra Cass"
-                },
-                {
-                    "order": 2,
-                    "name": "Maria Elizabeth Tiritan"
-                },
-                {
-                    "order": 3,
-                    "name": "Adriano Luis Soares de Souza"
-                }
-            ],
-            "doi": "10.1016/S0003-2670(00)00962-4",
-            "loadDate": "2000-08-07T00:00:00Z",
-            "openAccess": false,
-            "pages": {
-                "first": "93",
-                "last": "100"
-            },
-            "pii": "S0003267000009624",
-            "publicationDate": "2000-08-15",
-            "sourceTitle": "Analytica Chimica Acta",
-            "title": "A QSERR study on enantioselective separation of enantiomeric sulphoxides",
-            "uri": "https://www.sciencedirect.com/science/article/pii/S0003267000009624?dgcid=api_sd_search-api-endpoint",
-            "volumeIssue": "Volume 419, Issue 1"
-        },
-        {
-            "authors": [
-                {
-                    "order": 0,
-                    "name": "Andrew E. Czeizel"
-                },
-                {
-                    "order": 1,
-                    "name": "Magda Rockenbauer"
-                }
-            ],
-            "doi": "10.1016/S0301-2115(99)00112-8",
-            "loadDate": "2000-01-03T00:00:00Z",
-            "openAccess": false,
-            "pages": {
-                "first": "27",
-                "last": "33"
-            },
-            "pii": "S0301211599001128",
-            "publicationDate": "2000-01-31",
-            "sourceTitle": "European Journal of Obstetrics & Gynecology and Reproductive Biology",
-            "title": "A population-based case-control teratologic study of oral oxytetracycline treatment during pregnancy",
-            "uri": "https://www.sciencedirect.com/science/article/pii/S0301211599001128?dgcid=api_sd_search-api-endpoint",
-            "volumeIssue": "Volume 88, Issue 1"
+            ]
         }
-    ]
+    }
 }

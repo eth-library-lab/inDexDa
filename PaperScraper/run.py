@@ -9,19 +9,16 @@ import argparse
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--database', type=str, default='arXiv', help='database used')
-parser.add_argument('--field', type=str, default='Computer Science',
-                    help='field of research')
+parser.add_argument('--database', type=str, default='arxiv', help='database used')
 options = parser.parse_args()
 
-if options.database == 'arXiv':
-    CONFIG_DIR = os.path.join('config', options.database, 'config.json')
-    OUTPUT_DIR = os.path.join('data', options.database, options.field.replace(' ', ''))
-    OUTPUT_FILE = os.path.join(OUTPUT_DIR, 'abstract_links.txt')
-elif options.database == 'sciencedirect':
-    CONFIG_DIR = os.path.join('config', options.database, 'config.json')
-    OUTPUT_DIR = os.path.join('data', options.database)
-    OUTPUT_FILE = os.path.join(OUTPUT_DIR, 'papers.json')
+CONFIG_DIR = os.path.join('config', options.database, 'config.json')
+OUTPUT_DIR = os.path.join('data', options.database)
+OUTPUT_FILE = os.path.join(OUTPUT_DIR, 'papers.json')
+
+# Make output folder
+if not os.path.exists(OUTPUT_DIR):
+    os.mkdir(OUTPUT_DIR)
 
 # Check if config file exists for specified database
 if os.path.exists(CONFIG_DIR):
@@ -31,11 +28,23 @@ if os.path.exists(CONFIG_DIR):
 else:
     print('No config file found at {}'.format(CONFIG_DIR), file=sys.stderr)
 
+'''
+#########################################################################################
+########################### Query user for web scraping #################################
+#########################################################################################
+'''
+
 question = ('Scan {} for papers?'.format(options.database))
 scrape = query_yes_no(question)
 
 if scrape:
     scrape_database(config, options, CONFIG_DIR, OUTPUT_DIR, OUTPUT_FILE)
+
+'''
+#########################################################################################
+########################### Query user for database update ##############################
+#########################################################################################
+'''
 
 question = ('Add new papers from {} to database?'.format(options.database))
 append = query_yes_no(question)
