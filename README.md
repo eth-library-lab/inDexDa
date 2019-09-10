@@ -35,6 +35,7 @@ stores this information within the MongoDB database for later use.
 ### Scrape Papers
 
 __SETUP__
+
 This portion of the project uses a config file in order to run.
 
 * PaperScraper/config/repository/config.json
@@ -44,6 +45,7 @@ It contains information specific to scraping the selected database such as API k
 results.
 
 __USE SUPPORTED DATABASES__
+
 Three databases are supported in the vanilla version of inDexDa. They are: arXiv,
 ScienceDirect, and IEEE Xplore. To use these databases, follow the instructions below.
 
@@ -74,6 +76,7 @@ Follwoing this, the script will ask the user to update the Mongo database. The s
 will also currate the Mongo database by removing any papers which are duplicates.
 
 __USE NEW DATABASE__
+
 inDexDa also allows users to use online or local repositories which are not natively
 supported. To do this, the user must first create the PaperScraper class for the
 site in the _PaperScraper/lib/_ folder (following the naming convention). Additionally,
