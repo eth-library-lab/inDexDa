@@ -3,5 +3,5 @@
 	"_comment":" These parameters for web scraping arXiv",
 	"_comment":"=========================================",
 
-    "query":"dataset"
+    "query":"a"
 }
