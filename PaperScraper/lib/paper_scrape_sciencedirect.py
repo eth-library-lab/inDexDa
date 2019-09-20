@@ -27,8 +27,8 @@ class PaperScrapeScienceDirect:
         '''
         papers = []
         date_range = self.get_dates()
-        issue_range = np.arange(1, 100)
-        # issue_range = np.arange(1, 5)
+        # issue_range = np.arange(1, 100)
+        issue_range = np.arange(1, 5)
 
         # Uses ScienceDirect Search V2 to do a general search across the query params
         print('Scraping papers from ScienceDirect using query term "%s" :' % (self.query))
@@ -78,39 +78,39 @@ class PaperScrapeScienceDirect:
         papers[:] = [d for d in papers if d.get('DOI') != []]
 
         # More refined search using Aabstract Retrieval API to add abstract to papers dict
-        print('Retrieving abstracts for discovered papers:')
+        # print('Retrieving abstracts for discovered papers:')
 
-        length = len(papers)
-        for i, paper in enumerate(papers):
-            progress.printProgressBar(i + 1, length, prefix='Progress: ',
-                                      suffix='Complete', length=50)
-            request = Request('retrieval', DOI=paper['DOI'])
-            article = self.APIRequest(request)
+        # length = len(papers)
+        # for i, paper in enumerate(papers):
+        #     progress.printProgressBar(i + 1, length, prefix='Progress: ',
+        #                               suffix='Complete', length=50)
+        #     request = Request('retrieval', DOI=paper['DOI'])
+        #     article = self.APIRequest(request)
 
-            if article is not None:
-                category = []
-                try:
-                    for subject in article['abstracts-retrieval-response']['subject-areas']['subject-area']:
-                        if subject not in category:
-                            category.append(subject['@abbrev'])
-                except KeyError:
-                    category = []
+        #     if article is not None:
+        #         category = []
+        #         try:
+        #             for subject in article['abstracts-retrieval-response']['subject-areas']['subject-area']:
+        #                 if subject not in category:
+        #                     category.append(subject['@abbrev'])
+        #         except KeyError:
+        #             category = []
 
-                try:
-                    abstract = article['abstracts-retrieval-response']['item']['bibrecord']['head']['abstracts']
-                except KeyError:
-                    abstract = []
+        #         try:
+        #             abstract = article['abstracts-retrieval-response']['item']['bibrecord']['head']['abstracts']
+        #         except KeyError:
+        #             abstract = []
 
-                paper['Absrtact'] = abstract
-                paper['Category'] = category
-            else:
-                paper['Absrtact'] = []
-                paper['Category'] = []
+        #         paper['Absrtact'] = abstract
+        #         paper['Category'] = category
+        #     else:
+        #         paper['Absrtact'] = []
+        #         paper['Category'] = []
 
-        # Remove any papers without Abstracts, Authors, or Titles
-        papers[:] = [d for d in papers if d.get('Absrtact') != []]
-        papers[:] = [d for d in papers if d.get('Authors') != []]
-        papers[:] = [d for d in papers if d.get('Title') != []]
+        # # Remove any papers without Abstracts, Authors, or Titles
+        # papers[:] = [d for d in papers if d.get('Absrtact') != []]
+        # papers[:] = [d for d in papers if d.get('Authors') != []]
+        # papers[:] = [d for d in papers if d.get('Title') != []]
 
         return papers
 
@@ -141,16 +141,10 @@ class PaperScrapeScienceDirect:
 
         results = []
 
-        while True:
-            try:
-                request = Request('search', date=date, issue=issue, start_idx=0)
+        request = Request('search', date=date, issue=issue, start_idx=0)
 
-                data = self.APIRequest(request)
-                time.sleep(.5)
-                totalResults = data['resultsFound']
-                break
-            except json.JSONDecodeError:
-                time.sleep(1)
+        data = self.APIRequest(request)
+        totalResults = data['resultsFound']
 
         if totalResults > 0:
             for pagenum in range(math.ceil(totalResults / 100)):
@@ -159,15 +153,8 @@ class PaperScrapeScienceDirect:
                                           prefix=prefix, suffix='Complete', length=30)
                 start_idx = pagenum * 100
 
-                while True:
-                    try:
-                        request = Request('search', date=date, issue=issue,
-                                          start_idx=start_idx)
-                        results.append(self.APIRequest(request))
-                        time.sleep(.5)
-                        break
-                    except json.JSONDecodeError:
-                        time.sleep(1)
+                request = Request('search', date=date, issue=issue, start_idx=start_idx)
+                results.append(self.APIRequest(request))
 
             return results
         else:
@@ -191,43 +178,46 @@ class PaperScrapeScienceDirect:
         '''
 
         # SCIENCEDIRECT SEARCH V2
-        if request.request_type == 'search':
-            key = self.apikey
-            query = self.query
-            url = 'https://api.elsevier.com/content/search/sciencedirect'
-
-            headers = {"Accept": "application/json",
-                       "X-ELS-APIKey": key,
-                       "content-type": "application/json"}
-
-            body = json.dumps({"qs": query,
-                               "display": {"offset": request.start_idx,
-                                           "show": "100",
-                                           "sortBy": "relevance"},
-                               "date": request.date,
-                               "openAccess": "true",
-                               "issue": request.issue})
-
-            r = requests.put(url, headers=headers, data=body)
-            return json.loads(str(r.text))
-
-        # ABSTRACT RETRIEVAL
-        elif request.request_type == 'retrieval':
+        while True:
             try:
-                key = self.apikey
-                url = 'https://api.elsevier.com/content/abstract/doi/'
-                url = url + request.DOI + '?'
-                url = url + 'apiKey=' + key
-                url = url + '&httpAccept=application%2Fjson'
-            except TypeError:
-                return None
+                if request.request_type == 'search':
+                    key = self.apikey
+                    query = self.query
+                    url = 'https://api.elsevier.com/content/search/sciencedirect'
 
-            r = requests.get(url)
+                    headers = {"Accept": "application/json",
+                               "X-ELS-APIKey": key,
+                               "content-type": "application/json"}
 
-            try:
-                return json.loads(str(r.text))
-            except ValueError:
-                return None
+                    body = json.dumps({"qs": query,
+                                       "display": {"offset": request.start_idx,
+                                                   "show": "100",
+                                                   "sortBy": "relevance"},
+                                       "date": request.date,
+                                       "openAccess": "true",
+                                       "issue": request.issue})
+
+                    r = requests.put(url, headers=headers, data=body)
+                    time.sleep(.5)
+                    return json.loads(str(r.text))
+
+                # ABSTRACT RETRIEVAL
+                elif request.request_type == 'retrieval':
+                    key = self.apikey
+                    url = 'https://api.elsevier.com/content/abstract/doi/'
+                    url = url + request.DOI + '?'
+                    url = url + 'apiKey=' + key
+                    url = url + '&httpAccept=application%2Fjson'
+
+                    r = requests.get(url)
+                    print(r.text)
+                    input()
+                    time.sleep(.5)
+
+                    return json.loads(str(r.text))
+
+            except json.JSONDecodeError:
+                time.sleep(1)
 
 
 class Request():
