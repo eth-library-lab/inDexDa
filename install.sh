@@ -42,3 +42,13 @@ fi
 if [ -z $(pip list | grep -F nltk) ]; then
     pip install nltk
 fi
+
+
+pip install inflect
+pip install unidecode
+pip install textsearch
+pip install contractions
+pip install beautifulsoup4
+pip install wordcloud
+pip install matplotlib
+pip install gensim
