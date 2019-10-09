@@ -1,4 +1,3 @@
-import json
 import re
 from pymongo import MongoClient
 
@@ -45,6 +44,7 @@ def json2mongodb(dictionary):
     mongo_rec_id = db[index][collection].replace_one({'_id': rec['_id']}, rec, True)
     '''
     # print(mongo_rec_id)
+
 
 if __name__ == '__main__':
     json2mongodb('/home/parker/code/datadex/PaperScraper/data/result.json')

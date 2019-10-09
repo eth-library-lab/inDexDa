@@ -1,0 +1,11 @@
+{
+	"_comment":"=========================================",
+	"_comment":" These parameters for web scraping IEEEXplore",
+	"_comment":"=========================================",
+
+    "search":"dataset",
+    "apiKey": "8qxqbqcabxt5dqytu7hyr8xt",
+
+    "start_year":"",
+    "end_year":""
+}

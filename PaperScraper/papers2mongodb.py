@@ -1,15 +1,12 @@
 import os
 import ssl
-import time
-import json
-import urllib.request
 import utils.command_line as progress
 
-from utils.url_util import get_url, check_url
 from utils.json2mongodb import json2mongodb
 from utils.webpage2dict import webpage2dict
 
 LOG_FILE = 'log/log.txt'
+
 
 def compile_database(options, OUTPUT_FILE):
     '''
@@ -28,7 +25,7 @@ def compile_database(options, OUTPUT_FILE):
             with open(OUTPUT_FILE, 'r') as f:
                 for i, line in enumerate(f):
                     progress.printProgressBar(i + 1, length, prefix='Progress:',
-                                          suffix='Complete', length=50)
+                                              suffix='Complete', length=50)
 
                     if idx is not None and i < idx:
                         continue
@@ -36,7 +33,7 @@ def compile_database(options, OUTPUT_FILE):
                     info = webpage2dict(line)
                     json2mongodb(info)
 
-    except ssl.CertificateError as e:
+    except ssl.CertificateError:
         print("Disconnected from Internet")
         if os.path.exists(LOG_FILE):
             with open(LOG_FILE, 'w') as log:

@@ -3,7 +3,7 @@
 	"_comment":" These parameters for web scraping ScienceDirect",
 	"_comment":"=========================================",
 
-    "search":"dataset",
+    "query":"dataset",
 
     "apiKey": "8195584e9a1784037041888ba25292ee",
 
