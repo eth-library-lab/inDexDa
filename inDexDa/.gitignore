@@ -1,0 +1,9 @@
+*.pdf
+*.pyc
+*.txt
+*.bin
+
+**/BERT/data
+**/BERT/log/args.json
+**/BERT/lib/outputs
+
