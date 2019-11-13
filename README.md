@@ -103,7 +103,8 @@ The Doc2Vec Classification network involves two seperate networks. The first ass
 encoding to the document and the second takes the encodings of all the documents in the
 dataset and trains a basic fully-connected neural network classifier.
 
-![alt text](https://i.stack.imgur.com/t7slV.png)
+![alt text]()
+<img src="https://i.stack.imgur.com/t7slV.png" width="200" height="100" />
 
 To see how to use this network, go to the Readme in the inDexDa/Doc2Vec folder.
 
@@ -113,7 +114,8 @@ better support the longer sequences of data we feed it (academic paper abstracts
 inputs to the network are encodings of the individual words, so a Word2Vec model must
 first be trained to procude this encoding.
 
-![alt text](https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2018/08/LSTM-Autoencoder-Model.png)
+![alt text]()
+<img src="https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2018/08/LSTM-Autoencoder-Model.png" width="200" height="100" />
 
 To see how to use this network, go to the Readme in the inDexDa/LSTM folder.
 
@@ -124,6 +126,6 @@ BERT cannot be explained here, but Google allows you to download the pre-trained
 and then fine-tuning can be done for the user-specific task. We train it on the same
 data as the other two networks, however the input structure is slightly different.
 
-![alt text](https://miro.medium.com/max/876/0*ViwaI3Vvbnd-CJSQ.png)
+<img src="https://miro.medium.com/max/876/0*ViwaI3Vvbnd-CJSQ.png" width="200" height="100" />
 
 To see how to use this network, go to the Readme in the inDexDa/BERT folder.
