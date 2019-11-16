@@ -1,5 +1,3 @@
-# import os
-# import json
 import math
 import requests
 import feedparser
