@@ -52,3 +52,10 @@ pip install beautifulsoup4
 pip install wordcloud
 pip install matplotlib
 pip install gensim
+
+# BERT Dependencies
+pip install pandas
+pip install ipywidgets
+pip install apex
+pip install pytorch-transformers
+pip install tensorboardX
