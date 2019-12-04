@@ -1,4 +1,6 @@
 import re
+import os
+import json
 from pymongo import MongoClient
 
 
@@ -22,8 +24,10 @@ def replace_values(dic_obj, q, replace_value):
     return dict(dic_obj)
 
 
-def json2mongodb(dictionary):
-    json_dictionary = dictionary
+def json2mongodb(data_file):
+    with open(data_file, 'r') as f:
+        json_string = f.read()
+        json_dictionary = json.load(json_string)
 
     # Some databases can't deal with NULL values:
     rec = replace_values(json_dictionary, ": null", ': ""')
@@ -47,4 +51,6 @@ def json2mongodb(dictionary):
 
 
 if __name__ == '__main__':
-    json2mongodb('/home/parker/code/datadex/PaperScraper/data/result.json')
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    output_dir = os.path.join(current_dir, '../data/result.json')
+    json2mongodb(output_dir)
