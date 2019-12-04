@@ -1,9 +1,8 @@
 import os
 import ssl
-import utils.command_line as progress
-
-from utils.json2mongodb import json2mongodb
-from utils.webpage2dict import webpage2dict
+import PaperScraper.utils.command_line as progress
+from PaperScraper.utils.json2mongodb import json2mongodb
+# from PaperScraper.utils.webpage2dict import webpage2dict
 
 LOG_FILE = 'log/log.txt'
 

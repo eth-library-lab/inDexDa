@@ -1,9 +1,9 @@
 import math
 import requests
 import feedparser
-import utils.command_line as progress
+import PaperScraper.utils.command_line as progress
 
-from utils.url_util import get_url
+from PaperScraper.utils.url_util import get_url
 
 
 class PaperScrapeArXiv:
@@ -11,12 +11,12 @@ class PaperScrapeArXiv:
         """
         Create an for storing links to papers in a given topic
 
-        :param config: config.json file containing information about which
+        :param config: namedtuple containing information about which
                         topic papers will be found in
         :return papers (list of dict): dict of each paper found with relevant content
         """
         self.config = config
-        self.query = config['query']
+        self.query = config.query
         self.papers = self.scrape4papers()
 
     def scrape4papers(self):
@@ -43,6 +43,10 @@ class PaperScrapeArXiv:
                     abstract = result['summary'].replace('\n', ' ')
                 except KeyError:
                     abstract = []
+                try:
+                    doi = result["arxiv_doi"]
+                except KeyError:
+                    doi = []
 
                 category = []
                 try:
@@ -55,6 +59,7 @@ class PaperScrapeArXiv:
                                "Abstract": abstract,
                                "Authors": authors,
                                "Date": pubdate,
+                               "DOI": doi,
                                "Category": category})
         return papers
 
@@ -123,3 +128,11 @@ class PaperScrapeArXiv:
         url = url + '&max_results=' + max_results
 
         return url
+
+
+# if __name__ == '__main__':
+    # config = ['arxiv', 'data']
+
+    # arxiv = PaperScrapeArXiv(config)
+    # paper = arxiv.APIRequest(0)
+    # print(paper[0]['arxiv_doi'])

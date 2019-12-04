@@ -1,0 +1,45 @@
+{
+    "_comment":" ================ WEB SCRAPING =================",
+    "_comment":"================================================",
+
+    "archive_to_scrape":
+                    {
+                      "archives":
+                                [
+                                    {"id": "01", "archive": "sciencedirect"}
+                                ]
+                    },
+
+    "archive_info":
+                    {
+                        "arxiv":
+                                {
+                                    "query":"dataset",
+                                    "apikey": "",
+                                    "start_year":"",
+                                    "end_year":""
+                                },
+
+                        "sciencedirect":
+                                {
+                                    "query": "dataset",
+                                    "apikey": "8195584e9a1784037041888ba25292ee",
+                                    "start_year":"2000",
+                                    "end_year":"2001"
+                                },
+
+                        "ieeexplore":
+                                {
+                                    "query": "dataset",
+                                    "apikey": "8qxqbqcabxt5dqytu7hyr8xt",
+                                    "start_year":"",
+                                    "end_year":""
+                                }
+
+                    },
+
+    "_comment":"======= PIPELINE FOR GATHERING DATASETS ========",
+    "_comment":"================================================",
+
+    "blah": "blah"
+}
