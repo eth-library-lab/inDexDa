@@ -8,6 +8,7 @@
 **/data/bert_data
 **/BERT/data
 **/BERT/log/args.json
+**/BERT/log/output_stats
 
 **/data/arxiv
 **/data/sciencedirect

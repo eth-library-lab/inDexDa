@@ -1,57 +1,49 @@
 # Web Scraping
-## SETUP
+## Setpu With Supported Archives
 
-This portion of the project uses a config file in order to run.
+This portion of the project uses the web-scraping section of the args.json config file.
+The two portions of this section are the archives the user wants to scrape for papers and
+information on all the archives supported by inDexDa.
 
-* PaperScraper/config/repository/config.json
-
-It contains information specific to scraping the selected database such as API key
-(for ScienceDirect and IEEE Xplore), query keyword, and search dates to restrict the search
-results.
-
-## USE SUPPORTED DATABASES##
-
-Three databases are supported in the vanilla version of inDexDa. They are: arXiv,
-ScienceDirect, and IEEE Xplore. To use these databases, follow the instructions below.
-
-The PaperScraper folder contains the run.py script which allows the user to both search
-through the online databases for a specfic query (default is 'dataset') as well as update
-a database (storage of all scraped papers). Before running the script, verify the
-parameters within the _database/config.json_ file. Each online database requires unique
-paramaters for their specific web scraping API.
-
-ScienceDirect and IEEEXplore both require API keys, so the user must apply to these at the
-following web sites:
-
-* ScienceDirect: https://dev.elsevier.com/apikey/manage
-* IEEE Xplore: https://developer.ieee.org/
-
-Once API keys have been registered and the appropriate _config.json_ files updates, run
-the following script.
-
-Example:
+### Archives To Use
+The user can specify either one or multiple online repositories to scrape from by modifying
+the number of entries in the archive tag. The syntax is as follows:
 ```shell
-python run.py --database database
+{"id": "0x", "archive": "name"}
+    # x should be an integer between 1-9
+    # name is the name of the online paper repository, all lowercase, no spaces
 ```
-It will first confirm with the user the online repository they wish to scrape. By
-confirming, the web scraper will use the database's appropriate API to collect papers
-relating to the query term within the _config.json_.
 
-Follwoing this, the script will ask the user to update the Mongo database. The script
-will also currate the Mongo database by removing any papers which are duplicates.
+### Archive Information
+This section is for all the required information for each repository's API. The fields
+must be standardized for all archives, so if fields are not needed for a repository
+leave them blank.
 
-## USE NEW DATABASE
+* All archives require a search query to find papers relating to that term.
+* ScienceDirect requires an API key the user must register for themselves (see below) as
+well as a range of years to search over.
+* Other added archives may require more information, so fields may need to be added and the
+scraping code modified.
+
+* ScienceDirect API Key Application: https://dev.elsevier.com/apikey/manage
+
+
+## Use New Archive
 
 inDexDa also allows users to use online or local repositories which are not natively
-supported. To do this, the user must first create the PaperScraper class for the
-site in the _PaperScraper/lib/_ folder (following the naming convention). Additionally,
-a file must be created for the parameters (_PaperScraper/config/database/config.json_)
-and the name/class should be added to the dictionary in the
-_PaperScraper/scrape_database.py_ file.
+supported. To do this, the following must be done:
 
-The created class should take as input the config file for initialization, and the
-database.papers variable should call a scrape4papers which returns a list of dictionaries,
-each dictionary containing the Title, Abstract, Authors, Category, and Date of publication
-of a paper. This output is then saved to _PaperScraper/data/database/papers.json_.
-
-This will allow the following portion of inDexDa to use papers from the new repository.
+1. Create a scraper class in the _PaperScraper/lib/_ folder.
+    1. Name of the file with the scraper class should be paper_scrape_name.py where name
+       is the name of the archive with no spaces or punctuation between words, all
+       letters lowercase.
+    2. Class named PaperScraperName where Name is the name of the repository.
+    3. Should output a papers.json file which contains a list of dicts, each dict containing
+        the title, abstract, authors, category (if available), date of publication (if
+        available) of a paper. The papers.json file should be saved to the
+        _PaperScraper/data/archiveName_ folder.
+2. From the new file import the class (PaperScraperName) into scrape.py
+3. In scrape.py, the databases variable in scrape_databases function needs to be updated
+    to include the new scraper. Add a dictionary entry with the key as the name of the
+    repository (all lowercase, no spaces or punctuation) and the value as the name of
+    the scraping class.

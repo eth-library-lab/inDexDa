@@ -2,21 +2,12 @@ import os
 # import json
 import argparse
 from termcolor import colored
-# from collections import namedtuple
 
 from PaperScraper.scrape import scrape
-from NLP.preprocess import PreprocessForBert, PreprocessScrapedData
+# from NLP.utils.preprocess import PreprocessForBert, PreprocessScrapedData
+from NLP.utils.preprocess import PreprocessForBert
 from NLP.run_through_network import runThroughNetwork
 from utils import getInfoAboutArchivesToScrape
-
-# from NLP.BERT.lib.train import train as BertTrain
-# from NLP.BERT.lib.test import test as BertTest
-
-# from NLP.Doc2Vec.lib.train import train as Doc2VecTrain
-# from NLP.Doc2Vec.lib.test import test as Doc2VecTest
-
-# from NLP.LSTM.lib.train import train as LSTMTrain
-# from NLP.LSTM.lib.test import test as LSTMTest
 
 
 parser = argparse.ArgumentParser()
@@ -53,7 +44,7 @@ if opt.first_time:
         print(colored(error, 'red'))
         print(colored(fix, 'yellow'))
 
-    preprocess = Preprocess()
+    preprocess = PreprocessForBert()
     preprocess.processForBert()
 
 if opt.scrape and not opt.train:
@@ -76,12 +67,12 @@ if opt.scrape and not opt.train:
         print(colored(fix, 'yellow'))
         exit()
 
-    try:
-        preprocess = PreprocessScrapedData()
-        preprocess.transferData()
-    except Exception as preprocess_error:
-        print(colored(preprocess_error, 'red'))
-        exit()
+    # try:
+        # preprocess = PreprocessScrapedData(archivesToUse)
+        # preprocess.transferData()
+    # except Exception as preprocess_error:
+    #     print(colored(preprocess_error, 'red'))
+    #     exit()
 
     print("Processing acquired papers through the networks ...")
     try:

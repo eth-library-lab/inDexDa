@@ -20,6 +20,14 @@ class PaperScrapeArXiv:
         self.papers = self.scrape4papers()
 
     def scrape4papers(self):
+        '''
+        Calls the arXiv API to scrape all papers relating to the search term. The API then
+        returns the dict of results which we parse here. If one of the fields is not in
+        the dict, we leave it as a blank space.
+
+        :params  N/A
+        :return  papers: list of dicts, each dict containing info on a specific paper
+        '''
         papers = []
         results = self.arXiv_search()
 
@@ -78,6 +86,7 @@ class PaperScrapeArXiv:
         feed = feedparser.parse(r.text)
         totalResults = int(feed.feed['opensearch_totalresults'])
 
+        # If we receive no results from a search query, we simply return 0
         results = []
         if totalResults > 0:
             for pagenum in range(math.ceil(totalResults / 100)):

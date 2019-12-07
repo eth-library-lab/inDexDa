@@ -11,23 +11,45 @@ import PaperScraper.utils.command_line as progress
 class PaperScrapeScienceDirect:
     def __init__(self, config):
         """
-        Create an for storing links to papers in a given topic
+        Create an for storing links to papers in a given topic. ScienceDirect API is quite
+        slow, so scraping is done in 2 phases: scrape general information on each paper,
+        then scrape the abstract for each paper. Scraping the abstracts can take hours
+        or even days, so it sometimes times-out. If this happens, the general scraped
+        info is saved to a file.
 
-        # :param config: namedtuple containing information about which
+        ScienceDirect API is complicated, so please refer to the inDexDa manual for more
+        information if confused.
+
+        :param config: namedtuple containing information about which
                         topic papers will be found in
         """
 
         self.config = config
         self.query = config.query
         self.apikey = config.apikey
-        self.papers = self.scrape4papers()
-        self.savePaperInformation(self.papers)
-        self.papers = self.scrape4abstracts(self.PaperScraper)
+
+        # Checks if scrape4abstracts had failed in a previous run
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        datapath = os.path.join(current_dir, '../data/sciencedirect/paperinfo.json')
+
+        # If general scraped info was saved previously (meaning abstract scraper failed)
+        if os.path.exists(datapath):
+            with open(datapath, 'r') as f:
+                contents = f.read()
+                papers = json.loads(contents)
+            self.papers = self.scrape4abstracts(papers, datapath)
+        else:
+            self.papers = self.scrape4papers()
+            self.savePaperInformation(self.papers)
+            self.papers = self.scrape4abstracts(self.papers, datapath)
 
     def scrape4papers(self):
         '''
         Searches through ScienceDirect archive for papers relating to the search term and
         date ranges specified within the ScienceDirect config file.
+
+        :params  N/A
+        :return  papers: list of dicts, each dict containing info on a specific paper
         '''
         papers = []
         date_range = self.getDates()
@@ -42,11 +64,13 @@ class PaperScrapeScienceDirect:
                 if stop_counter == 3:
                     break
 
+                # Calls API
                 data = self.ScienceDirectSearchV2(year, issue)
 
                 if data == 0:
                     stop_counter += 1
                 else:
+                    # Parse information from each dict
                     for page in data:
                         for result in page["results"]:
                             try:
@@ -78,15 +102,20 @@ class PaperScrapeScienceDirect:
                                            "DOI": doi,
                                            "Category": ""})
 
-        # Remove any papers without DOIs
+        # Remove any papers without DOIs as we will be unable to find their abstracts
         papers[:] = [d for d in papers if d.get('DOI') != []]
 
         print("Finished getting basic info on papers")
 
         return papers
 
-    def scrape4abstracts(self, papers):
-        # More refined search using Abstract Retrieval API to add abstract to papers dict
+    def scrape4abstracts(self, papers, datapath):
+        '''
+        More refined search using Abstract Retrieval API to add abstract to papers dict.
+
+        :params  papers: list of dicts, each dict with info on a specific paper
+                 datapath: path to previously saved general scraped data
+        '''
         print('Retrieving abstracts for discovered papers:\n')
 
         length = len(papers)
@@ -96,6 +125,7 @@ class PaperScrapeScienceDirect:
             request = Request('retrieval', DOI=paper['DOI'])
 
             try:
+                # Call API
                 article = self.APIRequest(request)
             except Exception as error:
                 print(error)
@@ -118,24 +148,37 @@ class PaperScrapeScienceDirect:
 
         # Remove any papers without Abstracts, Authors, or Titles
         papers[:] = [d for d in papers if d.get('Abstract') != []]
-        papers[:] = [d for d in papers if d.get('Abstract') != None]
+        papers[:] = [d for d in papers if d.get('Abstract') is not None]
         papers[:] = [d for d in papers if d.get('Authors') != []]
         papers[:] = [d for d in papers if d.get('Title') != []]
+
+        # Remove file containing general scraped data
+        os.remove(datapath)
 
         return papers
 
     def savePaperInformation(self, papers):
+        '''
+        After scraping general info from each paper, save this in a json file so that
+        if the abstract retreival fails we can load this file and skip the general
+        scraping next attempt.
+
+        :params  papers: list of dicts, each dict containing info on a specific paper
+        '''
         print("Saving basic info on papers")
         current_dir = os.path.dirname(os.path.abspath(__file__))
         save_dir = os.path.join(current_dir, '../data/sciencedirect/paperinfo.json')
+
         with open(save_dir, 'w') as f:
             json.dump(papers, f, indent=4)
 
     def getDates(self):
         '''
-        Makes array of year range specified within ScienceDirect config file. Robust to
+        Makes array of year range specified within args config file. Robust to
         only one year entry.
-        :return numpy array (ints) or int
+
+        :params  N/A
+        :return  numpy array (ints) or int
         '''
         start_year = int(self.config.start_year)
         end_year = int(self.config.end_year)
@@ -199,6 +242,8 @@ class PaperScrapeScienceDirect:
 
         # SCIENCEDIRECT SEARCH V2
         while True:
+            # Will try to access a website 5 times before exiting the function. Sometimes
+            #  a bad response occurs so we test multiple times to ensure something failed.
             counter = 0
             try:
                 # GENERAL SEARCH
@@ -240,10 +285,12 @@ class PaperScrapeScienceDirect:
                     return json.loads(str(r.text))
 
             except json.JSONDecodeError:
+                # If query failed, wait for 1 second and try again
                 counter += 1
                 time.sleep(1)
 
-                if counter > 5 :
+                # If enough failed attempts occur, exit function
+                if counter > 5:
                     raise Exception("ScienceDirect has stopped responding.")
 
 

@@ -2,11 +2,11 @@ import os
 import sys
 
 
-# Disable
+# Disable command line printing
 def blockPrint():
     sys.stdout = open(os.devnull, 'w')
 
 
-# Restore
+# Restore command line printing
 def enablePrint():
     sys.stdout = sys.__stdout__

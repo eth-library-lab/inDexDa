@@ -38,6 +38,11 @@
 
                     },
 
+    "_comment":"======== PIPELINE FOR TRAINING NETWORK =========",
+    "_comment":"================================================",
+    "epochs": 3,
+    "batchSize": 8,
+
     "_comment":"======= PIPELINE FOR GATHERING DATASETS ========",
     "_comment":"================================================",
 

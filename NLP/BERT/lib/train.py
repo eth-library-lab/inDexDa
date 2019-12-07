@@ -5,12 +5,13 @@ from ktrain import text
 from NLP.BERT.lib.utils import blockPrint, enablePrint
 
 
-def train():
+def train(epochs=3, batchSize=8):
     '''
-    Trains the BERT model.
+    Trains the BERT model. Saves trianed BERT model in NLP/BERT/log directory.
 
-    :param datadir: directory of evaulation examples
-    :return classification: list of ints
+    :params  epochs: number of epochs to train the network
+             batchSize: size of batches for training
+    :return  N/A
     '''
     blockPrint()
 
