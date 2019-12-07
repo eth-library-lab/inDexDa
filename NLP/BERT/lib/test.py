@@ -1,9 +1,11 @@
 import os
 import json
+import math
 import ktrain
+import NLP.utils.command_line as progress
 
 from ktrain import text
-from NLP.BERT.lib.utils import blockPrint, enablePrint
+# from NLP.BERT.lib.utils import blockPrint, enablePrint
 
 
 def test(datadir):
@@ -25,6 +27,8 @@ def test(datadir):
     # ========================================================== #
     # ================= GET EVALUATION DATA ==================== #
     # ========================================================== #
+    print('Setting up BERT network for classification ...')
+
     if not os.path.exists(traindir):
         raise Exception('Data in directory inDexDa/data/bert_data has either been',
                         ' deleted or is formatted incorrectly. Refer to original',
@@ -58,6 +62,8 @@ def test(datadir):
     # ========================================================== #
     # =============== LOAD PRETRAINED BERT MODEL =============== #
     # ========================================================== #
+    print('Loading the pretrained BERT network ...')
+
     load_file = os.path.join(current_dir, '../log/bert_model.h5')
     learner.load_model(load_file)
 
@@ -66,6 +72,7 @@ def test(datadir):
     # ========================================================== #
     # ======================== PREDICT ========================= #
     # ========================================================== #
+    print('Predicting if new datasets are presented ...')
     prediction = predictor.predict(eval_papers)
 
     results = []
@@ -79,15 +86,20 @@ def test(datadir):
     # ================== INFO ABOUT DATASETS =================== #
     # ========================================================== #
     dataset_papers = []
-    for result in results:
+    print("Finalizing BERT Outputs ...")
+    for idx, result in enumerate(results):
+        progress.printProgressBar(idx + 1, math.ceil(len(results)),
+                                  prefix='Progress :', suffix='Complete',
+                                  length=30)
         for paper in raw:
-            if result["Abstract"] == paper["Abstract"]  and "Dataset Detected" in result["Prediction"]:
+            if result["Abstract"] == paper["Abstract"] and "Dataset Detected" in result["Prediction"]:
                 paper.update({"Prediction": result["Prediction"]})
                 dataset_papers.append(paper)
 
     # ========================================================== #
     # ========================= SAVE =========================== #
     # ========================================================== #
+    print('Saving results ...')
     outputdir = os.path.join(current_dir, '../../../data/results.json')
     with open(outputdir, 'w') as f:
         json.dump(dataset_papers, f, indent=4)
@@ -95,7 +107,7 @@ def test(datadir):
     # enablePrint()
 
 
-if __name__ == '__main__':
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    datadir = os.path.join(current_dir, '../../../data/example.json')
-    test(datadir)
+# if __name__ == '__main__':
+#     current_dir = os.path.dirname(os.path.abspath(__file__))
+#     datadir = os.path.join(current_dir, '../../../data/example.json')
+#     test(datadir)

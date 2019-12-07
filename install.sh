@@ -43,19 +43,27 @@ if [ -z $(pip list | grep -F nltk) ]; then
     pip install nltk
 fi
 
+# For paper scraping
+pip install feedparser
+pip install pymongo
+pip install requests
+pip install termcolor
 
-pip install inflect
+# For NLP
+# pip install inflect
 pip install unidecode
 pip install textsearch
 pip install contractions
 pip install beautifulsoup4
-pip install wordcloud
-pip install matplotlib
+# pip install wordcloud
+# pip install matplotlib
 pip install gensim
 
 # BERT Dependencies
-pip install pandas
-pip install ipywidgets
-pip install apex
-pip install pytorch-transformers
-pip install tensorboardX
+# pip install pandas
+# pip install ipywidgets
+# pip install apex
+# pip install pytorch-transformers
+# pip install tensorboardX
+
+# For processing pipeline

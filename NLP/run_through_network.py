@@ -1,16 +1,26 @@
 import os
-import json
-
-# from NLP.preprocess import NormalizePapers
 from NLP.BERT.lib.test import test as BertTest
 
 
 def runThroughNetwork():
+    '''
+    Takes scraped papers and runs them through the pre-trained BERT classification
+    network. Takes the original scraped info from the papers modifies the file such
+    that:
+        - Only papers which indicate a newly created dataset are kept
+        - Each dict is appended with a "Predicted": "Dataset Detected" field
+
+    Specific actions need to be taken when using the ktrain BERT network. For more
+    information please refer to the inDexDa manual.
+
+    :params  N/A
+    :return  N/A
+    '''
     current_dir = os.path.dirname(os.path.abspath(__file__))
     datadir = os.path.join(current_dir, '../data/eval.json')
 
+    # Attempts to run the network
     try:
         BertTest(datadir)
     except Exception as bert_error:
         raise Exception(bert_error)
-
