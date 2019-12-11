@@ -110,20 +110,33 @@ class PreprocessForBert():
         :params  N/A
         '''
 
-        if not os.path.exists(self.current_dir, '../data/bert_data'):
-            os.mkdir(os.path.join(self.current_dir, '../data/bert_data'))
-        if not os.path.exists(self.current_dir, '../data/bert_data/train'):
-            os.mkdir(os.path.join(self.current_dir, '../data/bert_data/train'))
-        if not os.path.exists(self.current_dir, '../data/bert_data/test'):
-            os.mkdir(os.path.join(self.current_dir, '../data/bert_data/test'))
-        if not os.path.exists(self.current_dir, '../data/bert_data/train/0'):
-            os.mkdir(os.path.join(self.current_dir, '../data/bert_datatrain/0'))
-        if not os.path.exists(self.current_dir, '../data/bert_data/train/1'):
-            os.mkdir(os.path.join(self.current_dir, '../data/bert_data/train/1'))
-        if not os.path.exists(self.current_dir, '../data/bert_data/test/0'):
-            os.mkdir(os.path.join(self.current_dir, '../data/bert_data/test/0'))
-        if not os.path.exists(self.current_dir, '../data/bert_data/test/1'):
-            os.mkdir(os.path.join(self.current_dir, '../data/bert_data/test/1'))
+        directory = os.path.join(self.current_dir, '../../data/bert_data')
+        if not os.path.exists(directory):
+            os.mkdir(os.path.join(self.current_dir, '../../data/bert_data'))
+
+        directory = os.path.join(self.current_dir, '../../data/bert_data/train')
+        if not os.path.exists(directory):
+            os.mkdir(os.path.join(self.current_dir, '../../data/bert_data/train'))
+
+        directory = os.path.join(self.current_dir, '../../data/bert_data/test')
+        if not os.path.exists(directory):
+            os.mkdir(os.path.join(self.current_dir, '../../data/bert_data/test'))
+
+        directory = os.path.join(self.current_dir, '../../data/bert_data/train/0')
+        if not os.path.exists(directory):
+            os.mkdir(os.path.join(self.current_dir, '../../data/bert_datatrain/0'))
+
+        directory = os.path.join(self.current_dir, '../../data/bert_data/train/1')
+        if not os.path.exists(directory):
+            os.mkdir(os.path.join(self.current_dir, '../../data/bert_data/train/1'))
+
+        directory = os.path.join(self.current_dir, '../../data/bert_data/test/0')
+        if not os.path.exists(directory):
+            os.mkdir(os.path.join(self.current_dir, '../../data/bert_data/test/0'))
+
+        directory = os.path.join(self.current_dir, '../../data/bert_data/test/1')
+        if not os.path.exists(directory):
+            os.mkdir(os.path.join(self.current_dir, '../../data/bert_data/test/1'))
 
     def saveBertSamples(self, train_pos, test_pos, train_neg, test_neg):
         '''
@@ -139,27 +152,27 @@ class PreprocessForBert():
         for idx, sample in enumerate(train_pos):
             ix = idx + 1
             file_name = os.path.join(self.current_dir,
-                                     "../data/bert_data/train/1/{:04d}.txt".format(ix))
+                                     "../../data/bert_data/train/1/{:04d}.txt".format(ix))
             with open(file_name, 'w') as f:
-                f.write(sample['Text'])
+                f.write(sample[0])
 
         for idx, sample in enumerate(test_pos):
             file_name = os.path.join(self.current_dir,
-                                     "../data/bert_data/test/1/{:04d}.txt".format(ix))
+                                     "../../data/bert_data/test/1/{:04d}.txt".format(ix))
             with open(file_name, 'w') as f:
-                f.write(sample['Text'])
+                f.write(sample[0])
 
         for idx, sample in enumerate(train_neg):
             file_name = os.path.join(self.current_dir,
-                                     "../data/bert_data/train/0/{:04d}.txt".format(ix))
+                                     "../../data/bert_data/train/0/{:04d}.txt".format(ix))
             with open(file_name, 'w') as f:
-                f.write(sample['Text'])
+                f.write(sample[0])
 
         for idx, sample in enumerate(test_neg):
             file_name = os.path.join(self.current_dir,
-                                     "../data/bert_data/test/0/{:04d}.txt".format(ix))
+                                     "../../data/bert_data/test/0/{:04d}.txt".format(ix))
             with open(file_name, 'w') as f:
-                f.write(sample['Text'])
+                f.write(sample[0])
 
     def processForTrainingBert(self):
         '''
@@ -177,8 +190,8 @@ class PreprocessForBert():
         print('Processing data to train BERT network...')
 
         # Sets up the positive and negative corpus' and removes non-ASCII characters
-        fpos = os.path.join(self.current_dir, '../data/positive_samples.json')
-        fneg = os.path.join(self.current_dir, '../data/negative_samples.json')
+        fpos = os.path.join(self.current_dir, '../../data/positive_samples.json')
+        fneg = os.path.join(self.current_dir, '../../data/negative_samples.json')
         positives, negatives = self.readCorpus(fpos, fneg)
 
         # positives = self.removeSpecializedWords(self.normalizeCorpus(positives))
@@ -187,11 +200,11 @@ class PreprocessForBert():
         negatives = self.normalizeCorpus(negatives)
 
         # Sets up the testing and training sets
-        train_pos = positives[:len(positives) * self.train_test_split]
-        test_pos = positives[len(positives) * self.train_test_split:]
+        train_pos = positives[:int(len(positives) * self.train_test_split)]
+        test_pos = positives[int(len(positives) * self.train_test_split):]
 
-        train_neg = negatives[:len(negatives) * self.train_test_split]
-        test_neg = negatives[len(negatives) * self.train_test_split:]
+        train_neg = negatives[:int(len(negatives) * self.train_test_split)]
+        test_neg = negatives[int(len(negatives) * self.train_test_split):]
 
         self.makeDirs()
         self.saveBertSamples(train_pos, test_pos, train_neg, test_neg)
@@ -215,7 +228,7 @@ class PreprocessScrapedData():
 
         datadirs = []
         for archive in archivesUsed:
-            archive_dir = os.path.join('../PaperScraper/data', archive, 'papers.json')
+            archive_dir = os.path.join('../../PaperScraper/data', archive, 'papers.json')
             datadirs.append(os.path.join(self.current_dir, archive_dir))
 
         return datadirs
@@ -223,7 +236,7 @@ class PreprocessScrapedData():
     def transferData(self):
         # Moves all scraped papers to one file and deletes the originals.
 
-        output_file = os.path.join(self.current_dir, '../data/results.json')
+        output_file = os.path.join(self.current_dir, '../../data/results.json')
 
         data = []
         for datadir in self.datadirs:

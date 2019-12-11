@@ -69,6 +69,7 @@ class PaperScrapeArXiv:
                                "Date": pubdate,
                                "DOI": doi,
                                "Category": category})
+
         return papers
 
     def arXiv_search(self):

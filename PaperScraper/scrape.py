@@ -34,26 +34,26 @@ def scrape(archivesToUse, archiveInfo):
             except Exception as database_error:
                 raise Exception(database_error)
 
-        # Save Processed Data to New File
-        all_papers = []
-        for archive in archivesToUse:
-            datadir = os.path.join(current_dir, 'data', archive, 'papers.json')
+    # Save Processed Data to New File
+    all_papers = []
+    for archive in archivesToUse:
+        datadir = os.path.join(current_dir, 'data', archive, 'papers.json')
 
-            with open(datadir, 'r') as f:
-                contents = f.read()
-                papers = json.loads(contents)
+        with open(datadir, 'r') as f:
+            contents = f.read()
+            papers = json.loads(contents)
 
-            all_papers.extend(papers)
+        all_papers.extend(papers)
 
         # Moves the papers from the individual archive data folders to the inDexDa/data
         #  folder. Removes original saved individual archive data files.
-        new_dataset_output = os.path.join(current_dir, '../data', 'samples.json')
+        new_dataset_output = os.path.join(current_dir, '../data', 'results.json')
         with open(new_dataset_output, 'w') as f:
             json.dump(all_papers, f, indent=4)
 
-        for archive in archivesToUse:
-            datadir = os.path.join(current_dir, 'data', archive, 'papers.json')
-            os.remove(datadir)
+    for archive in archivesToUse:
+        datadir = os.path.join(current_dir, 'data', archive, 'papers.json')
+        os.remove(datadir)
 
 
 def scrape_database(archiveToUse, archiveInfo, output_file):
