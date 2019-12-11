@@ -100,7 +100,8 @@ class PaperScrapeScienceDirect:
                                            "Authors": authors,
                                            "Date": pubdate,
                                            "DOI": doi,
-                                           "Category": ""})
+                                           "Category": "",
+                                           "Archive": "ScienceDirect"})
 
         # Remove any papers without DOIs as we will be unable to find their abstracts
         papers[:] = [d for d in papers if d.get('DOI') != []]
