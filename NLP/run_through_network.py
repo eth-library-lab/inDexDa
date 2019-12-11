@@ -17,7 +17,7 @@ def runThroughNetwork():
     :return  N/A
     '''
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    datadir = os.path.join(current_dir, '../data/eval.json')
+    datadir = os.path.join(current_dir, '../data/results.json')
 
     # Attempts to run the network
     try:

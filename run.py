@@ -45,7 +45,7 @@ if opt.first_time:
         print(colored(fix, 'yellow'))
 
     preprocess = PreprocessForBert()
-    preprocess.processForBert()
+    preprocess.processForTrainingBert()
 
 if opt.scrape and not opt.train:
     '''
@@ -54,18 +54,18 @@ if opt.scrape and not opt.train:
         will be created which specifies which papers pointed towards a dataset and another
         file containing the specifics of that dataset.
     '''
-    print("Beginning scraping archives for papers ...")
-    try:
-        scrape(archivesToUse, archiveInfo)
-    except Exception as scrape_error:
-        print(colored(scrape_error, 'red'))
-        fix = ("Archives_to_scrape parameter specified in args.json does not have an "
-               " associated scraper class. Make sure to specify either the existing "
-               " supported archives (arxiv, sciencedirect) or if new scraper class was "
-               " created make sure to update the available databases in "
-               " PaperScraper.scrape.scrape_database function.")
-        print(colored(fix, 'yellow'))
-        exit()
+    # print("Beginning scraping archives for papers ...")
+    # try:
+    #     scrape(archivesToUse, archiveInfo)
+    # except Exception as scrape_error:
+    #     print(colored(scrape_error, 'red'))
+    #     fix = ("Archives_to_scrape parameter specified in args.json does not have an "
+    #            " associated scraper class. Make sure to specify either the existing "
+    #            " supported archives (arxiv, sciencedirect) or if new scraper class was "
+    #            " created make sure to update the available databases in "
+    #            " PaperScraper.scrape.scrape_database function.")
+    #     print(colored(fix, 'yellow'))
+    #     exit()
 
     # try:
         # preprocess = PreprocessScrapedData(archivesToUse)

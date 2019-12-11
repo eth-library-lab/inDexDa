@@ -14,6 +14,12 @@ This code has been tested on a computer with following specifications:
 
 To install the virtual environment and most of the required dependencies, run:
 ```bash
+pip install pew
+pip new inDexDa
+pip in inDexDa
+
+git clone https://github.com/ParkerEwen5441/datadex.git
+cd inDexDa
 ./install.sh
 ```
 
