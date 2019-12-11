@@ -1,11 +1,9 @@
-# import os
-# import json
 import math
 import requests
 import feedparser
-import utils.command_line as progress
+import PaperScraper.utils.command_line as progress
 
-from utils.url_util import get_url
+from PaperScraper.utils.url_util import get_url
 
 
 class PaperScrapeArXiv:
@@ -13,15 +11,23 @@ class PaperScrapeArXiv:
         """
         Create an for storing links to papers in a given topic
 
-        :param config: config.json file containing information about which
+        :param config: namedtuple containing information about which
                         topic papers will be found in
         :return papers (list of dict): dict of each paper found with relevant content
         """
         self.config = config
-        self.query = config['query']
+        self.query = config.query
         self.papers = self.scrape4papers()
 
     def scrape4papers(self):
+        '''
+        Calls the arXiv API to scrape all papers relating to the search term. The API then
+        returns the dict of results which we parse here. If one of the fields is not in
+        the dict, we leave it as a blank space.
+
+        :params  N/A
+        :return  papers: list of dicts, each dict containing info on a specific paper
+        '''
         papers = []
         results = self.arXiv_search()
 
@@ -45,6 +51,10 @@ class PaperScrapeArXiv:
                     abstract = result['summary'].replace('\n', ' ')
                 except KeyError:
                     abstract = []
+                try:
+                    doi = result["arxiv_doi"]
+                except KeyError:
+                    doi = []
 
                 category = []
                 try:
@@ -57,7 +67,9 @@ class PaperScrapeArXiv:
                                "Abstract": abstract,
                                "Authors": authors,
                                "Date": pubdate,
+                               "DOI": doi,
                                "Category": category})
+
         return papers
 
     def arXiv_search(self):
@@ -75,6 +87,7 @@ class PaperScrapeArXiv:
         feed = feedparser.parse(r.text)
         totalResults = int(feed.feed['opensearch_totalresults'])
 
+        # If we receive no results from a search query, we simply return 0
         results = []
         if totalResults > 0:
             for pagenum in range(math.ceil(totalResults / 100)):
@@ -125,3 +138,11 @@ class PaperScrapeArXiv:
         url = url + '&max_results=' + max_results
 
         return url
+
+
+# if __name__ == '__main__':
+    # config = ['arxiv', 'data']
+
+    # arxiv = PaperScrapeArXiv(config)
+    # paper = arxiv.APIRequest(0)
+    # print(paper[0]['arxiv_doi'])

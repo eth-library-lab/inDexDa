@@ -26,6 +26,13 @@ def printProgressBar(iteration, total, prefix='', suffix='', decimals=1, length=
 
 
 def print_progress():
+    '''
+    Prints a progress bar in the command line to track progress
+
+    :params  N/A
+    :return N/A
+    '''
+
     # A List of Items
     items = list(range(0, 57))
     length = len(items)
@@ -40,7 +47,8 @@ def print_progress():
 
 
 def query_yes_no(question, default="yes"):
-    """Ask a yes/no question via raw_input() and return their answer.
+    '''
+    Ask a yes/no question via raw_input() and return their answer.
 
     "question" is a string that is presented to the user.
     "default" is the presumed answer if the user just hits <Enter>.
@@ -48,7 +56,11 @@ def query_yes_no(question, default="yes"):
         an answer is required of the user).
 
     The "answer" return value is True for "yes" or False for "no".
-    """
+
+    :params  question: string to query the user with
+             default: default accepted answer for query
+    '''
+
     valid = {"yes": True, "y": True, "ye": True,
              "no": False, "n": False}
     if default is None:
