@@ -1,5 +1,5 @@
 # Web Scraping
-## Setpu With Supported Archives
+## Setup With Supported Archives
 
 This portion of the project uses the web-scraping section of the args.json config file.
 The two portions of this section are the archives the user wants to scrape for papers and

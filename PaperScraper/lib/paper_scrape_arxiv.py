@@ -62,13 +62,19 @@ class PaperScrapeArXiv:
                         category.append(tag['term'])
                 except KeyError:
                     category = []
+                try:
+                    link = result["link"].replace('abs', 'pdf') + '.pdf'
+                except KeyError:
+                    link = []
 
                 papers.append({"Title": title,
                                "Abstract": abstract,
                                "Authors": authors,
                                "Date": pubdate,
                                "DOI": doi,
-                               "Category": category})
+                               "Category": category,
+                               "Link": link,
+                               "Archive": "arXiv"})
 
         return papers
 
