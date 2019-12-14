@@ -1,5 +1,26 @@
-# Web Scraping
-## Setpu With Supported Archives
+<div align="center">
+  <a href="https://www.librarylab.ethz.ch"><img src="https://www.librarylab.ethz.ch/wp-content/uploads/2018/05/logo.svg" alt="ETH Library LAB logo" height="160"></a>
+  
+  <br/>
+  
+  <p><strong>inDexDa</strong> - Natural Language Processing of academic papers for dataset identification and indexing.</p>
+  
+  <p>An Initiative for human-centered Innovation in the Knowledge Sphere of the <a href="https://www.librarylab.ethz.ch">ETH Library Lab</a>.</p>
+
+</div>
+
+## Table of contents
+
+## Table of contents
+
+- [Web Scraping](#web-scraping)
+- [Archives To Use](#archives-to-use)
+    - [Archive Information](#archive-information)
+- [Use New Archive](#use-new-archive)
+- [Usage](#usage)
+- [License](#license)
+
+## Web Scraping
 
 This portion of the project uses the web-scraping section of the args.json config file.
 The two portions of this section are the archives the user wants to scrape for papers and
@@ -8,6 +29,7 @@ information on all the archives supported by inDexDa.
 ### Archives To Use
 The user can specify either one or multiple online repositories to scrape from by modifying
 the number of entries in the archive tag. The syntax is as follows:
+
 ```shell
 {"id": "0x", "archive": "name"}
     # x should be an integer between 1-9
@@ -27,7 +49,6 @@ scraping code modified.
 * Queries for arXiv should only be a single word
 
 * ScienceDirect API Key Application: https://dev.elsevier.com/apikey/manage
-
 
 ## Use New Archive
 
@@ -52,6 +73,9 @@ supported. To do this, the following must be done:
     repository (all lowercase, no spaces or punctuation) and the value as the name of
     the scraping class.
 
-
 * MAKE SURE _data/sciencedirect/paperinfo.json_ IS DELETED BEFORE RUNNING FOR THE FIRST
 TIME WITH A NEW SEARCH QUERY
+
+## License
+
+[MIT](https://github.com/eth-library-lab/inDexDa/LICENSE)

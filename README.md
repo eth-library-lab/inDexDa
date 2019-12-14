@@ -1,5 +1,34 @@
-# inDexDa
-Natural Language Processing of academic papers for dataset identification and indexing.
+<div align="center">
+  <a href="https://www.librarylab.ethz.ch"><img src="https://www.librarylab.ethz.ch/wp-content/uploads/2018/05/logo.svg" alt="ETH Library LAB logo" height="160"></a>
+  
+  <br/>
+  
+  <p><strong>inDexDa</strong> - Natural Language Processing of academic papers for dataset identification and indexing.</p>
+  
+  <p>An Initiative for human-centered Innovation in the Knowledge Sphere of the <a href="https://www.librarylab.ethz.ch">ETH Library Lab</a>.</p>
+
+</div>
+
+## Table of contents
+
+- [Getting Started](#getting-started)
+- [Setup](#setup)
+    - [Installation Instructions](#installation-instructions)
+- [Usage](#usage)
+    - [Configuration](#configuration)
+    - [Running inDexDa](#running-indexda)
+- [Contact](#contact)
+- [License](#license)
+
+## Getting Started
+
+This project is divided into multiple sections, pipelines, to make it more modular and easier to use/modify. These are as the followings:
+
+| Pipeline | Description |
+|:-----:|:-----:|
+| [PaperScaper](/PaperScaper) | Used to comb through a specified online archive of academic papers in order to find papers relating to a field, topic, or search term. Stores these papers in a MongoDB database. See PaperScraper folder for more information and usage instructions. |
+| [NLP](/NLP) | From the papers found using PaperScraper, used natural language processing techniques to determine whether the papers shows a new dataset was created. If so, it stores this information within the MongoDB database for later use. See NaturalLanguageProcessing folder for more information and usage instructions. |
+| Dataset Extraction | Collects information from the papers the BERT network predicts contain new datasets such as links to the dataset, type of data used, size of dataset, etc. |
 
 ## Setup
 
@@ -10,9 +39,10 @@ This code has been tested on a computer with following specifications:
 * __Python__: 3.6.8
 * __TensorFlow__: 1.14
 
-## Installation Instructions:
+### Installation Instructions
 
 To install the virtual environment and most of the required dependencies, run:
+
 ```bash
 pip install pew
 pew new inDexDa
@@ -25,30 +55,14 @@ cd inDexDa
 
 Networks used in this project are run using Tensorflow backend.
 
-
 ## Usage
 
-This project is divided into multiple sections to make it more modular and easier to
-use/modify. TThey are as follows:
-
-1. PaperScaper: Used to comb through a specified online archive of academic papers
-in order to find papers relating to a field, topic, or search term. Stores these papers
-in a MongoDB database. See PaperScraper folder for more information and usage
-instructions.
-2. NLP: From the papers found using PaperScraper, used natural language processing
-techniques to determine whether the papers shows a new dataset was created. If so, it
-stores this information within the MongoDB database for later use. See
-NaturalLanguageProcessing folder for more information and usage instructions.
-3. Dataset Extraction: Collects information from the papers the BERT network predicts
-contain new datasets such as links to the dataset, type of data used, size of dataset,
-etc.
-
-To begin running __inDexDa__ check the args.json file in the main directory. This contains
+To begin running __inDexDa__ check the `args.json` file in the main directory. This contains
 relevant information which will be used during the process. Please make sure to add the
 following fields:
 
-## Config
-__inDexDa__ is configured primarily through the args.json file. In this file is included
+## Configuration
+__inDexDa__ is configured primarily through the `args.json` file. In this file is included
 a variety of options for web-scraping, network training, and dataset extraction options.
 Each section is explained more thoroughly in the PaperScraper README, but the following
 steps will allow you to run __inDexDa__ quickly.
@@ -62,13 +76,21 @@ queries will yield less results, but will run much faster.
 Once a key has been obtained, include it in the archive_info ScienceDirect apikey field.
 Also make sure to include the start and end years for the search.
 
-
 ## Running inDexDa
-Once the args.json file has been configured, run the run.py file using the following flags
+Once the `args.json` file has been configured, run the run.py file using the following flags
 as desired, but only include EITHER the train or the scrape flag:
+
 ```bash
 python3 run.py
     --first_time  # Must be included the first time you run inDexDa
     --scrape      # Will run inDexDa and output datasets it finds
     --train       # Will re-train the BERT network
 ```
+
+## Contact
+
+For any inquiries, use the ETH Library Lab [contact form](https://www.librarylab.ethz.ch/contact/).
+
+## License
+
+[MIT](LICENSE)
