@@ -26,7 +26,7 @@ This project is divided into multiple sections, pipelines, to make it more modul
 
 | Pipeline | Description |
 |:-----:|:-----:|
-| [PaperScaper](/PaperScaper) | Used to comb through a specified online archive of academic papers in order to find papers relating to a field, topic, or search term. Stores these papers in a MongoDB database. See PaperScraper folder for more information and usage instructions. |
+| [PaperScraper](/PaperScraper) | Used to comb through a specified online archive of academic papers in order to find papers relating to a field, topic, or search term. Stores these papers in a MongoDB database. See PaperScraper folder for more information and usage instructions. |
 | [NLP](/NLP) | From the papers found using PaperScraper, used natural language processing techniques to determine whether the papers shows a new dataset was created. If so, it stores this information within the MongoDB database for later use. See NaturalLanguageProcessing folder for more information and usage instructions. |
 | Dataset Extraction | Collects information from the papers the BERT network predicts contain new datasets such as links to the dataset, type of data used, size of dataset, etc. |
 
