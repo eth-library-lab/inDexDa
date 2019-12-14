@@ -68,12 +68,12 @@ Each section is explained more thoroughly in the PaperScraper README, but the fo
 steps will allow you to run __inDexDa__ quickly.
 
 1. Choose the online academic paper repository you wish to scrape in the archives_to_scrape
-section. InDexDa natively supports both arXiv and ScienceDirect scraping APIs. You can
+section. InDexDa natively supports both arXiv and [ScienceDirect](https://www.sciencedirect.com) scraping APIs. You can
 use either a single scraper or multiple scrapers in sequence.
 2. Replace the default search query with your specific word or phrase. More specific search
 queries will yield less results, but will run much faster.
-3. If using ScienceDirect scraper, apply for an API key (https://dev.elsevier.com/apikey/manage).
-Once a key has been obtained, include it in the archive_info ScienceDirect apikey field.
+3. If using [ScienceDirect](https://www.sciencedirect.com) scraper, apply for an API key (https://dev.elsevier.com/apikey/manage).
+Once a key has been obtained, include it in the archive_info [ScienceDirect](https://www.sciencedirect.com) apikey field.
 Also make sure to include the start and end years for the search.
 
 ## Running inDexDa

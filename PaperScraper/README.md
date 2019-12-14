@@ -42,13 +42,13 @@ must be standardized for all archives, so if fields are not needed for a reposit
 leave them blank.
 
 * All archives require a search query to find papers relating to that term.
-* ScienceDirect requires an API key the user must register for themselves (see below) as
+* [ScienceDirect](https://www.sciencedirect.com) requires an API key the user must register for themselves (see below) as
 well as a range of years to search over.
 * Other added archives may require more information, so fields may need to be added and the
 scraping code modified.
 * Queries for arXiv should only be a single word
 
-* ScienceDirect API Key Application: https://dev.elsevier.com/apikey/manage
+*To register a ScienceDirect API Key Application, follow this link: https://dev.elsevier.com/apikey/manage*
 
 ## Use New Archive
 
@@ -73,7 +73,7 @@ supported. To do this, the following must be done:
     repository (all lowercase, no spaces or punctuation) and the value as the name of
     the scraping class.
 
-MAKE SURE `data/sciencedirect/paperinfo.json` IS DELETED BEFORE RUNNING FOR THE FIRST TIME WITH A NEW SEARCH QUERY
+MAKE SURE `data/[ScienceDirect](https://www.sciencedirect.com)/paperinfo.json` IS DELETED BEFORE RUNNING FOR THE FIRST TIME WITH A NEW SEARCH QUERY
 
 ## License
 
