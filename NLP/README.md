@@ -32,10 +32,10 @@ in the same way as the default inDexDa dataset.
 
 __Rules for Dataset Preparation__:
 
-1. Positive training examples should in their own file (_inDexDa/data/positive_samples.json_)
+1. Positive training examples should in their own file (`inDexDa/data/positive_samples.json`)
     and the format should be a list of strings where each string is a new paper abstract.
 2. Do the same as above but with the negative training samples (file name should be
-    changed to _[...]/negative_samples.json_)
+    changed to `[...]/negative_samples.json`)
 
 ## BERT Network
 BERT is the Bidirectional Encoder Representations from Transforms language model. It was
