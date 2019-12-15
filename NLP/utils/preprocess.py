@@ -124,7 +124,7 @@ class PreprocessForBert():
 
         directory = os.path.join(self.current_dir, '../../data/bert_data/train/0')
         if not os.path.exists(directory):
-            os.mkdir(os.path.join(self.current_dir, '../../data/bert_datatrain/0'))
+            os.mkdir(os.path.join(self.current_dir, '../../data/bert_data/train/0'))
 
         directory = os.path.join(self.current_dir, '../../data/bert_data/train/1')
         if not os.path.exists(directory):
@@ -157,18 +157,21 @@ class PreprocessForBert():
                 f.write(sample[0])
 
         for idx, sample in enumerate(test_pos):
+            ix = idx + 1
             file_name = os.path.join(self.current_dir,
                                      "../../data/bert_data/test/1/{:04d}.txt".format(ix))
             with open(file_name, 'w') as f:
                 f.write(sample[0])
 
         for idx, sample in enumerate(train_neg):
+            ix = idx + 1
             file_name = os.path.join(self.current_dir,
                                      "../../data/bert_data/train/0/{:04d}.txt".format(ix))
             with open(file_name, 'w') as f:
                 f.write(sample[0])
 
         for idx, sample in enumerate(test_neg):
+            ix = idx + 1
             file_name = os.path.join(self.current_dir,
                                      "../../data/bert_data/test/0/{:04d}.txt".format(ix))
             with open(file_name, 'w') as f:
