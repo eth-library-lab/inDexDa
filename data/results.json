@@ -12,7 +12,26 @@
         "Category": [
             "cs.CL"
         ],
-        "Link": "https://arxiv.org/pdf/1804.11251.pdf",
+        "Link": "http://arxiv.org/pdf/1804.11251v1.pdf",
+        "Archive": "arXiv",
+        "Prediction": "Dataset Detected"
+    },
+    {
+        "Title": "Online Decorrelation of Humidity and Temperature in Chemical Sensors for  Continuous Monitoring",
+        "Abstract": "A method for online decorrelation of chemical sensor signals from the effects of environmental humidity and temperature variations is proposed. The goal is to improve the accuracy of electronic nose measurements for continuous monitoring by processing data from simultaneous readings of environmental humidity and temperature. The electronic nose setup built for this study included eight metal-oxide sensors, temperature and humidity sensors with a wireless communication link to external computer. This wireless electronic nose was used to monitor air for two years in the residence of one of the authors and it collected data continuously during 537 days with a sampling rate of 1 samples per second. To estimate the effects of variations in air humidity and temperature on the chemical sensors signals, we used a standard energy band model for an n-type metal-oxide (MOX) gas sensor. The main assumption of the model is that variations in sensor conductivity can be expressed as a nonlinear function of changes in the semiconductor energy bands in the presence of external humidity and temperature variations. Fitting this model to the collected data, we confirmed that the most statistically significant factors are humidity changes and correlated changes of temperature and humidity. This simple model achieves excellent accuracy with a coefficient of determination $R^2$ close to 1. To show how the humidity-temperature correction model works for gas discrimination, we constructed a model for online discrimination among banana, wine and baseline response. This shows that pattern recognition algorithms improve performance and reliability by including the filtered signal of the chemical sensors.",
+        "Authors": [
+            "Ramon Huerta",
+            "Thiago S. Mosqueiro",
+            "Jordi Fonollosa"
+        ],
+        "Date": "2016-08-04T23:54:36Z",
+        "DOI": "10.1016/j.chemolab.2016.07.004",
+        "Category": [
+            "physics.data-an",
+            "cs.CE",
+            "physics.ins-det"
+        ],
+        "Link": "http://arxiv.org/pdf/1608.01719v2.pdf",
         "Archive": "arXiv",
         "Prediction": "Dataset Detected"
     }

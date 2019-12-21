@@ -8,6 +8,7 @@ pip install feedparser
 pip install scikit-learn
 
 # For NLP
+pip install ktrain
 pip install unidecode
 pip install textsearch
 pip install contractions
@@ -24,9 +25,5 @@ NLTK_LIBRARIES
 python script.py
 rm script.py
 
-# BERT Dependencies
-pip install ktrain
-
-
 # Dataset Extraction Dependencies
-# pip install PyPDF2
+pip install pdfminer
