@@ -10,8 +10,7 @@
 **/BERT/log/args.json
 **/BERT/log/output_stats
 
-**/data/arxiv
-**/data/sciencedirect
+**/PaperScraper/data
 
 **data/eval.json
 **data/example.json
@@ -22,4 +21,6 @@
 *.pyc
 *.txt
 **/__pycache__
+
+.idea/
 

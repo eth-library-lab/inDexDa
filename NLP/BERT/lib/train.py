@@ -13,7 +13,7 @@ def train(epochs=3, batchSize=8):
              batchSize: size of batches for training
     :return  N/A
     '''
-    blockPrint()
+    # blockPrint()
 
     # ========================================================== #
     # ======================== PARAMS ========================== #
@@ -47,7 +47,11 @@ def train(epochs=3, batchSize=8):
     # ========================================================== #
     # ====================== SAVE MODEL ======================== #
     # ========================================================== #
+    save_dir = os.path.join(current_dir, '../log')
+    if not os.path.exists(save_dir):
+        os.mkdir(save_dir)
+
     save_file = os.path.join(current_dir, '../log/bert_model.h5')
     learner.save_model(save_file)
 
-    enablePrint()
+    # enablePrint()
