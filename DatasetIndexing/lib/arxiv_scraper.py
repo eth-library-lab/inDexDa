@@ -13,10 +13,30 @@ from pdfminer.pdfpage import PDFPage
 
 class ArXivScraper():
     def __init__(self, paper):
-        # Perform layout analysis for all text
+        '''
+        Skim through the paper's text to try and find any urls within that could
+        point towards a dataset and try to find the name of the dataset.
+
+        :params  paper: dict of information about paper
+        :return  paper: updated version of input
+        '''
         self.laparams = pdfminer.layout.LAParams()
         setattr(self.laparams, 'all_texts', True)
         self.paper = paper
+
+    def extract(self):
+        '''
+        Runs all scripts for the class
+
+        :params  N/A
+        :return  paper: updated dict of paper info
+        '''
+        self.downloadPaper()
+        self.extractTextFromPdf()
+        self.analyzeText()
+        self.updatePaper()
+
+        return self.paper
 
     def downloadPaper(self):
         '''
@@ -87,7 +107,6 @@ class ArXivScraper():
         # Find all links in text
         urls = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\), ]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', self.text)
         urls = self.extendUrls(urls)
-        input(urls)
 
         self.dataset_name = dataset_name
         self.urls = urls
@@ -117,7 +136,6 @@ class ArXivScraper():
 
         return extended_urls
 
-
     def updatePaper(self):
         '''
         Updates paper dict with dataset name and possible links to dataset if they were
@@ -142,9 +160,6 @@ if __name__ == '__main__':
         papers = json.loads(contents)
 
     test = ArXivScraper(papers[0])
-    test.downloadPaper()
-    test.extractTextFromPdf()
-    # test.saveResults()
-    test.analyzeText()
-    test.updatePaper()
-    input(test.paper)
+    paper = test.extract()
+
+    input(paper)

@@ -6,8 +6,7 @@
                     {
                       "archives":
                                 [
-                                    {"id": "01", "archive": "arxiv"},
-                                    {"id": "02", "archive": "sciencedirect"}
+                                    {"id": "01", "archive": "arxiv"}
                                 ]
                     },
 
