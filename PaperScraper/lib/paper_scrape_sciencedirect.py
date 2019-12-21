@@ -285,13 +285,13 @@ class PaperScrapeScienceDirect:
 
                     return json.loads(str(r.text))
 
-            except json.JSONDecodeError:
+            except:
                 # If query failed, wait for 1 second and try again
                 counter += 1
                 time.sleep(1)
 
                 # If enough failed attempts occur, exit function
-                if counter > 5:
+                if counter == 5:
                     raise Exception("ScienceDirect has stopped responding.")
 
 
