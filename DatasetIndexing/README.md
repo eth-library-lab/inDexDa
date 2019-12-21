@@ -1,11 +1,33 @@
-# Dataset Extraction
-### Setup with Supported Archives
+<div align="center">
+  <a href="https://www.librarylab.ethz.ch"><img src="https://www.librarylab.ethz.ch/wp-content/uploads/2018/05/logo.svg" alt="ETH Library LAB logo" height="160"></a>
+
+  <br/>
+
+  <p><strong>inDexDa</strong> - Natural Language Processing of academic papers for dataset identification and indexing.</p>
+
+  <p>An Initiative for human-centered Innovation in the Knowledge Sphere of the <a href="https://www.librarylab.ethz.ch">ETH Library Lab</a>.</p>
+
+</div>
+
+## Table of contents
+
+- [Dataset Information Extraction](#datset-information-extraction)
+- [Setup with Supported Archives](#setup-with-supported-archives)
+    - [Archive Information](#archive-information)
+    - [Scraping](#scraping)
+    - [Information Extracted](#information-extracted)
+- [Use New Archive](#use-new-archive)
+- [License](#license)
+
+
+# Dataset Information Extraction
+## Setup with Supported Archives
 For this pipeline, we use only the papers predicted to point to datasets output
 by the BERT network. Like with PaperScraper, we must scrape the archive where
 the paper was originally from, this time to acquire the full body text rather
 than just snippits of information.
 
-### Archives To Use
+### Archive Information
 Like PaperScraper, the args.json is where the supported scraping archives can
 be found. Additionally, the indicated archive to scrape for PaperScraper is
 also used here (for logical consistency within the entire pipeline).
@@ -67,3 +89,8 @@ supported. To do this, the following must be done:
      needs to be updated to include the new scraper. Add a dictionary entry with
      the key as the name of the repository (all lowercase, no spaces or
      punctuation) and the value as the name of the scraping class.
+
+
+## License
+
+[MIT](https://github.com/eth-library-lab/inDexDa/LICENSE)

@@ -15,7 +15,6 @@
 - [Archives To Use](#archives-to-use)
     - [Archive Information](#archive-information)
 - [Use New Archive](#use-new-archive)
-- [Usage](#usage)
 - [License](#license)
 
 ## Web Scraping
