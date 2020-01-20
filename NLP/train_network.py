@@ -2,7 +2,7 @@ import os
 from NLP.BERT.lib.train import train as BertTrain
 
 
-def trainNetwork():
+def trainNetwork(networkParams):
     '''
     Trains the BERT network using the training data in inDexDa/data/bert_data.
     It both the train and test data in the format which inDexDa generates.
@@ -12,7 +12,7 @@ def trainNetwork():
         - New training data provided by user in positive_examples.json and
             negative_examples.json
 
-    :params  N/A
+    :params  networkParams: [epochs, batchSize]
     :return  N/A
     '''
     # current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -20,6 +20,6 @@ def trainNetwork():
 
     # Attempts to run the network
     try:
-        BertTrain()
+        BertTrain(networkParams[0], networkParams[1])
     except Exception as bert_error:
         raise Exception(bert_error)

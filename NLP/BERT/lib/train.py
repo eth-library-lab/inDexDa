@@ -2,6 +2,7 @@ import os
 import ktrain
 
 from ktrain import text
+from termcolor import colored
 from NLP.BERT.lib.utils import blockPrint, enablePrint
 
 
@@ -18,10 +19,13 @@ def train(epochs=3, batchSize=8):
     # ========================================================== #
     # ======================== PARAMS ========================== #
     # ========================================================== #
+    ouput_msg = "Begin training the BERT network ..."
+    print(colored(ouput_msg, 'cyan'))
+
     current_dir = os.path.dirname(os.path.abspath(__file__))
     datadir = os.path.join(current_dir, '../../../data/bert_data')
-    batchSize = 8
-    epochs = 3
+    batchSize = 4
+    epochs = 1
 
     # ========================================================== #
     # ================= SET UP BERT NETWORK ==================== #
@@ -44,9 +48,15 @@ def train(epochs=3, batchSize=8):
     # ========================================================== #
     learner.fit_onecycle(2e-5, epochs)
 
+
+    predictor = ktrain.get_predictor(learner.model, preproc=preproc)
+    predictor.save('../log')
     # ========================================================== #
     # ====================== SAVE MODEL ======================== #
     # ========================================================== #
+    ouput_msg = "Saving the trained BERT model in NLP/log/model.h5 ..."
+    print(colored(ouput_msg, 'cyan'))
+
     save_dir = os.path.join(current_dir, '../log')
     if not os.path.exists(save_dir):
         os.mkdir(save_dir)

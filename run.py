@@ -1,5 +1,4 @@
 import os
-# import json
 import argparse
 from termcolor import colored
 
@@ -7,7 +6,8 @@ from PaperScraper.scrape import scrape
 from NLP.train_network import trainNetwork
 from NLP.utils.preprocess import PreprocessForBert
 from NLP.run_through_network import runThroughNetwork
-from utils import getInfoAboutArchivesToScrape
+from DatasetIndexing.infoExtraction import datasetIndexing
+from utils import getInfoAboutArchivesToScrape, getInfoAboutNetworkParams
 
 
 parser = argparse.ArgumentParser()
@@ -22,9 +22,11 @@ opt = parser.parse_args()
 # Read args.json
 try:
     archivesToUse, archiveInfo = getInfoAboutArchivesToScrape()
+    networkParams = getInfoAboutNetworkParams()
 except Exception:
-    print('Not able to get information from args.json. Make sure file is formatted'
-          ' correctly.')
+    output_msg = ('Not able to get information from args.json. Make sure file is formatted'
+                 ' correctly. Refer to original format of file provided on GitHub.')
+    print(colored(output_msg, 'red'))
 
 if opt.first_time:
     '''
@@ -34,15 +36,18 @@ if opt.first_time:
     directories for BERT to run and trains the network.
 
     '''
+    output_msg = 'Formatting dataset for BERT network training ...'
+    print(colored(output_msg, 'cyan'))
+
     current_dir = os.path.dirname(os.path.abspath(__file__))
     datadir_pos = os.path.join(current_dir, 'data', 'positive_samples.json')
     datadir_neg = os.path.join(current_dir, 'data', 'negative_samples.json')
     if not os.path.exists(datadir_pos) or not os.path.exists(datadir_neg):
-        # error = "Directory with dataset is either empty or does not exist."
-        # fix = ("Make sure inDexDa/data directory exists and that it contains the file "
-        #        " dataset.json.")
-        # print(colored(error, 'red'))
-        # print(colored(fix, 'yellow'))
+        error = "One or both of the dataset example files is missing."
+        fix = ("Make sure inDexDa/data directory exists and that it contains the files "
+               " negative_samples.json and positive_samples.json.")
+        print(colored(error, 'red'))
+        print(colored(fix, 'yellow'))
 
     # Relevent data preprocessing for BERT network
     preprocess = PreprocessForBert()
@@ -59,7 +64,9 @@ if opt.first_time:
             os.mkdir(archive_datapath)
 
     # Train network and save the model
-    print('Training BERT network for classification of academic papers ...')
+    output_msg = ('Training BERT network for classification of academic papers. This may'
+                   ' take awhile ...')
+    print(colored(output_msg, 'cyan'))
     trainNetwork()
 
 if opt.scrape and not opt.train:
@@ -69,27 +76,25 @@ if opt.scrape and not opt.train:
         will be created which specifies which papers pointed towards a dataset and another
         file containing the specifics of that dataset.
     '''
-    print("Beginning scraping archives for papers ...")
-    try:
-        scrape(archivesToUse, archiveInfo)
-    except Exception as scrape_error:
-        print(colored(scrape_error, 'red'))
-        fix = ("Archives_to_scrape parameter specified in args.json does not have an "
-               " associated scraper class. Make sure to specify either the existing "
-               " supported archives (arxiv, sciencedirect) or if new scraper class was "
-               " created make sure to update the available databases in "
-               " PaperScraper.scrape.scrape_database function.")
-        print(colored(fix, 'yellow'))
-        exit()
+    # output_msg = "Beginning scraping archives for papers ..."
+    # print(colored(output_msg, 'cyan'))
+    # try:
+    #     scrape(archivesToUse, archiveInfo)
+    # except Exception:
+    #     exit()
 
-    print("Processing acquired papers through the networks ...")
+    # output_msg = "Processing acquired papers through the networks ..."
+    # print(colored(output_msg, 'cyan'))
+    # try:
+    #     runThroughNetwork(networkParams)
+    # except Exception:
+    #     exit()
+
+    output_msg = "Indexing datasets and acquiring more information ..."
+    print(colored(output_msg, 'cyan'))
     try:
-        runThroughNetwork()
-    except Exception as network_error:
-        # print(colored(network_error, 'red'))
-        # fix = ("Either specify only existing supported networks in the args.json file or"
-        #        " update the available networks in the NLP.run_through_network function.")
-        # print(colored(fix, 'yellow'))
+        datasetIndexing()
+    except Exception:
         exit()
 
 if opt.train and not opt.scrape:
@@ -99,5 +104,11 @@ if opt.train and not opt.scrape:
         on a portion of them, and then test BERT's accuracy using the remainder of the
         examples.
     '''
-    print("Training the networks now ...")
-    trainNetwork()
+    output_msg = "Training the BERT network now ..."
+    print(colored(output_msg, 'cyan'))
+    trainNetwork(networkParams)
+
+if opt.scrape and opt.train:
+    error = ("User specified both --scrape and --train flags. Can only use one of these"
+               " flags at a time.")
+    print(colored(error, 'red'))

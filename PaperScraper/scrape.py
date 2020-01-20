@@ -1,5 +1,6 @@
 import os
 import json
+from termcolor import colored
 
 from PaperScraper.utils.command_line import query_yes_no
 from PaperScraper.lib.paper_scrape_arxiv import PaperScrapeArXiv
@@ -31,8 +32,8 @@ def scrape(archivesToUse, archiveInfo):
         if scrape_answer:
             try:
                 scrape_database(archive, archiveInfo, output_file)
-            except Exception as database_error:
-                raise Exception(database_error)
+            except Exception:
+                raise Exception
 
     # Save Processed Data to New File
     all_papers = []
@@ -75,8 +76,11 @@ def scrape_database(archiveToUse, archiveInfo, output_file):
     try:
         scraper = databases[archiveToUse.lower()](config[0])
     except Exception:
-        raise Exception('Specified archive does not have a scrape class or something'
-                        ' went wrong during the scraping process.')
+        raise Exception
 
-    with open(output_file, 'w') as f:
-        json.dump(scraper.papers, f, indent=4)
+    try:
+        with open(output_file, 'w') as f:
+            json.dump(scraper.papers, f, indent=4)
+    except TypeError:
+        error = ("Was not able to write to json file.")
+        print(colored(error, 'red'))

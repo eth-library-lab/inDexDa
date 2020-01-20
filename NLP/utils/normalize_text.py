@@ -148,3 +148,10 @@ class Normalize():
             sample = self.__stem_words(sample)
 
         return sample
+
+if __name__ == '__main__':
+    link = "http://kitchen.cs.cmu.edu/http://ai.stanford.edu/\u02dcalireza"
+    linknew = Normalize(link, toLower=False, removePunctuation=False, removeNonASCII=True,
+                        removeContradictions=False, denoise=False, removeStopWords=False,
+                        stem=False, lemmatize=False, tokenize=False)
+    print(linknew.normalized_text)

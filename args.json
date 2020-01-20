@@ -14,7 +14,7 @@
                     {
                         "arxiv":
                                 {
-                                    "query":"banana",
+                                    "query":"dataset",
                                     "apikey": "",
                                     "start_year":"",
                                     "end_year":""
@@ -41,10 +41,16 @@
     "_comment":"======== PIPELINE FOR TRAINING NETWORK =========",
     "_comment":"================================================",
     "epochs": 3,
-    "batchSize": 8,
+    "batchSize": 6,
 
     "_comment":"======= PIPELINE FOR GATHERING DATASETS ========",
     "_comment":"================================================",
 
-    "blah": "blah"
+    "get_name": "true",
+    "get_links": "true",
+
+    "_comment":"================ MONGODB USAGE =================",
+    "_comment":"================================================",
+
+    "use_mongodb": "false"
 }
