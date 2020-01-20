@@ -14,7 +14,17 @@
         ],
         "Link": "http://arxiv.org/pdf/1411.3041v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "MS-COCO Dataset",
+            "UIUC Pascal Sentence Dataset",
+            "PASCAL-50S Dataset",
+            "ABSTRACT-50S Dataset",
+            "Image-Sentence Dataset",
+            "Flickr8k Dataset",
+            "Abstract Scenes Dataset"
+        ],
+        "Possible_Dataset_Links": []
     },
     {
         "Title": "Cross-dataset Training for Class Increasing Object Detection",
@@ -31,7 +41,26 @@
         ],
         "Link": "http://arxiv.org/pdf/2001.04621v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "WIDER Pedestrian Dataset",
+            "Cross- Dataset",
+            "Open Image Dataset",
+            "Existing Dataset",
+            "Two Dataset",
+            "PASCAL VOC Dataset",
+            "PASCAL VOC: PASCAL VOC Dataset",
+            "Pedestrian Dataset",
+            "Classes Dataset",
+            "COCO Dataset",
+            "Wider Face Dataset",
+            "PED Dataset",
+            "Hybrid Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://wider-challenge.org/,2018",
+            "https://www.dropbox.com/s/jec"
+        ]
     },
     {
         "Title": "Datasets on object manipulation and interaction: a survey",
@@ -47,7 +76,46 @@
         ],
         "Link": "http://arxiv.org/pdf/1607.00442v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "MPII Dataset",
+            "CMU-MMAC Dataset",
+            "MPII Cooking Dataset",
+            "YouCook Dataset",
+            "Rochester ADL Dataset",
+            "CAD-120 Dataset",
+            "MPII Cooking Composite Dataset",
+            "Cooking Eggs Dataset",
+            "Gaze+ Dataset",
+            "TUM Kitchten Dataset",
+            "Salad Dataset",
+            "Gaze Dataset",
+            "OPPORTUNITY Dataset",
+            "ADL Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://rpal.cse.usf.edu/motiondatasetreview/index.htm",
+            "http://people.csail.mit.edu/hpirsiav/codes/",
+            "http://www.murase.m.is.nagoya-u.ac.jp/KSCGR/",
+            "http://robocoffee.org/datasets/",
+            "https://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/research/human-activity-recognition/mpii-cooking-2-dataset/",
+            "http://openlab.ncl.ac.uk/publicweb/publicweb",
+            "https://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/research/human-activity-recognition/mpii-cooking-composite-activities/",
+            "http://pr.cs.cornell.edu/humanactivities/",
+            "http://ai.stanford.edu/~alireza",
+            "http://kitchen.cs.cmu.edu/",
+            "http://www.opportunity-project.eu/data.php",
+            "http://serre-lab.clps.brown.edu/resource/breakfast-actions-dataset/",
+            "http://www.cs.rochester.edu/~rmessing/uradl/",
+            "http://www.cse.buffalo.edu/~jcorso/r/youcook/",
+            "https://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/research/human-activity-recognition/mpii-cooking-activities-dataset/",
+            "https://archive.ics.uci.edu/ml/datasets/",
+            "http://www.eng.yale.edu/grablab/humangrasping/[2][3",
+            "https://archive.ics.uci.edu/ml/datasets",
+            "https://ias.in.tum.de/software/kitchen-activity-data",
+            "http://www.murase.m.is.nagoya-u.ac.jp",
+            "http://cvip.computing.dundee.ac.uk/datasets/foodpreparation/50salads/"
+        ]
     },
     {
         "Title": "Transforming Question Answering Datasets Into Natural Language Inference  Datasets",
@@ -64,7 +132,17 @@
         ],
         "Link": "http://arxiv.org/pdf/1809.02922v2.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Numerous Dataset",
+            "QA Dataset",
+            "Discussion NLI Dataset",
+            "Abstract Existing Dataset",
+            "NLI Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://bit.ly/2OMm4vK"
+        ]
     },
     {
         "Title": "Kannada-MNIST: A new handwritten digits dataset for the Kannada language",
@@ -81,7 +159,30 @@
         ],
         "Link": "http://arxiv.org/pdf/1908.01242v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Dig-MNIST Dataset",
+            "MNIST-sized Dataset",
+            "Kannada MNIST Dataset",
+            "Main Dataset",
+            "MNIST Dataset",
+            "Kannada-MNIST Dataset",
+            "Dig-MNSIT Dataset",
+            "MNIST-10k-Test Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://unicode.org/charts/PDF/U0C80.pdf, 2019. [Online; accessed 16-Mar-2019].[10",
+            "https://github.com/vinayprabhu/Kannada_MNIST\f",
+            "https://en.wikipedia.org/wiki/Kannada, 2019. [Online; accessed 16-Mar-2019].[4",
+            "https://en.wikipedia.org/wiki/Eighth_Schedule_to_the",
+            "https://github.com/keras-team/keras/blob/master/examples/mnist_cnn.py6",
+            "https://medium.com/@o.kroeger/tensorflow-mnist-and-your-own-handwritten-digits-4d1cd32bbab45\f",
+            "https://github.com/vinayprabhu/Kannada_MNIST/blob/master/colab_notebooks/",
+            "https://github.com/vinayprabhu/Kannada_MNIST/blob/master/colab_notebooks/5)",
+            "https://gist.github.com/mineshpatel1/",
+            "http://yann. lecun. com/exdb/mnist, 2:18, 2010.[2",
+            "https://bit.ly/32WTxeT4"
+        ]
     },
     {
         "Title": "Dataset2Vec: Learning Dataset Meta-Features",
@@ -99,7 +200,30 @@
         ],
         "Link": "http://arxiv.org/pdf/1905.11063v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Another Dataset",
+            "Dataset2Vec: Learning Dataset",
+            "Toy Meta Dataset",
+            "Evaluation Metric UCI Meta Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://arxiv.org/abs/1802.02219.[11",
+            "https://doi.org/10.1109/TIT.2017.2762322.[3",
+            "https://github.com/hadijomaa/dataset2vec.git2",
+            "https://doi.org/10.1016/j.patcog.2017.10.009.[7",
+            "http://archive.ics.uci.edu/ml.[9",
+            "http://jmlr.org/proceedings/papers/v31/poczos13a.html.[26",
+            "https://doi.org/10.1007/978-3-319-23525-7_7.[36",
+            "https://doi.org/10.1007/s10994-017-5684-y.[38",
+            "https://github.com/wistuba/TST.git7",
+            "http://jmlr.org/proceedings/papers/v28/bardenet13.html.[4",
+            "http://proceedings.mlr.press/v70/finn17a.html.[13",
+            "http://arxiv.org/abs/1807.08479.9\f[20",
+            "https://github.com/conormdurkan/neural-statistician.git3",
+            "http://papers.nips.cc/paper/6996-prototypical-networks-for-few-shot-learning.[32",
+            "http://www.bioinf.jku.at/people/klambauer/data_py.zip5"
+        ]
     },
     {
         "Title": "VizWiz Dataset Browser: A Tool for Visualizing Machine Learning Datasets",
@@ -117,7 +241,18 @@
         ],
         "Link": "http://arxiv.org/pdf/1912.09336v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "For Dataset",
+            "VizWiz Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://mariadb.com/kb/en/library/full-text-index-overview2\f2.5",
+            "https://vizwiz.org/browse.",
+            "https://www.walmart.com. [Online; ac-11",
+            "https://www.ebay.com. [Online; accessed[3",
+            "https://www.amazon.com"
+        ]
     },
     {
         "Title": "RGB-D-based Action Recognition Datasets: A Survey",
@@ -134,7 +269,87 @@
         ],
         "Link": "http://arxiv.org/pdf/1601.05511v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "LIRIS Human Activities Dataset",
+            "O\ufb03ce Activity Dataset",
+            "DMLSmartActions DMLSmartActions Dataset",
+            "RGB-D Dataset",
+            "MSRActionPair MSRActionPair Dataset",
+            "Human Morning Routine Dataset Human Morning Routine Dataset",
+            "Mivia Dataset",
+            "ATC42 ATC42 Dataset",
+            "NJUST RGB-D Action Dataset",
+            "SBU Kinect Interaction Dataset",
+            "CAD-60 CAD-60 Dataset",
+            "WorkoutSU-10 Dataset",
+            "RGBD-SAR Dataset",
+            "MSRC-12 MSRC-12 Dataset",
+            "Such Dataset",
+            "UPCV Dataset",
+            "CAD-120 CAD-120 Dataset",
+            "UTKinect UTKinect Dataset",
+            "Human-Object Interaction Dataset",
+            "Falling Event Detection Dataset",
+            "Osaka University Kinect Action Dataset",
+            "CAD-120 Dataset",
+            "Falling Detection Dataset",
+            "Event Dataset",
+            "MSRDailyActivity3D Dataset",
+            "Only LIRIS Dataset",
+            "UCFKinect Dataset",
+            "ReadingAct ReadingAct Dataset",
+            "MSR-Action3D Dataset",
+            "Human Morning Routine Dataset",
+            "UWA3D Multiview UWA3D Multiview Activity Dataset",
+            "RGB-D-based Dataset",
+            "TJU Dataset",
+            "Muti-View TJU Dataset",
+            "IAS-lab Action IAS-lab Action Dataset",
+            "Mivia Dataset Mivia Dataset",
+            "ShakeFive Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://research.microsoft.com/en-_us/um/cambridge/projects/msrc12/)wa",
+            "http://www.projects.science.uu.nl/shakefive/), collected by Universiteit",
+            "http://adsc.illinois.edu/sites/default/files/files/ADSC-_RGBD-_dataset-_-download-_instructions.pd",
+            "http://www.upcv.upatras.gr/personal/kastaniotis/datasets.html)wa",
+            "http://vision.sysu.edu.cn/projects/3d-_activity/) was collected by",
+            "http://vlm1.uta.edu/~zhangzhong/fall_detection",
+            "http://staffhome.ecm.uwa.edu.au/~00053650/databases.htm",
+            "http://pr.cs.cornell.edu/humanactivities/data.php) was captured by Cor-nel",
+            "http://robotics.dei.unipd.it/actions/index.php/overview) wascollecte",
+            "http://www.am.sanken.osaka-_u.ac.jp/~mansur/dataset.htm",
+            "http://www.lmars.whu.edu.cn:8086/prof_web/zhuxinyan/DataSetPublish/dataset.htm",
+            "http://dipersec.king.ac.uk/G3D/) is a human interaction dataset for multiplayer gamingscenario",
+            "http://media-_lab.engr.ccny.cuny.edu/~zcy",
+            "http://dml.ece.ubc.ca/data/smartaction/) was collected by the Uni-versit",
+            "http://liris.cnrs.fr/voir/activities-_dataset/), collectedb",
+            "http://sist.sysu.edu.cn/~zhwshi/students/jianfang",
+            "http://media.tju.edu.cn/tju_dataset.html) was captured by Tian-ji",
+            "http://www3.cs.stonybrook.edu/~kyun/research/kinect_interaction/index.htm",
+            "http://dipersec.king.ac.uk/G3D/) captured by Kingston Univer-sit",
+            "http://humansensing.cs.cmu.edu/mad/download.html) was created by Carnegie Mellon Uni-versit",
+            "http://vipl.ict.ac.cn/rgbd-_action-_dataset)was collected by Institute of Com-putin",
+            "http://www.uestcrobot.net/en/?q=download), created by the University of",
+            "http://mclab.citi.sinica.edu.tw/dataset/dha/dha.htm",
+            "http://mivia.unisa.it/datasets/video-_analysis-_datasets/mivia-_action-_-dataset",
+            "http://vpa.sabanciuniv.edu/databases/WorkoutSU-_10/) was collectedb",
+            "http://media.tju.edu.cn/tju_dataset.html) was captured by Tianjin Univer-sit",
+            "http://www.utdallas.edu/~cxc123730",
+            "http://imag.njust.edu.cn/imag/NJUST_RGB-_D_Action_Dataset.htm",
+            "http://www.stat.ucla.edu/~ping.wei/research/project",
+            "http://www.uni-_tuebingen.de/fakultaeten/mathematisch-_-naturwissenschaftliche-_fakultaet/fachbereiche/informatik/lehrstuehle/human-_computer-_interaction/home/code-_datasets/morning-_routine-_dataset.htm",
+            "http://users.eecs.northwestern.edu/~jwa368/my_data.htm",
+            "http://cvrc.ece.utexas.edu/KinectDatasets/HOJ3D.html) was collected byth",
+            "http://web.ing.puc.cl/~ialillo",
+            "https://sites.google.com/site/skicyyu/rgbd_recognition) was col-lecte",
+            "http://tele-_immersion.citris-_uc.org/berkeley_mhad#d",
+            "http://watchnpatch.cs.cornell.edu/) was collected by Cornell Uni-versit",
+            "http://www.cs.ucf.edu/~oreifej",
+            "http://pr.cs.cornell.edu/humanactivities/data.php), collected by the Cor-nel",
+            "http://research.microsoft.com/en-_us/um/people/zliu/ActionRecoRsrc/) isth"
+        ]
     },
     {
         "Title": "Inoculation by Fine-Tuning: A Method for Analyzing Challenge Datasets",
@@ -151,7 +366,15 @@
         ],
         "Link": "http://arxiv.org/pdf/1904.02668v4.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Numerical Reasoning Dataset",
+            "Adversarial SQuAD Dataset",
+            "NLI Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://nelsonliu.me/papers/inoculation-by-finetuning"
+        ]
     },
     {
         "Title": "REPAIR: Removing Representation Bias by Dataset Resampling",
@@ -167,7 +390,19 @@
         ],
         "Link": "http://arxiv.org/pdf/1904.07911v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Minimum-bias Dataset",
+            "While Dataset",
+            "REPAIRed Dataset",
+            "Resampled Dataset",
+            "MNIST Dataset",
+            "REPAIRed Kinetics Dataset",
+            "SGD-based Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://github.com/"
+        ]
     },
     {
         "Title": "MultiQA: An Empirical Investigation of Generalization and Transfer in  Reading Comprehension",
@@ -185,7 +420,18 @@
         ],
         "Link": "http://arxiv.org/pdf/1905.13453v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Each Dataset",
+            "Which Dataset",
+            "Q&A Dataset",
+            "Large Dataset",
+            "MULTIQA Test Dataset",
+            "Size Dataset",
+            "RC Dataset",
+            "MULTI-375K Dataset"
+        ],
+        "Possible_Dataset_Links": []
     },
     {
         "Title": "The Oxford Radar RobotCar Dataset: A Radar Extension to the Oxford  RobotCar Dataset",
@@ -203,7 +449,20 @@
         ],
         "Link": "http://arxiv.org/pdf/1909.01300v2.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Marulan Dataset",
+            "TB Dataset",
+            "Oxford RobotCar Dataset",
+            "Oxford Radar RobotCar Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://www.openstreetmap.org, 2017.[17",
+            "https://www.w3.org/TR/PNG/\fan",
+            "https://level5.lyft.com/dataset/, 2019.[9",
+            "https://planet.osm.org ,",
+            "http://ceres-solver.[21"
+        ]
     },
     {
         "Title": "Measuring Dataset Granularity",
@@ -221,7 +480,21 @@
         ],
         "Link": "http://arxiv.org/pdf/1912.10154v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "CUB-200 Dataset",
+            "Novel Dataset",
+            "Each Dataset",
+            "CIFAR Dataset",
+            "CIFAR-100 Dataset",
+            "Measuring Dataset",
+            "Suppose Dataset",
+            "CIFAR-10 Dataset",
+            "As Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://github.com/richardaecn/dataset-granularity.5.1"
+        ]
     },
     {
         "Title": "Reader-Aware Multi-Document Summarization: An Enhanced Model and The  First Dataset",
@@ -239,7 +512,19 @@
         ],
         "Link": "http://arxiv.org/pdf/1708.01065v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Existing Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://tac.nist.gov/knowledge",
+            "https://tac.nist.gov/document,",
+            "https://goo.gl/DdU0vL",
+            "https://en.wikipedia.org/wiki/Category:2017 earthquakes\f3.",
+            "http://lpsolve.sourceforge.net/5.5/",
+            "http://www.se.cuhk.edu.hk/~textmine/dataset/ra-mds/",
+            "http://duc.nist.gov/4"
+        ]
     },
     {
         "Title": "DRCD: a Chinese Machine Reading Comprehension Dataset",
@@ -256,7 +541,28 @@
         ],
         "Link": "http://arxiv.org/pdf/1806.00920v3.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "MRC Dataset",
+            "DRC Dataset",
+            "MSMARCO Dataset",
+            "Human Generated Machine Reading Comprehension Dataset",
+            "SQuAD Dataset",
+            "Chinese Machine Reading Comprehension Dataset",
+            "Multiple-choice Dataset",
+            "Chinese MRC Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://github.com/EternalFeather/Word2Vec-on-Wikipedia-",
+            "https://github.com/fxsjy/jieba ",
+            "https://github.com/DRCKnowledgeTeam/",
+            "https://github.com/YerevaNN/R-NET-in-Keras ",
+            "https://github.com/google-research/bert \fsupervise",
+            "https://github.com/NLPLearn/QANet ",
+            "http://aclweb.org/anthology/C16-1167",
+            "https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12",
+            "https://github.com/BYVoid/OpenCC an"
+        ]
     },
     {
         "Title": "Synthetic Human Model Dataset for Skeleton Driven Non-rigid Motion  Tracking and 3D Reconstruction",
@@ -273,7 +579,15 @@
         ],
         "Link": "http://arxiv.org/pdf/1903.02679v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Synthetic Human Model Dataset",
+            "CMU Mocap Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://doi.org/10.25919/5b7b60176d0cd[15",
+            "https://research.csiro.au/robotics/our-work/databases/synthetic-human-model-dataset/foundat:be"
+        ]
     },
     {
         "Title": "A synthetic dataset for deep learning",
@@ -290,7 +604,13 @@
         ],
         "Link": "http://arxiv.org/pdf/1906.11905v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "NIST Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://www.nist.gov/srd/nist-special-database-19"
+        ]
     },
     {
         "Title": "Towards More Usable Dataset Search: From Query Characterization to  Snippet Generation",
@@ -307,7 +627,32 @@
         ],
         "Link": "http://arxiv.org/pdf/1908.11146v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "DING! Dataset",
+            "Google Dataset",
+            "RDF Dataset",
+            "KEYWORDS Dataset",
+            "Towards More Usable Dataset",
+            "HUST-ASL Dataset",
+            "FDA Dataset",
+            "Hierarchical Dataset",
+            "Characterising Dataset",
+            "RELATED WORK Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://doi.org/10.1109/ICSC.2013.12[7",
+            "http://ws.nju.edu.cn/datasetsearch/query-cikm2019/dataneeds.txt3",
+            "https://opendata.stackexchange.com/questions/11146/dataset-for-road-accidents-or-traffic2",
+            "https://doi.org/10.1109",
+            "https://doi.org/10.1007/978-3-030-00668-6_9[10",
+            "http://ws.nju.edu.cn/datasetsearch/query-cikm2019/annotations.txt2",
+            "https://doi.org/10.1016/j.websem.2018.11.003[5",
+            "https://doi.org/10.1145/2882903.2915217[8",
+            "https://doi.org/10.1109/ICDE.2007.367929[4",
+            "http://ws.nju.edu.cn/datasetsearch/query-cikm2019/queries.txt4",
+            "https://doi.org/10.1145/3308558.3313685[9"
+        ]
     },
     {
         "Title": "Clustering Mixed Numeric and Categorical Data: A Cluster Ensemble  Approach",
@@ -324,7 +669,9 @@
         ],
         "Link": "http://arxiv.org/pdf/cs/0509011v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [],
+        "Possible_Dataset_Links": []
     },
     {
         "Title": "EMBER: An Open Dataset for Training Static PE Malware Machine Learning  Models",
@@ -340,7 +687,23 @@
         ],
         "Link": "http://arxiv.org/pdf/1804.04637v2.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "EMBER: An Open Dataset",
+            "EMBER Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://www. nexginrc.org/papers/tr21-zubair",
+            "http://83.133.184.251/virensimulation.org/index.html",
+            "https://github.com/endgameinc/ember.",
+            "https://sourceforge.net/adobe/malclassifier/wiki/Home/\ftime.tection.",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1b/",
+            "https:// (case insensitive) that may indicate a",
+            "http:// or ",
+            "https://virusshare.com. Accessed: 2018-03-[25",
+            "https://www.virustotal.com/en",
+            "https://github.com/endgameinc/ember\fsourc"
+        ]
     },
     {
         "Title": "Cross-Dataset Adaptation for Visual Question Answering",
@@ -357,7 +720,14 @@
         ],
         "Link": "http://arxiv.org/pdf/1806.03726v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "QA Dataset",
+            "Visual QA Dataset",
+            "Cross Dataset",
+            "VQA Dataset"
+        ],
+        "Possible_Dataset_Links": []
     },
     {
         "Title": "Characterizing multiple instance datasets",
@@ -373,7 +743,16 @@
         ],
         "Link": "http://arxiv.org/pdf/1806.08186v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Arti\ufb01cial Dataset",
+            "MIL Dataset",
+            "Real-life Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://homepage.tudelft.nl/n9d04/milweb/ .",
+            "https://bit.ly/2K9iTja.1"
+        ]
     },
     {
         "Title": "Data collaboration analysis for distributed datasets",
@@ -390,7 +769,12 @@
         ],
         "Link": "http://arxiv.org/pdf/1902.07535v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [],
+        "Possible_Dataset_Links": [
+            "https://arxiv.org/abs/1610.05492[17",
+            "https://aaai.org/Conferences/AAAI-19/invited-speakers/7"
+        ]
     },
     {
         "Title": "A New Benchmark Dataset for Texture Image Analysis and Surface Defect  Detection",
@@ -405,7 +789,24 @@
         ],
         "Link": "http://arxiv.org/pdf/1906.11561v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Outex Dataset",
+            "Brodatz Dataset",
+            "Trunk12 Dataset",
+            "Each Dataset",
+            "Outex Tc-000030 Dataset",
+            "New Benchmark Dataset",
+            "Stone Texture Dataset",
+            "VisTex Dataset",
+            "Proposed Dataset",
+            "STI Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://www.outex.oulu.fi/). [8",
+            "http://vismod.media.mit.edu/pub/ ",
+            "https://www.researchgate.net/publication/333755130_STI_Dataset_Link [13"
+        ]
     },
     {
         "Title": "ToyADMOS: A Dataset of Miniature-Machine Operating Sounds for Anomalous  Sound Detection",
@@ -425,7 +826,18 @@
         ],
         "Link": "http://arxiv.org/pdf/1908.03299v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "ToyADMOS Dataset",
+            "Large-scale Dataset",
+            "Freesound Dataset",
+            "CNT Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://github.com",
+            "https://github.com/YumaKoizumi/",
+            "http://dx.doi.org/10.7488/ds/1994"
+        ]
     },
     {
         "Title": "FairFace: Face Attribute Dataset for Balanced Race, Gender, and Age",
@@ -442,7 +854,19 @@
         ],
         "Link": "http://arxiv.org/pdf/1908.04913v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "FairFace: Face Attribute Dataset",
+            "Yahoo YFCC100M Dataset",
+            "LFWA+ Dataset",
+            "FaceScrub Dataset",
+            "YFCC-100M Flickr Dataset",
+            "Protest Dataset",
+            "YFCC100M Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://github.com/joojs/fairface}.1"
+        ]
     },
     {
         "Title": "Soft-Label Dataset Distillation and Text Dataset Distillation",
@@ -460,7 +884,22 @@
         ],
         "Link": "http://arxiv.org/pdf/1910.02551v2.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Keywords: Dataset",
+            "IMDB Dataset",
+            "Abstract Dataset",
+            "Soft-Label Dataset",
+            "Knowledge Distillation Dataset",
+            "With Dataset",
+            "Improving Dataset",
+            "Text Dataset",
+            "Baselines Dataset",
+            "Similarly, Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://www.cs.toronto.edu/~kriz/learning-features-2009"
+        ]
     },
     {
         "Title": "A Semi-Automatic Approach for Detecting Dataset References in Social  Science Texts",
@@ -477,7 +916,21 @@
         ],
         "Link": "http://arxiv.org/pdf/1611.01820v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "However, Dataset",
+            "Detecting Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://www.gesis.org/en/services/publications/mda/8",
+            "http://www.ssoar.info7",
+            "https://github.com/OSCOSS/testdata_mda1",
+            "https://github.com/OSCOSS/testdata_mda/blob/master/ELPub_Corpus_evaluation.csv",
+            "http://www.da-ra.de9",
+            "http://purl.org/net/epubs/work/43640.[8",
+            "http://da-ra.de/oaip/\f3",
+            "http://dl.acm.org/citation.cfm?id=645328.650004.[15"
+        ]
     },
     {
         "Title": "Deep Learning with Lung Segmentation and Bone Shadow Exclusion  Techniques for Chest X-Ray Analysis of Lung Cancer",
@@ -495,7 +948,22 @@
         ],
         "Link": "http://arxiv.org/pdf/1712.07632v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "MC Dataset",
+            "JSRT, Dataset",
+            "Both Dataset",
+            "BSE-JSRT Dataset",
+            "JSRT Dataset",
+            "ChestX-ray14 Dataset",
+            "X-ray Dataset",
+            "Shenzhen Hospital Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://comsys.kpi.ua ",
+            "https://github.com/imlab-uiip/lung-segmentation-2",
+            "http://www.hzu.edu.cn "
+        ]
     },
     {
         "Title": "Quick, Stat!: A Statistical Analysis of the Quick, Draw! Dataset",
@@ -516,7 +984,22 @@
         ],
         "Link": "http://arxiv.org/pdf/1907.06417v2.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Google Dataset",
+            "Quick, Draw! Dataset",
+            "Eitz Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://github.com/googlecreativelab/quickdraw-dataset\f126",
+            "https://quickdraw.withgoogle.com/\f2",
+            "https://doi.org/10.1007/978-3-030-01234-2_182",
+            "https://doi.org/10.1109/CVPR.2009.5206848",
+            "https://doi.org/10.1109/TPAMI.2008.22210",
+            "https://tinyurl.com/tensorflow-models-quickdraw4864963",
+            "https://doi.org/10.1109/CVPR.2015.72985943",
+            "http://ndjson.org/\f5"
+        ]
     },
     {
         "Title": "EgoNet-UIUC: A Dataset For Ego Network Research",
@@ -533,7 +1016,14 @@
         ],
         "Link": "http://arxiv.org/pdf/1309.4157v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Ego Network Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://forward.cs.illinois.edu/demos/linkedin/about.html1\fschool:precollework:acquaintance5%work",
+            "https://wiki.engr.illinois.edu/display/forward/Dataset-CP-LinkedinCrawl-Aug2013"
+        ]
     },
     {
         "Title": "Baselines and a datasheet for the Cerema AWP dataset",
@@ -551,7 +1041,19 @@
         ],
         "Link": "http://arxiv.org/pdf/1806.04016v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Weather Pedestrian) Dataset",
+            "Cerema AWP Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://www.cerema.fr/system/files/documents/technology2017/",
+            "https://github.com/hindupuravinash/the-gan-zoo",
+            "https://ceremadlcfmds.wixsite.com/cerema-databases",
+            "http://opendatacommons.org/licenses/dbcl/1.0/.",
+            "http://opendatacommons.org/licenses/odbl/1.0/.",
+            "https://github.com/gloosli/cerem"
+        ]
     },
     {
         "Title": "How robust is MovieLens? A dataset analysis for recommender systems",
@@ -567,7 +1069,14 @@
         ],
         "Link": "http://arxiv.org/pdf/1909.12799v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "RecoGym Dataset",
+            "MovieLens Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://doi.org/10.1145/nnnnnnn.nnnnnnn"
+        ]
     },
     {
         "Title": "Clustering on Multiple Incomplete Datasets via Collective Kernel  Learning",
@@ -585,7 +1094,17 @@
         ],
         "Link": "http://arxiv.org/pdf/1310.1177v2.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Each Dataset",
+            "Seeds Dataset",
+            "Description Incomplete Dataset",
+            "Different Dataset",
+            "Abstract\u2014Multiple Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://archive.ics.uci.edu/ml/datasets/seeds[5"
+        ]
     },
     {
         "Title": "Photographic dataset: random peppercorns",
@@ -602,7 +1121,9 @@
         ],
         "Link": "http://arxiv.org/pdf/1603.01046v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [],
+        "Possible_Dataset_Links": []
     },
     {
         "Title": "The HASYv2 dataset",
@@ -617,7 +1138,25 @@
         ],
         "Link": "http://arxiv.org/pdf/1701.08380v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "HASY Dataset",
+            "Complete Dataset",
+            "HASYv2 Dataset",
+            "HWRT Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://arxiv.org/abs/1412.6980",
+            "https://arxiv.org/pdf/1512.03385v1.pdf",
+            "https://doi.org/10.5281/i",
+            "http://www.matthewzeiler.com/pubs/icml2013/icml2013.pdf",
+            "https://www.tensorflow.org/tutorials/mnist/pros/[tf-16b]",
+            "http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf",
+            "http://write-math.com.",
+            "http://danielkirs.ch/thesis.pdf",
+            "http://tensorflow.org/\f5",
+            "https://arxiv.org/abs/1608.06993v1"
+        ]
     },
     {
         "Title": "A Bayesian model for microarray datasets merging",
@@ -634,7 +1173,14 @@
         ],
         "Link": "http://arxiv.org/pdf/1510.07850v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Both Dataset",
+            "Stuart Dataset",
+            "Gray: Dataset",
+            "Coli Dataset"
+        ],
+        "Possible_Dataset_Links": []
     },
     {
         "Title": "Navigating the Data Lake with Datamaran: Automatically Extracting  Structure from Log Datasets",
@@ -651,7 +1197,26 @@
         ],
         "Link": "http://arxiv.org/pdf/1708.08905v3.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "For Dataset",
+            "GitHub Dataset",
+            "One Dataset",
+            "Single-Line Dataset",
+            "Log Dataset",
+            "Extracted Relational Dataset",
+            "Structure) Description Dataset",
+            "Multi-Line Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://doi.org/",
+            "https://en.wikipedia.org/wiki/Flex_(lexical_[3",
+            "http://www.gartner.com/newsroom/id/2809117, 2014.[47",
+            "http://dx.doi.org/10.1145/XXXXXX.XXXXXX22",
+            "https://arxiv.org/abs/1708.08905.[2",
+            "http://cloudera.[4",
+            "https://archive.org/details/stackexchange. Accessed:analyser_generato"
+        ]
     },
     {
         "Title": "A Large Dataset for Improving Patch Matching",
@@ -668,7 +1233,25 @@
         ],
         "Link": "http://arxiv.org/pdf/1801.01466v3.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Oxford-Af\ufb01ne Dataset",
+            "Features Dataset",
+            "Proposed PS Dataset",
+            "HPatches Dataset",
+            "Large Dataset",
+            "Baseline Dataset",
+            "Hpatches Dataset",
+            "CDVS Dataset",
+            "PS Dataset",
+            "DTU Dataset",
+            "MVS Dataset",
+            "Strecha Dataset",
+            "Recently, Hpatches Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://github.com/rmitra/PS-Dataset"
+        ]
     },
     {
         "Title": "Detect, Quantify, and Incorporate Dataset Bias: A Neuroimaging Analysis  on 12,207 Individuals",
@@ -686,7 +1269,19 @@
         ],
         "Link": "http://arxiv.org/pdf/1804.10764v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Name That Dataset",
+            "IXI: Guys IXI: HH Dataset",
+            "Left: Dataset",
+            "II Dataset",
+            "ABIDE I Dataset",
+            "Incorporate Dataset",
+            "Abstract\u2014 Neuroimaging Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://brain-development.org/ixi-dataset/b"
+        ]
     },
     {
         "Title": "DeepMIMO: A Generic Deep Learning Dataset for Millimeter Wave and  Massive MIMO Applications",
@@ -703,7 +1298,18 @@
         ],
         "Link": "http://arxiv.org/pdf/1902.06435v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Deep- MIMO Dataset",
+            "Deep Learning Dataset",
+            "Generic Deep Learning Dataset",
+            "MIMO Dataset",
+            "DeepMIMO Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://www.DeepMIMO.net[2",
+            "http://www.remcom.com/wireless-insite.[3"
+        ]
     },
     {
         "Title": "ShopSign: a Diverse Scene Text Dataset of Chinese Shop Signs in Street  Views",
@@ -721,7 +1327,15 @@
         ],
         "Link": "http://arxiv.org/pdf/1903.10412v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Diverse Scene Text Dataset",
+            "Therefore, ShopSign Dataset",
+            "ShopSign Dataset",
+            "Shop- Sign Dataset",
+            "RCTW/CTW/MTWI Dataset"
+        ],
+        "Possible_Dataset_Links": []
     },
     {
         "Title": "A New Stereo Benchmarking Dataset for Satellite Images",
@@ -738,7 +1352,20 @@
         ],
         "Link": "http://arxiv.org/pdf/1907.04404v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "CORE3D-Public Dataset",
+            "Jacksonville Dataset",
+            "That Dataset",
+            "Middlebury Dataset",
+            "New Stereo Benchmarking Dataset",
+            "IARPA\u2019s MVS Challenge Dataset",
+            "In German Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://www.jhuapl.edu/pubgeo/170807",
+            "https://engineering.purdue.edu/"
+        ]
     },
     {
         "Title": "Challenging More Updates: Towards Anonymous Re-publication of Fully  Dynamic Datasets",
@@ -754,7 +1381,15 @@
         ],
         "Link": "http://arxiv.org/pdf/0806.4703v2.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Dynamic Dataset",
+            "Risk) Suppose Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://arxiv.org/list/cs.DB/recent\f'represent",
+            "http://ipums.org, whichi"
+        ]
     },
     {
         "Title": "Collecting and Annotating the Large Continuous Action Dataset",
@@ -771,7 +1406,19 @@
         ],
         "Link": "http://arxiv.org/pdf/1511.05914v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "VIRAT Dataset",
+            "That Dataset",
+            "Benchmarking Dataset",
+            "Action Dataset",
+            "Large Continuous Action Dataset",
+            "Y2 Evaluation Dataset",
+            "LCA Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://www.visint.org/"
+        ]
     },
     {
         "Title": "The WILDTRACK Multi-Camera Person Dataset",
@@ -788,7 +1435,31 @@
         ],
         "Link": "http://arxiv.org/pdf/1707.09299v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Daimler Dataset",
+            "EPFL-RLC Dataset",
+            "WILDTRACK Dataset",
+            "DukeMTMC Dataset",
+            "INRIA Dataset",
+            "Pets2009: Dataset",
+            "Related Dataset",
+            "WILDTRACK Multi-Camera Person Dataset",
+            "HD Dataset",
+            "KITTI Dataset",
+            "Daimler-stereo Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://dx.doi.org/10.1007/s10851-012-0405-4.",
+            "http://arxiv.org/abs/1702.04593.",
+            "https://en.wikipedia.org/w/index.php?title=Bundle_2017a.adjustment&oldid=770262831",
+            "http://cvlab.epfl.ch/data/wildtrack3\f",
+            "https://en.wikipedia.org/w/index.php?title=Pinhole_camera_model&oldid=782167557",
+            "http://pedestriantag.epfl.ch/3",
+            "http://dx.doi.org/10.1016/j.patcog.2014.12.004.",
+            "http://ceres-solver.",
+            "https://github.com/cvlab-epfl/multicam-gt16"
+        ]
     },
     {
         "Title": "Constructing a Natural Language Inference Dataset using Generative  Neural Networks",
@@ -806,7 +1477,20 @@
         ],
         "Link": "http://arxiv.org/pdf/1607.06025v2.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Each Dataset",
+            "Natural Language Inference Dataset",
+            "After SNLI Dataset",
+            "SNLI Dataset",
+            "Original Dataset",
+            "NLI Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://keras.io",
+            "http://nlp.stanford.edu/data/glove.6B.zip",
+            "http://github.com/jstarc/nli_generation. It is based on li-brarie"
+        ]
     },
     {
         "Title": "AI Challenger : A Large-scale Dataset for Going Deeper in Image  Understanding",
@@ -823,7 +1507,21 @@
         ],
         "Link": "http://arxiv.org/pdf/1711.06475v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "ICC Dataset",
+            "MSCOCO Dataset",
+            "Large-scale Dataset",
+            "Large-scale Attribute Dataset",
+            "AwA Dataset",
+            "Caltech-UCSD Birds-200-2011 Dataset",
+            "HKD Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://github.com",
+            "https://challenger.ai/3",
+            "https://github.com/AIChallenger/AI_Challenger"
+        ]
     },
     {
         "Title": "Dimensionality Reduction in Deep Learning for Chest X-Ray Analysis of  Lung Cancer",
@@ -841,7 +1539,17 @@
         ],
         "Link": "http://arxiv.org/pdf/1801.06495v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Both Dataset",
+            "BSE-JSRT Dataset",
+            "JSRT Dataset",
+            "ChestX-ray14 Dataset",
+            "X-ray Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://www.kaggle.com/philschmidt). [16"
+        ]
     },
     {
         "Title": "DeepScores -- A Dataset for Segmentation, Detection and Classification  of Tiny Objects",
@@ -859,7 +1567,27 @@
         ],
         "Link": "http://arxiv.org/pdf/1804.00525v2.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "OMR Dataset",
+            "Further OMR Dataset",
+            "ImageNet Dataset",
+            "MS-COCO Dataset",
+            "MuseScore Monophonic MusicXML Dataset",
+            "HOMUS Dataset",
+            "SVHN Dataset",
+            "Moreover, Dataset",
+            "DeepScores Dataset",
+            "MUSCIMA++ Dataset",
+            "Handwritten Online Musical Symbols Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://arxiv.org/abs/1707.04877,2017.[5",
+            "https://tuggeluk.github.io/deepscores/",
+            "https://musescore.com.",
+            "https://apacha.github.io/OMR-Datasets/.",
+            "http://lilypond.org/."
+        ]
     },
     {
         "Title": "Neural models of factuality",
@@ -876,7 +1604,18 @@
         ],
         "Link": "http://arxiv.org/pdf/1804.02472v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "UDS-IH2 Dataset",
+            "Uni\ufb01ed Factuality Dataset",
+            "EFP Dataset",
+            "UDS-IH1 Dataset",
+            "UW Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://universaldependencies.github.io/docs/ .",
+            "http://web.stanford.edu/group/csli_lnr"
+        ]
     },
     {
         "Title": "A Framework for Evaluating Snippet Generation for Dataset Search",
@@ -894,7 +1633,20 @@
         ],
         "Link": "http://arxiv.org/pdf/1907.01183v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Google Dataset",
+            "An RDF Dataset",
+            "RDF Dataset",
+            "Illustrative Dataset",
+            "Characterising Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://dmoz-odp.org/",
+            "https://old.datahub.io/",
+            "https://github.com/chabrowa/data-requests-query-dataset1",
+            "http://ws.nju.edu.cn/datasetsearch/evaluation-iswc2019/metrics.zip"
+        ]
     },
     {
         "Title": "MIMII Dataset: Sound Dataset for Malfunctioning Industrial Machine  Investigation and Inspection",
@@ -914,7 +1666,14 @@
         ],
         "Link": "http://arxiv.org/pdf/1909.09347v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "MIMII Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://www.sifi.co.jp/system/modules/pico/index.php?conten",
+            "https://zenodo.org/record/3384388. This datasetcontain"
+        ]
     },
     {
         "Title": "Automatically Building Face Datasets of New Domains from Weakly Labeled  Data with Pretrained Models",
@@ -931,7 +1690,14 @@
         ],
         "Link": "http://arxiv.org/pdf/1611.08107v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Typical Dataset",
+            "M Output: Clean Dataset",
+            "Face Datasets Face Dataset",
+            "Training Dataset"
+        ],
+        "Possible_Dataset_Links": []
     },
     {
         "Title": "Creating A Multi-track Classical Musical Performance Dataset for  Multimodal Music Analysis: Challenges, Insights, and Applications",
@@ -949,7 +1715,34 @@
         ],
         "Link": "http://arxiv.org/pdf/1612.08727v3.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "C4S Dataset",
+            "RWC Dataset",
+            "Both Dataset",
+            "GB Dataset",
+            "Structural Segmentation Multitrack Dataset",
+            "URMP Dataset",
+            "MASS Dataset",
+            "TRIOS Dataset",
+            "Bach10 Dataset",
+            "Mixploration Dataset",
+            "WWQ Dataset",
+            "Guitar Dataset",
+            "Multi-track Classical Music Performance Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://www.apple.com/final-cut-pro/",
+            "http://doi.org/10.5061/dryad.ng3r749[53",
+            "http://www.esm.rochester.edu/concerts/halls/hatch/8ground-trut",
+            "http://www.8notes.com\f7",
+            "http://www.avid.com/en/sibelius, accessed: Sept, 2014.[46",
+            "http://www.disklavier.com\f3",
+            "http://www.audacityteam.org, accessed: Aug, 2015.[47",
+            "http://www.music-ir.org/mirex/wiki/MIREX HOME\fguita",
+            "http://expandedramblings.com/index.php/youtube-statistics/4/,online",
+            "http://www.mtg.upf.edu/static/mass/resources, 2008.[31"
+        ]
     },
     {
         "Title": "Comparing Dataset Characteristics that Favor the Apriori, Eclat or  FP-Growth Frequent Itemset Mining Algorithms",
@@ -965,7 +1758,18 @@
         ],
         "Link": "http://arxiv.org/pdf/1701.09042v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "DATASET GENERATION Generated Dataset",
+            "Comparing Dataset",
+            "EFFECTS OF DATASET DENSITY Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://mloss.org/software/view/294/.[8",
+            "http://www.ics.uci.edu/$\\sim$mlearn/",
+            "https://github.com/jeffheaton/papers, accessed: 2016-01-31.[9",
+            "http://www.jstatsoft.org/v14/i15/[4"
+        ]
     },
     {
         "Title": "Large-scale Datasets: Faces with Partial Occlusions and Pose Variations  in the Wild",
@@ -982,7 +1786,23 @@
         ],
         "Link": "http://arxiv.org/pdf/1706.08690v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "LSLF Dataset",
+            "LFW Dataset",
+            "FERET Dataset",
+            "Multi-PIE Dataset",
+            "Crowd- NonFaces Dataset",
+            "CrowdFaces Dataset",
+            "Extended Yale B Dataset",
+            "WebV-Cele Dataset",
+            "CrowdNonFaces Dataset",
+            "CAS-PEAL Dataset",
+            "FRGC Dataset",
+            "LSLNF Dataset",
+            "CrowedNonFaces Dataset"
+        ],
+        "Possible_Dataset_Links": []
     },
     {
         "Title": "A Longitudinal Assessment of the Persistence of Twitter Datasets",
@@ -997,7 +1817,19 @@
         ],
         "Link": "http://arxiv.org/pdf/1709.09186v2.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Twitter Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://archive.org/details/twitterstream",
+            "https://figshare.com/articles/Twitter_event_datasets_2012-2016_/51004608",
+            "https://twitter.com/tos2",
+            "https://dev.twitter.com/rest/reference/get/statuses/lookup5",
+            "https://www.politwoops.eu/4",
+            "https://dev.twitter.com/rest/reference/get/statuses/lookup4\f",
+            "https://dev.twitter.com/overview/terms/agreement-and-policy2\f"
+        ]
     },
     {
         "Title": "An empirical study of public data quality problems in cross project  defect prediction",
@@ -1014,7 +1846,15 @@
         ],
         "Link": "http://arxiv.org/pdf/1805.10787v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Jureczko Dataset",
+            "NASA Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://gr.xjtu.edu.cn/web/zhongbin725/datasets.",
+            "http://openscience.us/repo/defect/ck/"
+        ]
     },
     {
         "Title": "Exploring large scale public medical image datasets",
@@ -1031,7 +1871,15 @@
         ],
         "Link": "http://arxiv.org/pdf/1907.12720v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Each Dataset",
+            "Open-i Dataset",
+            "ChestXray14 Dataset",
+            "CXR14 Dataset",
+            "MURA Dataset"
+        ],
+        "Possible_Dataset_Links": []
     },
     {
         "Title": "FreiHAND: A Dataset for Markerless Capture of Hand Pose and Shape from  Single RGB Images",
@@ -1050,7 +1898,25 @@
         ],
         "Link": "http://arxiv.org/pdf/1909.04349v3.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Synthetic Dataset",
+            "RHD Dataset",
+            "Panoptic Dataset",
+            "Related Work Since Dataset",
+            "Hand Pose Dataset",
+            "Shape Dataset",
+            "FreiHAND Dataset",
+            "FPA Dataset",
+            "RGB Dataset",
+            "State-of-the-art Dataset",
+            "Rendered Hand Pose Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://lmb.informatik.uni-freiburg.de/projects/freihand/9102",
+            "https://arxiv.org/abs/1705.01389. 1, 3, 4, 6, 11",
+            "https://www.leapmotion.com. 3[23"
+        ]
     },
     {
         "Title": "A*3D Dataset: Towards Autonomous Driving in Challenging Environments",
@@ -1068,7 +1934,18 @@
         ],
         "Link": "http://arxiv.org/pdf/1909.07541v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Moreover, A*3D Dataset",
+            "Hence A*3D Dataset",
+            "Existing Dataset",
+            "LiDAR Dataset",
+            "KITTI Dataset",
+            "A*3D Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://github.com/I2RDL2/ASTAR-3D for non-commercia"
+        ]
     },
     {
         "Title": "Identifying and Improving Dataset References in Social Sciences Full  Texts",
@@ -1086,7 +1963,17 @@
         ],
         "Link": "http://arxiv.org/pdf/1603.01774v2.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Improving Dataset",
+            "Matching Dataset",
+            "Detecting Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://www.da-ra.de7",
+            "http://www.gesis.org/en/publications/journals/mda/6",
+            "http://da-ra.de/oaip/\f5"
+        ]
     },
     {
         "Title": "UMDFaces: An Annotated Face Dataset for Training Deep Networks",
@@ -1103,7 +1990,29 @@
         ],
         "Link": "http://arxiv.org/pdf/1611.01484v2.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "CASIA WebFace Dataset",
+            "UMD- Faces Dataset",
+            "Megaface Dataset",
+            "LFW Dataset",
+            "UMDFaces Dataset",
+            "IJB-A Dataset",
+            "VGGFace Dataset",
+            "AFW Dataset",
+            "Ours AFLW Dataset",
+            "CelebFaces+ Dataset",
+            "Similar Dataset",
+            "WIDER FACE Dataset",
+            "UMDFaces: An Annotated Face Dataset",
+            "CA- SIA WebFace Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://www.umdfaces.io",
+            "http://www.pascal-network.org/challenges",
+            "https://github.com/NikolaiT/GoogleScraper\f3",
+            "http://places2.csail.mit.edu. 1[2"
+        ]
     },
     {
         "Title": "Combination of PCA with SMOTE Resampling to Boost the Prediction Rate in  Lung Cancer Dataset",
@@ -1120,7 +2029,17 @@
         ],
         "Link": "http://arxiv.org/pdf/1403.1949v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Compacted Dataset",
+            "Lung-Cancer Dataset",
+            "Lung- Cancer Dataset",
+            "Initial Lung-Cancer Dataset",
+            "Lung Cancer Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://www.ics.uci.edu/~mlearn"
+        ]
     },
     {
         "Title": "BigHand2.2M Benchmark: Hand Pose Dataset and State of the Art Analysis",
@@ -1137,7 +2056,27 @@
         ],
         "Link": "http://arxiv.org/pdf/1704.02612v2.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "HandNet Dataset",
+            "MSRA15 Dataset",
+            "MSRC Dataset",
+            "Annotation Dataset",
+            "Existing Dataset",
+            "Graz16 Dataset",
+            "Benchmark: Hand Pose Dataset",
+            "UCI-EGO Dataset",
+            "Egocentric Dataset",
+            "ASTAR Dataset",
+            "ICVL Dataset",
+            "Creating Dataset",
+            "NYU Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://www.shapehand.com/shapehand.html.[24",
+            "https://www.ascension-tech.com/products/trakstar-2-drivebay-2/.[11",
+            "https://click.intel.com/intelrealsense-developer-kit-featuring-sr300.html.[4"
+        ]
     },
     {
         "Title": "Automatic Dataset Augmentation",
@@ -1154,7 +2093,21 @@
         ],
         "Link": "http://arxiv.org/pdf/1708.08201v2.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "ILSVRC-2012 Dataset",
+            "Novel Dataset",
+            "Each Dataset",
+            "Automatic Dataset",
+            "V T Dataset",
+            "Augmented Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://support.google.com/webmasters/answer/114016?hl=en",
+            "http://www.vision.ee.ethz.ch/webvision",
+            "https://auto-da.github.io/hav",
+            "http://www.bbc.co.uk/nature/life/"
+        ]
     },
     {
         "Title": "Paris-Lille-3D: a large and high-quality ground truth urban point cloud  dataset for automatic segmentation and classification",
@@ -1173,7 +2126,27 @@
         ],
         "Link": "http://arxiv.org/pdf/1712.00032v2.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Oakland Dataset",
+            "Point Cloud Dataset",
+            "Each Dataset",
+            "Available Datasets Numerous Dataset",
+            "Paris Dataset",
+            "Rue-Madame Dataset",
+            "Oxford Robotcar Dataset",
+            "Urban Point Cloud Dataset",
+            "Oxford RobotCar Dataset",
+            "Semantic3D Dataset",
+            "Recall Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "http://www.danielgm.net/cc/9",
+            "http://caor-mines-paristech.fr/fr/paris-lille-3d-dataset/.",
+            "http://rgp.ign.fr/2",
+            "https://www.novatel.com/products/software/inertial-explorer/7",
+            "http://data.ign.fr/benchmarks/UrbanAnalysis/download/classes.xm"
+        ]
     },
     {
         "Title": "Indian Regional Movie Dataset for Recommender Systems",
@@ -1191,7 +2164,31 @@
         ],
         "Link": "http://arxiv.org/pdf/1801.02203v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Indian Regional Cinema Dataset",
+            "Indian Regional Movie Dataset",
+            "Movielens Dataset",
+            "MovieLens Dataset",
+            "Datasets Dataset"
+        ],
+        "Possible_Dataset_Links": [
+            "https://movielens.org/[2",
+            "https://grouplens.org/datasets/movielens/[39",
+            "https://arxiv.org/abs/1410.2596.lishe",
+            "https://www.clickondetroit.com/entertainment/netflix-steps-up-its-battle-with-amazon-in-india[37",
+            "http://arxiv.org/abs/1505.01621[6",
+            "http://uis.unesco.org/en/news/record-number-films-produced[10",
+            "http://timesofindia.indiatimes.com/companies/amazon-to-join-bollywood-film-industry-hires-consultants-to-create-a-blueprint\\-for-a-hindi-film-studio/articleshow/58176571.cmsfor",
+            "http://www.amazon.in[35",
+            "https://www.barnesandnoble.com[36",
+            "http://www.imdb.com/",
+            "https://www.netflix.com/in/[3][4",
+            "https://goo.gl/EmTPv6.",
+            "http://www.netflixprize.com/[9",
+            "http://www.financialexpress.com/industry/technology/the-desi-content-battleground/798145/[38",
+            "http://flickscore.iiitd.edu.in[16"
+        ]
     },
     {
         "Title": "A new dataset and model for learning to understand navigational  instructions",
@@ -1207,6 +2204,15 @@
         ],
         "Link": "http://arxiv.org/pdf/1805.07952v1.pdf",
         "Archive": "arXiv",
-        "Prediction": "Dataset Detected"
+        "Prediction": "Dataset Detected",
+        "Dataset_Names": [
+            "Synthetic Dataset",
+            "Fixed-Sized SAILx Dataset",
+            "SAILx Dataset",
+            "Paragraph Dataset",
+            "SAIL Dataset",
+            "Thus Dataset"
+        ],
+        "Possible_Dataset_Links": []
     }
 ]

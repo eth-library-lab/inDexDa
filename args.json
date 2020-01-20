@@ -23,7 +23,7 @@
                         "sciencedirect":
                                 {
                                     "query": "banana",
-                                    "apikey": "8195584e9a1784037041888ba25292ee",
+                                    "apikey": "",
                                     "start_year":"2000",
                                     "end_year":"2019"
                                 },

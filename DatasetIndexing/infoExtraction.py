@@ -30,7 +30,7 @@ def datasetIndexing():
 
         new_papers.append(new_paper)
 
-    outputdir = os.path.join(current_dir, '../data/final_results.json')
+    outputdir = os.path.join(current_dir, '../data/results.json')
     with open(outputdir, 'w') as f:
         json.dump(new_papers, f, indent=4)
 
