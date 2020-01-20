@@ -14,7 +14,7 @@
                     {
                         "arxiv":
                                 {
-                                    "query":"dataset",
+                                    "query":"insert_query_here",
                                     "apikey": "",
                                     "start_year":"",
                                     "end_year":""
@@ -22,18 +22,10 @@
 
                         "sciencedirect":
                                 {
-                                    "query": "banana",
+                                    "query": "insert_query_here",
                                     "apikey": "",
                                     "start_year":"2000",
                                     "end_year":"2019"
-                                },
-
-                        "ieeexplore":
-                                {
-                                    "query": "dataset",
-                                    "apikey": "8qxqbqcabxt5dqytu7hyr8xt",
-                                    "start_year":"",
-                                    "end_year":""
                                 }
 
                     },
