@@ -10,7 +10,7 @@ from pdfminer.pdfinterp import PDFPageInterpreter
 from pdfminer.pdfinterp import PDFResourceManager
 from pdfminer.pdfpage import PDFPage
 
-from normalize_text import Normalize
+from NLP.utils.normalize_text import Normalize
 
 class ArXivScraper():
     def __init__(self, config):
