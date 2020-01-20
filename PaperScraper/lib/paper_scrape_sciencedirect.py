@@ -4,6 +4,7 @@ import math
 import time
 import requests
 import numpy as np
+from termcolor import colored
 
 import PaperScraper.utils.command_line as progress
 
@@ -56,7 +57,8 @@ class PaperScrapeScienceDirect:
         issue_range = np.arange(1, 100)
 
         # Uses ScienceDirect Search V2 to do a general search across the query params
-        print('Scraping papers from ScienceDirect using query term "%s" :' % (self.query))
+        output_msg = 'Scraping papers from ScienceDirect using query term "%s" :' % (self.query)
+        print(colored(output_msg, 'cyan'))
 
         for year in np.nditer(date_range):
             stop_counter = 0    # If 3 consecutive issues have 0 results, go to next year
@@ -106,7 +108,8 @@ class PaperScrapeScienceDirect:
         # Remove any papers without DOIs as we will be unable to find their abstracts
         papers[:] = [d for d in papers if d.get('DOI') != []]
 
-        print("Finished getting basic info on papers")
+        output_msg = "Finished getting basic info on papers ..."
+        print(colored(output_msg, 'cyan'))
 
         return papers
 
@@ -117,7 +120,12 @@ class PaperScrapeScienceDirect:
         :params  papers: list of dicts, each dict with info on a specific paper
                  datapath: path to previously saved general scraped data
         '''
-        print('Retrieving abstracts for discovered papers:\n')
+        output_msg = 'Retrieving abstracts for discovered papers ...'
+        print(colored(output_msg, 'cyan'))
+
+        # TODO: Sometimes the abstract scraper recieves a bad response from the website
+        #       and proceeds to run on an infinite loop, continuously trying to call the
+        #       same page and failing.
 
         length = len(papers)
         for i, paper in enumerate(papers):
@@ -129,7 +137,7 @@ class PaperScrapeScienceDirect:
                 # Call API
                 article = self.APIRequest(request)
             except Exception as error:
-                print(error)
+                print(colored(error, 'red'))
                 continue
 
             if article is not None:
@@ -166,7 +174,8 @@ class PaperScrapeScienceDirect:
 
         :params  papers: list of dicts, each dict containing info on a specific paper
         '''
-        print("Saving basic info on papers")
+        output_msg = "Saving basic info on papers ..."
+        print(colored(output_msg, 'cyan'))
         current_dir = os.path.dirname(os.path.abspath(__file__))
         save_dir = os.path.join(current_dir, '../data/sciencedirect/paperinfo.json')
 
@@ -222,6 +231,7 @@ class PaperScrapeScienceDirect:
             else:
                 return 0
         except Exception as error:
+            print(colored(error, 'red'))
             raise Exception(error)
 
     def APIRequest(self, request):
@@ -292,6 +302,8 @@ class PaperScrapeScienceDirect:
 
                 # If enough failed attempts occur, exit function
                 if counter == 5:
+                    error = "ScienceDirect has stopped responding."
+                    print(colored(error, 'red'))
                     raise Exception("ScienceDirect has stopped responding.")
 
 

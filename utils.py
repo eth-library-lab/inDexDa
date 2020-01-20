@@ -25,3 +25,23 @@ def getInfoAboutArchivesToScrape():
             print('Not able to parse json file to dictionary.\n')
 
         return archives, archive_info
+class ClassName(object):
+    """docstring for ClassName"""
+    def __init__(self, arg):
+        super(ClassName, self).__init__()
+        self.arg = arg
+
+def getInfoAboutNetworkParams():
+    with open("args.json", 'r') as f:
+        contents = f.read()
+        try:
+            input_args = json.loads(contents)
+            epochs = input_args['epochs']
+            batchSize = input_args['batchSize']
+
+            params = [epochs, batchSize]
+
+        except ValueError:
+            print('Not able to parse json file to dictionary.\n')
+
+        return params

@@ -3,40 +3,44 @@ import json
 import math
 import ktrain
 import NLP.utils.command_line as progress
+# import command_line as progress
 
 from ktrain import text
+from termcolor import colored
 # from NLP.BERT.lib.utils import blockPrint, enablePrint
 
 
-def test(datadir):
+def test(datadir, batchSize=6):
     '''
     Predicts whether or not an abstract indicates a new dataset.
 
     :param datadir: directory of evaulation examples
     :return classification: list of ints
     '''
-    # blockPrint()
-
     # ========================================================== #
     # ======================== PARAMS ========================== #
     # ========================================================== #
     current_dir = os.path.dirname(os.path.abspath(__file__))
     traindir = os.path.join(current_dir, '../../../data/bert_data')
-    batchSize = 8
 
     # ========================================================== #
     # ================= GET EVALUATION DATA ==================== #
     # ========================================================== #
-    print('Setting up BERT network for classification ...')
+    output_msg = 'Setting up BERT network for classification ...'
+    print(colored(output_msg, 'cyan'))
 
     if not os.path.exists(traindir):
-        raise Exception('Data in directory inDexDa/data/bert_data has either been',
-                        ' deleted or is formatted incorrectly. Refer to original',
-                        ' data supplied in the repo for proper formatting.')
+        error = ('Data in directory inDexDa/data/bert_data has either been',
+                 ' deleted or is formatted incorrectly. Refer to original',
+                 ' data supplied in the repo for proper formatting.')
+        print(colored(error, 'red'))
+        raise Exception(error)
 
     if not os.path.exists(datadir):
-        raise Exception('Data directory for evaluation data does not exist. Make sure',
-                        ' that directory and eval.json file exist at: {}'.format(datadir))
+        error = ('Data directory for evaluation data does not exist. Make sure',
+                 ' that directory and eval.json file exist at: {}'.format(datadir))
+        print(colored(error, 'red'))
+        raise Exception(error)
 
     with open(datadir, 'r') as f:
         contents = f.read()
@@ -62,17 +66,25 @@ def test(datadir):
     # ========================================================== #
     # =============== LOAD PRETRAINED BERT MODEL =============== #
     # ========================================================== #
-    print('Loading the pretrained BERT network ...')
+    output_msg = 'Loading the pretrained BERT network ...'
+    print(colored(output_msg, 'cyan'))
 
     load_file = os.path.join(current_dir, '../log/bert_model.h5')
-    learner.load_model(load_file)
+    try:
+        learner.load_model(load_file)
+    except:
+        error = 'Something went wrong when trying to load the weights for the BERT model.'
+        print(colored(error, 'red'))
+        exit()
 
     predictor = ktrain.get_predictor(learner.model, preproc)
 
     # ========================================================== #
     # ======================== PREDICT ========================= #
     # ========================================================== #
-    print('Predicting if new datasets are presented ...')
+    output_msg = 'Predicting if new datasets are presented ...'
+    print(colored(output_msg, 'cyan'))
+
     prediction = predictor.predict(eval_papers)
 
     results = []
@@ -85,8 +97,10 @@ def test(datadir):
     # ========================================================== #
     # ================== INFO ABOUT DATASETS =================== #
     # ========================================================== #
+    output_msg = "Finalizing BERT Outputs ..."
+    print(colored(output_msg, 'cyan'))
+
     dataset_papers = []
-    print("Finalizing BERT Outputs ...")
     for idx, result in enumerate(results):
         progress.printProgressBar(idx + 1, math.ceil(len(results)),
                                   prefix='Progress :', suffix='Complete',
@@ -99,15 +113,14 @@ def test(datadir):
     # ========================================================== #
     # ========================= SAVE =========================== #
     # ========================================================== #
-    print('Saving results ...')
+    output_msg = 'Saving results ...'
+    print(colored(output_msg, 'cyan'))
     outputdir = os.path.join(current_dir, '../../../data/results.json')
     with open(outputdir, 'w') as f:
         json.dump(dataset_papers, f, indent=4)
 
-    # enablePrint()
 
-
-# if __name__ == '__main__':
-#     current_dir = os.path.dirname(os.path.abspath(__file__))
-#     datadir = os.path.join(current_dir, '../../../data/example.json')
-#     test(datadir)
+if __name__ == '__main__':
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    datadir = os.path.join(current_dir, '../../../data/results.json')
+    test(datadir)

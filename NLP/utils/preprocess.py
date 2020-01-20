@@ -1,6 +1,7 @@
 import os
 import nltk
 import json
+from termcolor import colored
 
 from NLP.utils.normalize_text import Normalize
 
@@ -42,7 +43,8 @@ class PreprocessForBert():
                     dataset.append([paper['Abstract'], 1])
                 positives = dataset
             except ValueError:
-                print('Not able to parse json file to dictionary.\n')
+                error = 'Not able to parse json file with positive samples to dictionary.'
+                print(colored(error, 'red'))
 
         # Read negative sample dataset from a json file
         dataset = []
@@ -54,7 +56,8 @@ class PreprocessForBert():
                     dataset.append([paper['Abstract'], 0])
                 negatives = dataset
             except ValueError:
-                print('Not able to parse json file to dictionary.\n')
+                error = 'Not able to parse json file wth negative samples to dictionary.'
+                print(colored(error, 'red'))
 
         return positives, negatives
 
@@ -68,6 +71,9 @@ class PreprocessForBert():
         '''
 
         # Normalize and tokenize corpus using nltk and other NLP packages
+        output_msg = "Removing non-ascii characters in dataset ..."
+        print(colored(output_msg, 'cyan'))
+
         norm_corpus = []
         for doc in corpus:
             normalize = Normalize(doc[0], removeStopWords=False, tokenize=False,
@@ -87,6 +93,11 @@ class PreprocessForBert():
         '''
 
         # Make a word count and replace uncommon words with the keyword unknown
+        output_msg = ("Removing words which only appear less than {} in the entire"
+                      " dataset and replacing them with the word"
+                      " 'uncommon'...".format(self.min_thresh))
+        print(colored(output_msg, 'cyan'))
+
         vocab = []
         for doc in corpus:
             vocab.extend(doc[0])
@@ -190,7 +201,8 @@ class PreprocessForBert():
 
         :params  N/A
         '''
-        print('Processing data to train BERT network...')
+        output_msg = 'Processing data to train BERT network ...'
+        print(colored(output_msg, 'cyan'))
 
         # Sets up the positive and negative corpus' and removes non-ASCII characters
         fpos = os.path.join(self.current_dir, '../../data/positive_samples.json')
