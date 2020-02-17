@@ -67,7 +67,7 @@ if opt.first_time:
     output_msg = ('Training BERT network for classification of academic papers. This may'
                    ' take awhile ...')
     print(colored(output_msg, 'cyan'))
-    trainNetwork()
+    trainNetwork(networkParams)
 
 if opt.scrape and not opt.train:
     '''
