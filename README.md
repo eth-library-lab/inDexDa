@@ -48,12 +48,12 @@ pip install pew
 pew new inDexDa
 pew in inDexDa
 
-git clone https://github.com/ParkerEwen5441/datadex.git
+git clone https://github.com/eth-library-lab/inDexDa.git
 cd inDexDa
 ./install.sh
 ```
 
-Networks used in this project are run using Tensorflow backend.
+Networks used in this project are run using [Tensorflow](https://www.tensorflow.org) backend.
 
 ## Usage
 
@@ -67,8 +67,8 @@ a variety of options for web-scraping, network training, and dataset extraction 
 Each section is explained more thoroughly in the PaperScraper README, but the following
 steps will allow you to run __inDexDa__ quickly.
 
-1. Choose the online academic paper repository you wish to scrape in the archives_to_scrape
-section. InDexDa natively supports both arXiv and [ScienceDirect](https://www.sciencedirect.com) scraping APIs. You can
+1. Choose the online academic paper repository you wish to scrape in the `archives_to_scrape`
+section. InDexDa natively supports both [arXiv](https://arxiv.org) and [ScienceDirect](https://www.sciencedirect.com) scraping APIs. You can
 use either a single scraper or multiple scrapers in sequence.
 2. Replace the default search query with your specific word or phrase. More specific search
 queries will yield less results, but will run much faster.
