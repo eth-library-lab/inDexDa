@@ -1,9 +1,11 @@
 import re
 import os
+import json
 import time
 import requests
 from xml.dom import minidom
 from xml.etree import ElementTree
+from termcolor import colored
 
 
 class ScienceDirectScraper():
@@ -14,9 +16,10 @@ class ScienceDirectScraper():
                         topic papers will be found in
         '''
         self.paper = config[0]
-        self.apikey = config
-        input(config[1][1].apikey)
+        self.apikey = config[1][1]['apikey']
+        # input(config[1][1].apikey)
         self.doi = paper['DOI']
+        self.openaccess = 0
 
     def extract(self):
         '''
@@ -58,43 +61,47 @@ class ScienceDirectScraper():
         coredata = article.find('{http://www.elsevier.com/xml/svapi/article/dtd}coredata')
         openaccess = coredata.find('{http://www.elsevier.com/xml/svapi/article/dtd}openaccess')
 
-        if not openaccess.text:
-            print('Not open access')
+        if not int(openaccess.text) or openaccess.text is None:
+            self.openaccess = 0
+        else:
+            self.openaccess = 1
+
+
+        if self.openaccess:
+            # If paper is open access, get body text by parsing xml.
+            text = article.find('{http://www.elsevier.com/xml/svapi/article/dtd}originalText')
+            doc = text.find('{http://www.elsevier.com/xml/xocs/dtd}doc')
+            serial_item = doc.find('{http://www.elsevier.com/xml/xocs/dtd}serial-item')
+
+            try:
+                article_text = serial_item.find('{http://www.elsevier.com/xml/ja/dtd}article')
+            except AttributeError:
+                article_text = serial_item.find('{http://www.elsevier.com/xml/ja/dtd}converted-article')
+
+            body = article_text.find('{http://www.elsevier.com/xml/ja/dtd}body')
+            sections = body.find('{http://www.elsevier.com/xml/common/dtd}sections')
+
+            for section in sections.findall('{http://www.elsevier.com/xml/common/dtd}section'):
+                for child in section:
+                    if '{http://www.elsevier.com/xml/common/dtd}para' in child.tag:
+                        paragraphs.append(ElementTree.tostring(child, encoding="us-ascii", method="xml"))
+                    if '{http://www.elsevier.com/xml/common/dtd}section' in child.tag:
+                        for para in child.findall('{http://www.elsevier.com/xml/common/dtd}para'):
+                            paragraphs.append(ElementTree.tostring(para, encoding="us-ascii", method="xml"))
+
+            for list_item in article.iter('{http://www.elsevier.com/xml/common/dtd}list-item'):
+                for item_text in list_item.findall('{http://www.elsevier.com/xml/common/dtd}para'):
+                    paragraphs.append(ElementTree.tostring(item_text, encoding="us-ascii", method="xml"))
+
+            # Decode list of bytes to a single string
+            body_text = ' '.join([para.decode('utf-8') for para in paragraphs])
+
+            # Body text still contains xml formatting, so remove all characters ]
+            #   between brackets and double+ spaces.
+            self.text = re.sub('<[^<]+>', "", body_text)
+            self.text = re.sub(' +', ' ', self.text)
+        else:
             self.text = None
-            exit()
-
-        # If paper is open access, get body text by parsing xml.
-        text = article.find('{http://www.elsevier.com/xml/svapi/article/dtd}originalText')
-        doc = text.find('{http://www.elsevier.com/xml/xocs/dtd}doc')
-        serial_item = doc.find('{http://www.elsevier.com/xml/xocs/dtd}serial-item')
-
-        try:
-            article_text = serial_item.find('{http://www.elsevier.com/xml/ja/dtd}article')
-        except AttributeError:
-            article_text = serial_item.find('{http://www.elsevier.com/xml/ja/dtd}converted-article')
-
-        body = article_text.find('{http://www.elsevier.com/xml/ja/dtd}body')
-        sections = body.find('{http://www.elsevier.com/xml/common/dtd}sections')
-
-        for section in sections.findall('{http://www.elsevier.com/xml/common/dtd}section'):
-            for child in section:
-                if '{http://www.elsevier.com/xml/common/dtd}para' in child.tag:
-                    paragraphs.append(ElementTree.tostring(child, encoding="us-ascii", method="xml"))
-                if '{http://www.elsevier.com/xml/common/dtd}section' in child.tag:
-                    for para in child.findall('{http://www.elsevier.com/xml/common/dtd}para'):
-                        paragraphs.append(ElementTree.tostring(para, encoding="us-ascii", method="xml"))
-
-        for list_item in article.iter('{http://www.elsevier.com/xml/common/dtd}list-item'):
-            for item_text in list_item.findall('{http://www.elsevier.com/xml/common/dtd}para'):
-                paragraphs.append(ElementTree.tostring(item_text, encoding="us-ascii", method="xml"))
-
-        # Decode list of bytes to a single string
-        body_text = ' '.join([para.decode('utf-8') for para in paragraphs])
-
-        # Body text still contains xml formatting, so remove all characters ]
-        #   between brackets and double+ spaces.
-        self.text = re.sub('<[^<]+>', "", body_text)
-        self.text = re.sub(' +', ' ', self.text)
 
     def analyzeText(self):
         '''
@@ -108,71 +115,173 @@ class ScienceDirectScraper():
         :return  N/A
         '''
         # Check if xml parser had access to paper
-        if self.text is None:
-            exit()
+        if self.text is not None:
+            sentences = self.text.replace('\n', ' ').split('.')
 
-        sentences = self.text.replace('\n', ' ').split('.')
+            #Find dataset names
+            dataset_names = self.findDatasetName(sentences)
 
-        # Find all instances of 'Dataset' within the paper and compile the
-        #   capitalized words in front of it to form a name
-        dataset_name = []
+            # Find all links in text
+            urls = self.findUrls()
+
+            self.dataset_names = dataset_names
+            self.urls = urls
+
+        else:
+            error = "The paper {} could not be opened as it is not open access".format(self.paper['Title'])
+            print(colored(error, 'red'))
+            self.dataset_names = []
+            self.urls = []
+
+    def findDatasetName(self, sentences):
+        '''
+        Finds name of dataset if included.
+            - Scan for word dataset
+            - Take preceeding words as long as there is no period and all previous words
+                with capitalization are taken.
+        Extracts any links in the body paragraphs.
+
+        :params  sentences: list of sentences from the text
+        :return  names: list of possible dataset names
+        '''
+        useless_words = ['The', 'A', 'This', 'Other', 'Most', 'Some', 'All', 'These',
+                         'Those', 'These', 'Our', 'Their', 'Several', 'Each', 'Which',
+                         'Thus', 'As', 'Each', 'Suppose', 'Existing', '.']
+
+        # Find instances of the word 'dataset' in the text
+        dataset_names = []
         for sentence in sentences:
             words = sentence.split()
+
+            if 'dataset' in words:
+                dataset_name = []
+
+                idx = words.index('dataset')
+                while True:
+                    if not idx > 0:
+                        break
+                    if words[idx - 1][0].isupper() and not any(words[idx - 1] == word for word in useless_words):
+                        dataset_name.insert(0, words[idx - 1])
+                        idx = idx - 1
+                    else:
+                        break
+                if dataset_name != []:
+                    dataset_names.append(dataset_name)
+
             if 'Dataset' in words:
+                dataset_name = []
+
                 idx = words.index('Dataset')
-                dataset_name.append(self.isPreviousWordCapitalized(words, idx))
+                while True:
+                    if not idx > 0:
+                        break
+                    if words[idx - 1][0].isupper() and not any(words[idx - 1] == word for word in useless_words):
+                        dataset_name.insert(0, words[idx - 1])
+                        idx = idx - 1
+                    else:
+                        break
+                if dataset_name != []:
+                    dataset_names.append(dataset_name)
 
-        if dataset_name != []:
-            # Remove duplicates
-            dataset_name = list(set(dataset_name))
-            # Add 'Dataset' to the name
-            dataset_name = [name + ' Dataset' for name in dataset_name]
-        else:
-            dataset_name = []
+            if 'datasets' in words:
+                dataset_name = []
 
-        # Find all links in text
+                idx = words.index('datasets')
+                while True:
+                    if not idx > 0:
+                        break
+                    if words[idx - 1][0].isupper() and not any(words[idx - 1] == word for word in useless_words):
+                        dataset_name.insert(0, words[idx - 1])
+                        idx = idx - 1
+                    else:
+                        break
+                if dataset_name != []:
+                    dataset_names.append(dataset_name)
+
+        # Append name to include 'Dataset' at the end
+        names = []
+        if dataset_names != []:
+            for dataset in dataset_names:
+                dataset.append('Dataset')
+                dataset = ' '.join(dataset)
+                names.append(dataset)
+
+        # Remove duplicates
+        names = list(set(names))
+        return names
+
+    def findUrls(self):
+        '''
+        Finds any urls within the text
+
+        :params  N/A
+        :return  new_urls: list of urls
+        '''
         urls = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\), ]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', self.text)
-        urls = self.checkUrls(urls)
+        urls = self.extendUrls(urls)
 
-        self.dataset_name = dataset_name
-        self.urls = urls
+        # Remove non-ASCII characters
+        new_urls = []
+        for url in urls:
+            # Remove non-ASCII characters
+            url_new = Normalize(url, toLower=False, removePunctuation=False, removeNonASCII=True,
+                                 removeContradictions=False, denoise=False, removeStopWords=False,
+                                 stem=False, lemmatize=False, tokenize=False)
 
-    def isPreviousWordCapitalized(self, sentence, word_idx):
-        '''
-        Recursively checks if the previous word is capitalized and if so inserts
-        it into the name list as the first entry.
+            tmp_list = []
+            split_urls = url_new.normalized_text.split('http')
+            split_urls.remove('')
+            for url in split_urls:
+                if url[0] == 's' or url[0] == ':':
+                    url = "http" + url
+                tmp_list.append(url)
 
-        :params  sentence: list of words
-                 word_idx: index of a word
-        :return  name: string of dataset name
-        '''
-        name = []
-        if sentence[word_idx - 1].istitle():
-            name.append(sentence[word_idx - 1])
-            name += self.isPreviousWordCapitalized(sentence, word_idx - 1)
+                try:
+                    url.replace(',', '')
+                except:
+                    continue
 
-        return ' '.join(name)
+                try:
+                    url.replace(' ', '')
+                except:
+                    continue
 
-    def checkUrls(self, urls):
+
+            new_urls.extend(tmp_list)
+
+        new_list = tmp_list
+
+        # Remove duplicates
+        new_urls = list(set(new_urls))
+        return new_urls
+
+    def extendUrls(self, urls):
         '''
         Sometimes a new paragraph or space will cause regex to not identify the full
-        url, so we check if the next character is a space or newline. Additionally
-        the url may have extended past a bracket, so we trim it if we find one
+        url, so we check if the next character is a space or newline
 
         :params  url: string
         :return  extended_urls: string
         '''
-        new_urls = []
-        seps = ['(', ')', '{', '}', '<', '>', ' ']
-        default_sep = seps[0]
-
+        extended_urls = []
         for url in urls:
-            for sep in seps:
-                url = url.replace(sep, default_sep)
+            url_start_idx = self.text.find(url)
+            url_idx = self.text.find(url) + len(url)
 
-            new_urls.append(url.split(default_sep)[0])
+            bad_chars = ['(', ')', '{', '}', '<', '>', ' ', ',', '[', ']', '\\']
 
-        return new_urls
+            while True:
+                if url_idx + 1 < len(self.text):
+                    if self.text[url_idx + 1] not in bad_chars and not self.text[url_idx + 1].isupper():
+                        url_idx += 1
+                    else:
+                        break
+                else:
+                    break
+
+            extended_urls.append(self.text[url_start_idx:url_idx].replace('\n', ''))
+
+        return extended_urls
 
     def updatePaper(self):
         '''
@@ -182,7 +291,7 @@ class ScienceDirectScraper():
         :params  N/A
         :return  N/A
         '''
-        self.paper.update({'Dataset Name': self.dataset_name})
+        self.paper.update({'Dataset Name': self.dataset_names})
         self.paper.update({'Possible Dataset Links': self.urls})
 
     def APIRequest(self):
@@ -237,15 +346,26 @@ class ScienceDirectScraper():
 
 
 if __name__ == '__main__':
-    paper = {
-        "Title": "Dataset for Evaluating the Accessibility of the Websites of Selected Latin American Universities",
-        "DOI": '10.1016/j.dib.2019.105013',
-        "Archive": "sciencedirect",
-        "Prediction": "Dataset Detected"
-        }
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    datapath = os.path.join(current_dir, '../../data/results_sciencedirect.json')
+    with open(datapath, 'r') as f:
+        contents = f.read()
+        papers = json.loads(contents)
 
-    apikey = '8195584e9a1784037041888ba25292ee'
-    apiSciencedirect = ScienceDirectScraper(paper, apikey)
-    paper = apiSciencedirect.extract()
+    # unique = { each['Title'] : each for each in papers }.values()
+    # with open(datapath, 'w') as f:
+    #     json.dump(list(unique), f, indent=4)
 
-    input(paper)
+    input('Done')
+    newpapers = []
+    for paper in papers:
+        sciencedirect = {'blah': 'blah', 'apikey': '8195584e9a1784037041888ba25292ee'}
+        rand_list = ['blah', sciencedirect]
+        config = [paper, rand_list]
+        scraper = ScienceDirectScraper(config)
+        newpaper = scraper.extract()
+
+        newpapers.append(newpaper)
+
+    with open('test_file.json', 'w') as f:
+        json.dump(newpapers, f, indent=4)

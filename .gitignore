@@ -16,6 +16,7 @@
 **data/example.json
 **data/results.json
 **data/dataset.json
+**data/results_arxiv.json
 
 *.pdf
 *.pyc

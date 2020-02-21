@@ -5,6 +5,7 @@ import time
 import requests
 import numpy as np
 from termcolor import colored
+from multiprocessing import Pool
 
 import PaperScraper.utils.command_line as progress
 
@@ -69,7 +70,7 @@ class PaperScrapeScienceDirect:
                 # Calls API
                 data = self.ScienceDirectSearchV2(year, issue)
 
-                if data == 0:
+                if data == 0 or data == None:
                     stop_counter += 1
                 else:
                     # Parse information from each dict
@@ -128,6 +129,13 @@ class PaperScrapeScienceDirect:
         #       same page and failing.
 
         length = len(papers)
+
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        finishedpath = os.path.join(current_dir, '../data/sciencedirect/finished_papers.json')
+        notfinishedpath = os.path.join(current_dir, '../data/sciencedirect/not_finished_papers.json')
+
+        papers_finished = []
+        papers_not_finished = papers
         for i, paper in enumerate(papers):
             progress.printProgressBar(i + 1, length, prefix='Progress: ',
                                       suffix='Complete', length=50)
@@ -154,6 +162,17 @@ class PaperScrapeScienceDirect:
             else:
                 paper['Abstract'] = []
                 paper['Category'] = []
+
+            papers_finished.append(paper)
+            try:
+                papers_not_finished.remove(paper)
+            except:
+                print('No matching paper')
+
+            with open(finishedpath, 'w') as f:
+                json.dump(papers_finished, f, indent=4)
+            with open(notfinishedpath, 'w') as f:
+                json.dump(papers_not_finished, f, indent=4)
 
         # Remove any papers without Abstracts, Authors, or Titles
         papers[:] = [d for d in papers if d.get('Abstract') != []]
@@ -215,21 +234,25 @@ class PaperScrapeScienceDirect:
             request = Request('search', date=date, issue=issue, start_idx=0)
 
             data = self.APIRequest(request)
-            totalResults = data['resultsFound']
 
-            if totalResults > 0:
-                for pagenum in range(math.ceil(totalResults / 100)):
-                    prefix = 'Progress [Year:{}, Issue:{}]:'.format(date, issue)
-                    progress.printProgressBar(pagenum + 1, math.ceil(totalResults / 100),
-                                              prefix=prefix, suffix='Complete', length=30)
-                    start_idx = pagenum * 100
+            if data != None:
+                totalResults = data['resultsFound']
 
-                    request = Request('search', date=date, issue=issue, start_idx=start_idx)
-                    results.append(self.APIRequest(request))
+                if totalResults > 0:
+                    for pagenum in range(math.ceil(totalResults / 100)):
+                        prefix = 'Progress [Year:{}, Issue:{}]:'.format(date, issue)
+                        progress.printProgressBar(pagenum + 1, math.ceil(totalResults / 100),
+                                                  prefix=prefix, suffix='Complete', length=30)
+                        start_idx = pagenum * 100
 
-                return results
+                        request = Request('search', date=date, issue=issue, start_idx=start_idx)
+                        results.append(self.APIRequest(request))
+
+                    return results
+                else:
+                    return 0
             else:
-                return 0
+                return None
         except Exception as error:
             print(colored(error, 'red'))
             raise Exception(error)
@@ -252,59 +275,52 @@ class PaperScrapeScienceDirect:
         '''
 
         # SCIENCEDIRECT SEARCH V2
-        while True:
-            # Will try to access a website 5 times before exiting the function. Sometimes
-            #  a bad response occurs so we test multiple times to ensure something failed.
-            counter = 0
+        # GENERAL SEARCH
+        if request.request_type == 'search':
+            key = self.apikey
+            query = self.query
+            url = 'https://api.elsevier.com/content/search/sciencedirect'
+
+            headers = {"Accept": "application/json",
+                       "X-ELS-APIKey": key,
+                       "content-type": "application/json"}
+
+            body = json.dumps({"qs": query,
+                               "display": {"offset": request.start_idx,
+                                           "show": "100",
+                                           "sortBy": "relevance"},
+                               "date": request.date,
+                               "openAccess": "true",
+                               "issue": request.issue})
+
             try:
-                # GENERAL SEARCH
-                if request.request_type == 'search':
-                    key = self.apikey
-                    query = self.query
-                    url = 'https://api.elsevier.com/content/search/sciencedirect'
+                r = requests.put(url, headers=headers, data=body)
+            except requests.Timeout:
+                print("Timed out loading {}".format(url))
+                return None
 
-                    headers = {"Accept": "application/json",
-                               "X-ELS-APIKey": key,
-                               "content-type": "application/json"}
+            time.sleep(.5)
+            return json.loads(str(r.text))
 
-                    body = json.dumps({"qs": query,
-                                       "display": {"offset": request.start_idx,
-                                                   "show": "100",
-                                                   "sortBy": "relevance"},
-                                       "date": request.date,
-                                       "openAccess": "true",
-                                       "issue": request.issue})
+        # ABSTRACT RETRIEVAL
+        elif request.request_type == 'retrieval':
+            key = self.apikey
 
-                    r = requests.put(url, headers=headers, data=body)
-                    time.sleep(.5)
-                    return json.loads(str(r.text))
+            url = 'https://api.elsevier.com/content/article/doi/'
+            url = url + request.DOI
 
-                # ABSTRACT RETRIEVAL
-                elif request.request_type == 'retrieval':
-                    key = self.apikey
+            headers = {"Accept": "application/json",
+                       "X-ELS-APIKey": key,
+                       "content-type": "application/json"}
 
-                    url = 'https://api.elsevier.com/content/article/doi/'
-                    url = url + request.DOI
+            try:
+                r = requests.get(url, headers=headers)
+            except requests.Timeout:
+                print("Timed out loading {}".format(url))
+                return None
 
-                    headers = {"Accept": "application/json",
-                               "X-ELS-APIKey": key,
-                               "content-type": "application/json"}
-
-                    r = requests.get(url, headers=headers)
-                    time.sleep(.1)
-
-                    return json.loads(str(r.text))
-
-            except:
-                # If query failed, wait for 1 second and try again
-                counter += 1
-                time.sleep(1)
-
-                # If enough failed attempts occur, exit function
-                if counter == 5:
-                    error = "ScienceDirect has stopped responding."
-                    print(colored(error, 'red'))
-                    raise Exception("ScienceDirect has stopped responding.")
+            time.sleep(.1)
+            return json.loads(str(r.text))
 
 
 class Request():
