@@ -1,5 +1,6 @@
 import os
 import json
+from rake_nltk import Rake
 from termcolor import colored
 
 from utils import getInfoAboutArchivesToScrape

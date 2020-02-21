@@ -1,0 +1,2786 @@
+{
+    "MS-COCO Dataset": [
+        "images described",
+        "crowdsourcing platform",
+        "clipart objects",
+        "two datasets",
+        "existing datasets",
+        "Computer Vision and Pattern Recognition",
+        "written music",
+        "small objects",
+        "semantic segmentation",
+        "scene understanding",
+        "relevant challenge",
+        "Computer Vision and Pattern Recognition",
+        "Learning"
+    ],
+    "UIUC Pascal Sentence Dataset": [
+        "images described",
+        "crowdsourcing platform",
+        "clipart objects",
+        "two datasets",
+        "existing datasets",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "PASCAL-50S Dataset": [
+        "images described",
+        "crowdsourcing platform",
+        "clipart objects",
+        "two datasets",
+        "existing datasets",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "ABSTRACT-50S Dataset": [
+        "images described",
+        "crowdsourcing platform",
+        "clipart objects",
+        "two datasets",
+        "existing datasets",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Image-Sentence Dataset": [
+        "images described",
+        "crowdsourcing platform",
+        "clipart objects",
+        "two datasets",
+        "existing datasets",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Flickr8k Dataset": [
+        "images described",
+        "crowdsourcing platform",
+        "clipart objects",
+        "two datasets",
+        "existing datasets",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Abstract Scenes Dataset": [
+        "images described",
+        "crowdsourcing platform",
+        "clipart objects",
+        "two datasets",
+        "existing datasets",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "WIDER Pedestrian Dataset": [
+        "wider pedestrian",
+        "wider face",
+        "training independently",
+        "single model",
+        "results show",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Cross- Dataset": [
+        "wider pedestrian",
+        "wider face",
+        "training independently",
+        "single model",
+        "results show",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Open Image Dataset": [
+        "wider pedestrian",
+        "wider face",
+        "training independently",
+        "single model",
+        "results show",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "PASCAL VOC Dataset": [
+        "wider pedestrian",
+        "wider face",
+        "training independently",
+        "single model",
+        "results show",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Pedestrian Dataset": [
+        "wider pedestrian",
+        "wider face",
+        "training independently",
+        "single model",
+        "results show",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Classes Dataset": [
+        "wider pedestrian",
+        "wider face",
+        "training independently",
+        "single model",
+        "results show",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "COCO Dataset": [
+        "wider pedestrian",
+        "wider face",
+        "training independently",
+        "single model",
+        "results show",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Wider Face Dataset": [
+        "wider pedestrian",
+        "wider face",
+        "training independently",
+        "single model",
+        "results show",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "PED Dataset": [
+        "wider pedestrian",
+        "wider face",
+        "training independently",
+        "single model",
+        "results show",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Hybrid Dataset": [
+        "wider pedestrian",
+        "wider face",
+        "training independently",
+        "single model",
+        "results show",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "MPII Dataset": [
+        "object manipulation",
+        "model learning",
+        "directly related",
+        "also compare",
+        "right dataset",
+        "Robotics"
+    ],
+    "CMU-MMAC Dataset": [
+        "object manipulation",
+        "model learning",
+        "directly related",
+        "also compare",
+        "right dataset",
+        "Robotics"
+    ],
+    "MPII Cooking Dataset": [
+        "object manipulation",
+        "model learning",
+        "directly related",
+        "also compare",
+        "right dataset",
+        "Robotics"
+    ],
+    "YouCook Dataset": [
+        "object manipulation",
+        "model learning",
+        "directly related",
+        "also compare",
+        "right dataset",
+        "Robotics"
+    ],
+    "Rochester ADL Dataset": [
+        "object manipulation",
+        "model learning",
+        "directly related",
+        "also compare",
+        "right dataset",
+        "Robotics"
+    ],
+    "CAD-120 Dataset": [
+        "object manipulation",
+        "model learning",
+        "directly related",
+        "also compare",
+        "right dataset",
+        "Robotics",
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "MPII Cooking Composite Dataset": [
+        "object manipulation",
+        "model learning",
+        "directly related",
+        "also compare",
+        "right dataset",
+        "Robotics"
+    ],
+    "Cooking Eggs Dataset": [
+        "object manipulation",
+        "model learning",
+        "directly related",
+        "also compare",
+        "right dataset",
+        "Robotics"
+    ],
+    "Gaze+ Dataset": [
+        "object manipulation",
+        "model learning",
+        "directly related",
+        "also compare",
+        "right dataset",
+        "Robotics"
+    ],
+    "TUM Kitchten Dataset": [
+        "object manipulation",
+        "model learning",
+        "directly related",
+        "also compare",
+        "right dataset",
+        "Robotics"
+    ],
+    "Salad Dataset": [
+        "object manipulation",
+        "model learning",
+        "directly related",
+        "also compare",
+        "right dataset",
+        "Robotics"
+    ],
+    "Gaze Dataset": [
+        "object manipulation",
+        "model learning",
+        "directly related",
+        "also compare",
+        "right dataset",
+        "Robotics"
+    ],
+    "OPPORTUNITY Dataset": [
+        "object manipulation",
+        "model learning",
+        "directly related",
+        "also compare",
+        "right dataset",
+        "Robotics"
+    ],
+    "ADL Dataset": [
+        "object manipulation",
+        "model learning",
+        "directly related",
+        "also compare",
+        "right dataset",
+        "Robotics"
+    ],
+    "NLI Dataset": [
+        "wide range",
+        "successfully applied",
+        "propelled research",
+        "primarily trained",
+        "new method",
+        "Computation and Language",
+        "targets phenomena",
+        "stress tests",
+        "small amount",
+        "slight exposure",
+        "results indicate",
+        "Computation and Language",
+        "two sentences",
+        "training example",
+        "meteor scores",
+        "mapping embedding",
+        "logical relation",
+        "Artificial Intelligence",
+        "Computation and Language",
+        "Neural and Evolutionary Computing"
+    ],
+    "Dig-MNIST Dataset": [
+        "termed kannada",
+        "sterner challenge",
+        "scanner settings",
+        "perform end",
+        "numeral digits",
+        "Computer Vision and Pattern Recognition",
+        "Learning",
+        "Machine Learning"
+    ],
+    "Kannada MNIST Dataset": [
+        "termed kannada",
+        "sterner challenge",
+        "scanner settings",
+        "perform end",
+        "numeral digits",
+        "Computer Vision and Pattern Recognition",
+        "Learning",
+        "Machine Learning"
+    ],
+    "MNIST Dataset": [
+        "termed kannada",
+        "sterner challenge",
+        "scanner settings",
+        "perform end",
+        "numeral digits",
+        "Computer Vision and Pattern Recognition",
+        "Learning",
+        "Machine Learning",
+        "weight distribution",
+        "underlying task",
+        "tools used",
+        "repaired datasets",
+        "recognition models",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Kannada-MNIST Dataset": [
+        "termed kannada",
+        "sterner challenge",
+        "scanner settings",
+        "perform end",
+        "numeral digits",
+        "Computer Vision and Pattern Recognition",
+        "Learning",
+        "Machine Learning"
+    ],
+    "Dig-MNSIT Dataset": [
+        "termed kannada",
+        "sterner challenge",
+        "scanner settings",
+        "perform end",
+        "numeral digits",
+        "Computer Vision and Pattern Recognition",
+        "Learning",
+        "Machine Learning"
+    ],
+    "MNIST-10k-Test Dataset": [
+        "termed kannada",
+        "sterner challenge",
+        "scanner settings",
+        "perform end",
+        "numeral digits",
+        "Computer Vision and Pattern Recognition",
+        "Learning",
+        "Machine Learning"
+    ],
+    "Dataset2Vec: Learning Dataset": [
+        "whole dataset",
+        "vastly accelerated",
+        "variational auto",
+        "special case",
+        "small area",
+        "Learning",
+        "Machine Learning"
+    ],
+    "Toy Meta Dataset": [
+        "whole dataset",
+        "vastly accelerated",
+        "variational auto",
+        "special case",
+        "small area",
+        "Learning",
+        "Machine Learning"
+    ],
+    "Evaluation Metric UCI Meta Dataset": [
+        "whole dataset",
+        "vastly accelerated",
+        "variational auto",
+        "special case",
+        "small area",
+        "Learning",
+        "Machine Learning"
+    ],
+    "VizWiz Dataset": [
+        "vizwiz dataset",
+        "quantitative research",
+        "publicly available",
+        "multimodal information",
+        "exhaustively search",
+        "Learning",
+        "Computer Vision and Pattern Recognition",
+        "Human-Computer Interaction"
+    ],
+    "LIRIS Human Activities Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Office Activity Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "DMLSmartActions Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "RGB-D Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "MSRActionPair MSRActionPair Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Human Morning Routine Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Mivia Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "ATC42 ATC42 Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "NJUST RGB-D Action Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "SBU Kinect Interaction Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "CAD-60 Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "WorkoutSU-10 Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "RGBD-SAR Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "MSRC-12 MSRC-12 Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "UPCV Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "CAD-120 Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "UTKinect UTKinect Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Human-Object Interaction Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Falling Event Detection Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Osaka University Kinect Action Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Falling Detection Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Event Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "MSRDailyActivity3D Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Only LIRIS Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "UCFKinect Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "ReadingAct ReadingAct Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "MSR-Action3D Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Human Morning Routine Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "UWA3D Multiview UWA3D Multiview Activity Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "RGB-D-based Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "TJU Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Muti-View TJU Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "IAS-lab Action IAS-lab Action Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Mivia Dataset Mivia Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "ShakeFive Dataset": [
+        "useful resource",
+        "paper provides",
+        "new algorithms",
+        "future research",
+        "detailed information",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Numerical Reasoning Dataset": [
+        "targets phenomena",
+        "stress tests",
+        "small amount",
+        "slight exposure",
+        "results indicate",
+        "Computation and Language"
+    ],
+    "Adversarial SQuAD Dataset": [
+        "targets phenomena",
+        "stress tests",
+        "small amount",
+        "slight exposure",
+        "results indicate",
+        "Computation and Language"
+    ],
+    "Minimum-bias Dataset": [
+        "weight distribution",
+        "underlying task",
+        "tools used",
+        "repaired datasets",
+        "recognition models",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "REPAIRed Dataset": [
+        "weight distribution",
+        "underlying task",
+        "tools used",
+        "repaired datasets",
+        "recognition models",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Resampled Dataset": [
+        "weight distribution",
+        "underlying task",
+        "tools used",
+        "repaired datasets",
+        "recognition models",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "REPAIRed Kinetics Dataset": [
+        "weight distribution",
+        "underlying task",
+        "tools used",
+        "repaired datasets",
+        "recognition models",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "SGD-based Dataset": [
+        "weight distribution",
+        "underlying task",
+        "tools used",
+        "repaired datasets",
+        "recognition models",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Q&A Dataset": [
+        "research community",
+        "reading comprehension",
+        "propose multiqa",
+        "new ones",
+        "large number",
+        "Computation and Language",
+        "Artificial Intelligence",
+        "Learning"
+    ],
+    "MULTIQA Test Dataset": [
+        "research community",
+        "reading comprehension",
+        "propose multiqa",
+        "new ones",
+        "large number",
+        "Computation and Language",
+        "Artificial Intelligence",
+        "Learning"
+    ],
+    "Size Dataset": [
+        "research community",
+        "reading comprehension",
+        "propose multiqa",
+        "new ones",
+        "large number",
+        "Computation and Language",
+        "Artificial Intelligence",
+        "Learning"
+    ],
+    "RC Dataset": [
+        "research community",
+        "reading comprehension",
+        "propose multiqa",
+        "new ones",
+        "large number",
+        "Computation and Language",
+        "Artificial Intelligence",
+        "Learning"
+    ],
+    "MULTI-375K Dataset": [
+        "research community",
+        "reading comprehension",
+        "propose multiqa",
+        "new ones",
+        "large number",
+        "Computation and Language",
+        "Artificial Intelligence",
+        "Learning"
+    ],
+    "Marulan Dataset": [
+        "urban driving",
+        "typically challenge",
+        "two traversals",
+        "target application",
+        "six cameras",
+        "Robotics"
+    ],
+    "TB Dataset": [
+        "urban driving",
+        "typically challenge",
+        "two traversals",
+        "target application",
+        "six cameras",
+        "Robotics"
+    ],
+    "Oxford RobotCar Dataset": [
+        "urban driving",
+        "typically challenge",
+        "two traversals",
+        "target application",
+        "six cameras",
+        "Robotics",
+        "two cities",
+        "train deep",
+        "paper introduces",
+        "mls",
+        "learning methods",
+        "Learning",
+        "Computer Vision and Pattern Recognition",
+        "Machine Learning"
+    ],
+    "Oxford Radar RobotCar Dataset": [
+        "urban driving",
+        "typically challenge",
+        "two traversals",
+        "target application",
+        "six cameras",
+        "Robotics"
+    ],
+    "CUB-200 Dataset": [
+        "varying granularity",
+        "shot learning",
+        "provide examples",
+        "precise definition",
+        "measuring granularity",
+        "Computer Vision and Pattern Recognition",
+        "Learning"
+    ],
+    "CIFAR Dataset": [
+        "varying granularity",
+        "shot learning",
+        "provide examples",
+        "precise definition",
+        "measuring granularity",
+        "Computer Vision and Pattern Recognition",
+        "Learning"
+    ],
+    "CIFAR-100 Dataset": [
+        "varying granularity",
+        "shot learning",
+        "provide examples",
+        "precise definition",
+        "measuring granularity",
+        "Computer Vision and Pattern Recognition",
+        "Learning"
+    ],
+    "Measuring Dataset": [
+        "varying granularity",
+        "shot learning",
+        "provide examples",
+        "precise definition",
+        "measuring granularity",
+        "Computer Vision and Pattern Recognition",
+        "Learning"
+    ],
+    "CIFAR-10 Dataset": [
+        "varying granularity",
+        "shot learning",
+        "provide examples",
+        "precise definition",
+        "measuring granularity",
+        "Computer Vision and Pattern Recognition",
+        "Learning"
+    ],
+    "MRC Dataset": [
+        "transfer learning",
+        "questions generated",
+        "introduce drcd",
+        "human performance",
+        "f1 score",
+        "Computation and Language"
+    ],
+    "DRC Dataset": [
+        "transfer learning",
+        "questions generated",
+        "introduce drcd",
+        "human performance",
+        "f1 score",
+        "Computation and Language"
+    ],
+    "MSMARCO Dataset": [
+        "transfer learning",
+        "questions generated",
+        "introduce drcd",
+        "human performance",
+        "f1 score",
+        "Computation and Language"
+    ],
+    "Human Generated Machine Reading Comprehension Dataset": [
+        "transfer learning",
+        "questions generated",
+        "introduce drcd",
+        "human performance",
+        "f1 score",
+        "Computation and Language"
+    ],
+    "SQuAD Dataset": [
+        "transfer learning",
+        "questions generated",
+        "introduce drcd",
+        "human performance",
+        "f1 score",
+        "Computation and Language"
+    ],
+    "Chinese Machine Reading Comprehension Dataset": [
+        "transfer learning",
+        "questions generated",
+        "introduce drcd",
+        "human performance",
+        "f1 score",
+        "Computation and Language"
+    ],
+    "Multiple-choice Dataset": [
+        "transfer learning",
+        "questions generated",
+        "introduce drcd",
+        "human performance",
+        "f1 score",
+        "Computation and Language"
+    ],
+    "Chinese MRC Dataset": [
+        "transfer learning",
+        "questions generated",
+        "introduce drcd",
+        "human performance",
+        "f1 score",
+        "Computation and Language"
+    ],
+    "Synthetic Human Model Dataset": [
+        "evaluating non",
+        "conventional rgb",
+        "dataset consist",
+        "synthetic dataset",
+        "human model",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "CMU Mocap Dataset": [
+        "evaluating non",
+        "conventional rgb",
+        "dataset consist",
+        "synthetic dataset",
+        "human model",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "NIST Dataset": [
+        "unknown distribution",
+        "synthetic dataset",
+        "proposed theories",
+        "novel method",
+        "explicit distribution",
+        "Computer Vision and Pattern Recognition",
+        "Applications",
+        "Machine Learning"
+    ],
+    "DING! Dataset": [
+        "submitting queries",
+        "snippet generation",
+        "provide implications",
+        "novel fine",
+        "great interest",
+        "Information Retrieval"
+    ],
+    "Google Dataset": [
+        "submitting queries",
+        "snippet generation",
+        "provide implications",
+        "novel fine",
+        "great interest",
+        "Information Retrieval",
+        "great opportunity",
+        "first impression",
+        "classification score",
+        "classes contained",
+        "aspect makes",
+        "Computer Vision and Pattern Recognition",
+        "Databases",
+        "world datasets",
+        "suggest directions",
+        "results demonstrate",
+        "related fields",
+        "query intent",
+        "Information Retrieval",
+        "Databases"
+    ],
+    "RDF Dataset": [
+        "submitting queries",
+        "snippet generation",
+        "provide implications",
+        "novel fine",
+        "great interest",
+        "Information Retrieval",
+        "world datasets",
+        "suggest directions",
+        "results demonstrate",
+        "related fields",
+        "query intent",
+        "Information Retrieval",
+        "Databases"
+    ],
+    "HUST-ASL Dataset": [
+        "submitting queries",
+        "snippet generation",
+        "provide implications",
+        "novel fine",
+        "great interest",
+        "Information Retrieval"
+    ],
+    "FDA Dataset": [
+        "submitting queries",
+        "snippet generation",
+        "provide implications",
+        "novel fine",
+        "great interest",
+        "Information Retrieval"
+    ],
+    "Hierarchical Dataset": [
+        "submitting queries",
+        "snippet generation",
+        "provide implications",
+        "novel fine",
+        "great interest",
+        "Information Retrieval"
+    ],
+    "EMBER Dataset": [
+        "results show",
+        "parameter optimization",
+        "malware detection",
+        "general enough",
+        "extracting features",
+        "Cryptography and Security"
+    ],
+    "Visual QA Dataset": [
+        "visual recognition",
+        "two datasets",
+        "target dataset",
+        "sufficient amount",
+        "statistical distributions",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Cross Dataset": [
+        "visual recognition",
+        "two datasets",
+        "target dataset",
+        "sufficient amount",
+        "statistical distributions",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "VQA Dataset": [
+        "visual recognition",
+        "two datasets",
+        "target dataset",
+        "sufficient amount",
+        "statistical distributions",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Artificial Dataset": [
+        "vice versa",
+        "supervised classification",
+        "similar behaviour",
+        "seemingly different",
+        "results show",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "MIL Dataset": [
+        "vice versa",
+        "supervised classification",
+        "similar behaviour",
+        "seemingly different",
+        "results show",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Real-life Dataset": [
+        "vice versa",
+        "supervised classification",
+        "similar behaviour",
+        "seemingly different",
+        "results show",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Outex Dataset": [
+        "unbalanced classes",
+        "result part",
+        "real applications",
+        "local rotation",
+        "important role",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Brodatz Dataset": [
+        "unbalanced classes",
+        "result part",
+        "real applications",
+        "local rotation",
+        "important role",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Trunk12 Dataset": [
+        "unbalanced classes",
+        "result part",
+        "real applications",
+        "local rotation",
+        "important role",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Outex Tc-000030 Dataset": [
+        "unbalanced classes",
+        "result part",
+        "real applications",
+        "local rotation",
+        "important role",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Stone Texture Dataset": [
+        "unbalanced classes",
+        "result part",
+        "real applications",
+        "local rotation",
+        "important role",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "VisTex Dataset": [
+        "unbalanced classes",
+        "result part",
+        "real applications",
+        "local rotation",
+        "important role",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "STI Dataset": [
+        "unbalanced classes",
+        "result part",
+        "real applications",
+        "local rotation",
+        "important role",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "ToyADMOS Dataset": [
+        "recent advancements",
+        "paper introduces",
+        "operating sounds",
+        "moving tasks",
+        "four microphones",
+        "Learning",
+        "Sound",
+        "Machine Learning"
+    ],
+    "Freesound Dataset": [
+        "recent advancements",
+        "paper introduces",
+        "operating sounds",
+        "moving tasks",
+        "four microphones",
+        "Learning",
+        "Sound",
+        "Machine Learning"
+    ],
+    "CNT Dataset": [
+        "recent advancements",
+        "paper introduces",
+        "operating sounds",
+        "moving tasks",
+        "four microphones",
+        "Learning",
+        "Sound",
+        "Machine Learning"
+    ],
+    "FairFace: Face Attribute Dataset": [
+        "southeast asian",
+        "skewed data",
+        "significantly underrepresented",
+        "model trained",
+        "middle east",
+        "Computer Vision and Pattern Recognition",
+        "Learning"
+    ],
+    "Yahoo YFCC100M Dataset": [
+        "southeast asian",
+        "skewed data",
+        "significantly underrepresented",
+        "model trained",
+        "middle east",
+        "Computer Vision and Pattern Recognition",
+        "Learning"
+    ],
+    "LFWA+ Dataset": [
+        "southeast asian",
+        "skewed data",
+        "significantly underrepresented",
+        "model trained",
+        "middle east",
+        "Computer Vision and Pattern Recognition",
+        "Learning"
+    ],
+    "FaceScrub Dataset": [
+        "southeast asian",
+        "skewed data",
+        "significantly underrepresented",
+        "model trained",
+        "middle east",
+        "Computer Vision and Pattern Recognition",
+        "Learning"
+    ],
+    "YFCC-100M Flickr Dataset": [
+        "southeast asian",
+        "skewed data",
+        "significantly underrepresented",
+        "model trained",
+        "middle east",
+        "Computer Vision and Pattern Recognition",
+        "Learning"
+    ],
+    "Protest Dataset": [
+        "southeast asian",
+        "skewed data",
+        "significantly underrepresented",
+        "model trained",
+        "middle east",
+        "Computer Vision and Pattern Recognition",
+        "Learning"
+    ],
+    "YFCC100M Dataset": [
+        "southeast asian",
+        "skewed data",
+        "significantly underrepresented",
+        "model trained",
+        "middle east",
+        "Computer Vision and Pattern Recognition",
+        "Learning"
+    ],
+    "IMDB Dataset": [
+        "thus assigning",
+        "small number",
+        "simultaneously distill",
+        "original algorithm",
+        "lenet model",
+        "Learning",
+        "Artificial Intelligence",
+        "Machine Learning"
+    ],
+    "Soft-Label Dataset": [
+        "thus assigning",
+        "small number",
+        "simultaneously distill",
+        "original algorithm",
+        "lenet model",
+        "Learning",
+        "Artificial Intelligence",
+        "Machine Learning"
+    ],
+    "Baselines Dataset": [
+        "thus assigning",
+        "small number",
+        "simultaneously distill",
+        "original algorithm",
+        "lenet model",
+        "Learning",
+        "Artificial Intelligence",
+        "Machine Learning"
+    ],
+    "MC Dataset": [
+        "without clavicle",
+        "various diseases",
+        "rib shadows",
+        "results demonstrate",
+        "recent progress",
+        "Learning",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "JSRT, Dataset": [
+        "without clavicle",
+        "various diseases",
+        "rib shadows",
+        "results demonstrate",
+        "recent progress",
+        "Learning",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "BSE-JSRT Dataset": [
+        "without clavicle",
+        "various diseases",
+        "rib shadows",
+        "results demonstrate",
+        "recent progress",
+        "Learning",
+        "Computer Vision and Pattern Recognition",
+        "results demonstrate",
+        "processed datasets",
+        "lung segmentation",
+        "lung cancer",
+        "chest x",
+        "Learning",
+        "Computers and Society"
+    ],
+    "JSRT Dataset": [
+        "without clavicle",
+        "various diseases",
+        "rib shadows",
+        "results demonstrate",
+        "recent progress",
+        "Learning",
+        "Computer Vision and Pattern Recognition",
+        "results demonstrate",
+        "processed datasets",
+        "lung segmentation",
+        "lung cancer",
+        "chest x",
+        "Learning",
+        "Computers and Society"
+    ],
+    "ChestX-ray14 Dataset": [
+        "without clavicle",
+        "various diseases",
+        "rib shadows",
+        "results demonstrate",
+        "recent progress",
+        "Learning",
+        "Computer Vision and Pattern Recognition",
+        "results demonstrate",
+        "processed datasets",
+        "lung segmentation",
+        "lung cancer",
+        "chest x",
+        "Learning",
+        "Computers and Society"
+    ],
+    "X-ray Dataset": [
+        "without clavicle",
+        "various diseases",
+        "rib shadows",
+        "results demonstrate",
+        "recent progress",
+        "Learning",
+        "Computer Vision and Pattern Recognition",
+        "results demonstrate",
+        "processed datasets",
+        "lung segmentation",
+        "lung cancer",
+        "chest x",
+        "Learning",
+        "Computers and Society"
+    ],
+    "Shenzhen Hospital Dataset": [
+        "without clavicle",
+        "various diseases",
+        "rib shadows",
+        "results demonstrate",
+        "recent progress",
+        "Learning",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Quick, Draw! Dataset": [
+        "great opportunity",
+        "first impression",
+        "classification score",
+        "classes contained",
+        "aspect makes",
+        "Computer Vision and Pattern Recognition",
+        "Databases"
+    ],
+    "Eitz Dataset": [
+        "great opportunity",
+        "first impression",
+        "classification score",
+        "classes contained",
+        "aspect makes",
+        "Computer Vision and Pattern Recognition",
+        "Databases"
+    ],
+    "Ego Network Dataset": [
+        "version one",
+        "relationship types",
+        "33k users",
+        "283k relationships",
+        "dataset contains",
+        "Social an,d Information Networks",
+        "Physics and Society"
+    ],
+    "Weather Pedestrian Dataset": [
+        "various tasks",
+        "transparency objective",
+        "recent suggestions",
+        "paper presents",
+        "greatly controlled",
+        "Learning",
+        "Machine Learning"
+    ],
+    "Cerema AWP Dataset": [
+        "various tasks",
+        "transparency objective",
+        "recent suggestions",
+        "paper presents",
+        "greatly controlled",
+        "Learning",
+        "Machine Learning"
+    ],
+    "RecoGym Dataset": [
+        "various reasons",
+        "share results",
+        "recommender systems",
+        "largely used",
+        "heavily preprocessed",
+        "Information Retrieval",
+        "Learning"
+    ],
+    "MovieLens Dataset": [
+        "various reasons",
+        "share results",
+        "recommender systems",
+        "largely used",
+        "heavily preprocessed",
+        "Information Retrieval",
+        "Learning",
+        "wide base",
+        "varying demographics",
+        "release year",
+        "regional movies",
+        "office revenue",
+        "Information Retrieval",
+        "Artificial Intelligence"
+    ],
+    "Seeds Dataset": [
+        "two times",
+        "shared instances",
+        "recommendation systems",
+        "recommendation system",
+        "previous methods",
+        "Learning"
+    ],
+    "HASY Dataset": [
+        "verification challenge",
+        "publicly available",
+        "paper describes",
+        "hasyv2 dataset",
+        "fold cross",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "HASYv2 Dataset": [
+        "verification challenge",
+        "publicly available",
+        "paper describes",
+        "hasyv2 dataset",
+        "fold cross",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "HWRT Dataset": [
+        "verification challenge",
+        "publicly available",
+        "paper describes",
+        "hasyv2 dataset",
+        "fold cross",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Stuart Dataset": [
+        "web site",
+        "source code",
+        "proposed algorithm",
+        "parameter estimation",
+        "observation noise",
+        "Methodology",
+        "Quantitative Methods"
+    ],
+    "Coli Dataset": [
+        "web site",
+        "source code",
+        "proposed algorithm",
+        "parameter estimation",
+        "observation noise",
+        "Methodology",
+        "Quantitative Methods"
+    ],
+    "Single-Line Dataset": [
+        "user study",
+        "unsupervised schemes",
+        "unstructured noise",
+        "substantial 66",
+        "structured parts",
+        "Databases"
+    ],
+    "Log Dataset": [
+        "user study",
+        "unsupervised schemes",
+        "unstructured noise",
+        "substantial 66",
+        "structured parts",
+        "Databases"
+    ],
+    "Multi-Line Dataset": [
+        "user study",
+        "unsupervised schemes",
+        "unstructured noise",
+        "substantial 66",
+        "structured parts",
+        "Databases"
+    ],
+    "Oxford-Af\ufb01ne Dataset": [
+        "view stereo",
+        "shown later",
+        "rotations values",
+        "per application",
+        "overall viewpoint",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Features Dataset": [
+        "view stereo",
+        "shown later",
+        "rotations values",
+        "per application",
+        "overall viewpoint",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Baseline Dataset": [
+        "view stereo",
+        "shown later",
+        "rotations values",
+        "per application",
+        "overall viewpoint",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Hpatches Dataset": [
+        "view stereo",
+        "shown later",
+        "rotations values",
+        "per application",
+        "overall viewpoint",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "CDVS Dataset": [
+        "view stereo",
+        "shown later",
+        "rotations values",
+        "per application",
+        "overall viewpoint",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "PS Dataset": [
+        "view stereo",
+        "shown later",
+        "rotations values",
+        "per application",
+        "overall viewpoint",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "DTU Dataset": [
+        "view stereo",
+        "shown later",
+        "rotations values",
+        "per application",
+        "overall viewpoint",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "MVS Dataset": [
+        "view stereo",
+        "shown later",
+        "rotations values",
+        "per application",
+        "overall viewpoint",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Strecha Dataset": [
+        "view stereo",
+        "shown later",
+        "rotations values",
+        "per application",
+        "overall viewpoint",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "ABIDE I Dataset": [
+        "training set",
+        "presented embedding",
+        "predicting autism",
+        "neuroimaging sites",
+        "introduce metrics",
+        "Computer Vision and Pattern Recognition",
+        "Artificial Intelligence"
+    ],
+    "Deep- MIMO Dataset": [
+        "tracing scenario",
+        "receiver locations",
+        "powerful capabilities",
+        "outdoor ray",
+        "millimeter wave",
+        "Information Theory",
+        "Information Theory"
+    ],
+    "Generic Deep Learning Dataset": [
+        "tracing scenario",
+        "receiver locations",
+        "powerful capabilities",
+        "outdoor ray",
+        "millimeter wave",
+        "Information Theory",
+        "Information Theory"
+    ],
+    "MIMO Dataset": [
+        "tracing scenario",
+        "receiver locations",
+        "powerful capabilities",
+        "outdoor ray",
+        "millimeter wave",
+        "Information Theory",
+        "Information Theory"
+    ],
+    "DeepMIMO Dataset": [
+        "tracing scenario",
+        "receiver locations",
+        "powerful capabilities",
+        "outdoor ray",
+        "millimeter wave",
+        "Information Theory",
+        "Information Theory"
+    ],
+    "Diverse Scene Text Dataset": [
+        "total number",
+        "textboxes ++",
+        "text",
+        "street views",
+        "publicly available",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Therefore, ShopSign Dataset": [
+        "total number",
+        "textboxes ++",
+        "text",
+        "street views",
+        "publicly available",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "ShopSign Dataset": [
+        "total number",
+        "textboxes ++",
+        "text",
+        "street views",
+        "publicly available",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Shop- Sign Dataset": [
+        "total number",
+        "textboxes ++",
+        "text",
+        "street views",
+        "publicly available",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "RCTW/CTW/MTWI Dataset": [
+        "total number",
+        "textboxes ++",
+        "text",
+        "street views",
+        "publicly available",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "CORE3D-Public Dataset": [
+        "qualitative analyses",
+        "public domain",
+        "prove reliable",
+        "intersection angles",
+        "fused dsm",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Jacksonville Dataset": [
+        "qualitative analyses",
+        "public domain",
+        "prove reliable",
+        "intersection angles",
+        "fused dsm",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Middlebury Dataset": [
+        "qualitative analyses",
+        "public domain",
+        "prove reliable",
+        "intersection angles",
+        "fused dsm",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "New Stereo Benchmarking Dataset": [
+        "qualitative analyses",
+        "public domain",
+        "prove reliable",
+        "intersection angles",
+        "fused dsm",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "IARPA\u2019s MVS Challenge Dataset": [
+        "qualitative analyses",
+        "public domain",
+        "prove reliable",
+        "intersection angles",
+        "fused dsm",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Dynamic Dataset": [
+        "updating frequently",
+        "proposed solution",
+        "paper addresses",
+        "new problem",
+        "internal updates",
+        "Databases"
+    ],
+    "VIRAT Dataset": [
+        "temporal extent",
+        "significantly larger",
+        "recognition research",
+        "recent state",
+        "prior datasets",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Action Dataset": [
+        "temporal extent",
+        "significantly larger",
+        "recognition research",
+        "recent state",
+        "prior datasets",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Large Continuous Action Dataset": [
+        "temporal extent",
+        "significantly larger",
+        "recognition research",
+        "recent state",
+        "prior datasets",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Y2 Evaluation Dataset": [
+        "temporal extent",
+        "significantly larger",
+        "recognition research",
+        "recent state",
+        "prior datasets",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "LCA Dataset": [
+        "temporal extent",
+        "significantly larger",
+        "recognition research",
+        "recent state",
+        "prior datasets",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Daimler Dataset": [
+        "ups become",
+        "jointly high",
+        "joint exploitation",
+        "highly sensitive",
+        "help accelerate",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "EPFL-RLC Dataset": [
+        "ups become",
+        "jointly high",
+        "joint exploitation",
+        "highly sensitive",
+        "help accelerate",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "WILDTRACK Dataset": [
+        "ups become",
+        "jointly high",
+        "joint exploitation",
+        "highly sensitive",
+        "help accelerate",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "DukeMTMC Dataset": [
+        "ups become",
+        "jointly high",
+        "joint exploitation",
+        "highly sensitive",
+        "help accelerate",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "INRIA Dataset": [
+        "ups become",
+        "jointly high",
+        "joint exploitation",
+        "highly sensitive",
+        "help accelerate",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Pets2009: Dataset": [
+        "ups become",
+        "jointly high",
+        "joint exploitation",
+        "highly sensitive",
+        "help accelerate",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Related Dataset": [
+        "ups become",
+        "jointly high",
+        "joint exploitation",
+        "highly sensitive",
+        "help accelerate",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "WILDTRACK Multi-Camera Person Dataset": [
+        "ups become",
+        "jointly high",
+        "joint exploitation",
+        "highly sensitive",
+        "help accelerate",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "HD Dataset": [
+        "ups become",
+        "jointly high",
+        "joint exploitation",
+        "highly sensitive",
+        "help accelerate",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "KITTI Dataset": [
+        "ups become",
+        "jointly high",
+        "joint exploitation",
+        "highly sensitive",
+        "help accelerate",
+        "Computer Vision and Pattern Recognition",
+        "world setting",
+        "world datasets",
+        "various attributes",
+        "significant diversity",
+        "rgb images",
+        "Computer Vision and Pattern Recognition",
+        "Robotics"
+    ],
+    "Daimler-stereo Dataset": [
+        "ups become",
+        "jointly high",
+        "joint exploitation",
+        "highly sensitive",
+        "help accelerate",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Natural Language Inference Dataset": [
+        "two sentences",
+        "training example",
+        "meteor scores",
+        "mapping embedding",
+        "logical relation",
+        "Artificial Intelligence",
+        "Computation and Language",
+        "Neural and Evolutionary Computing"
+    ],
+    "SNLI Dataset": [
+        "two sentences",
+        "training example",
+        "meteor scores",
+        "mapping embedding",
+        "logical relation",
+        "Artificial Intelligence",
+        "Computation and Language",
+        "Neural and Evolutionary Computing"
+    ],
+    "ICC Dataset": [
+        "three sub",
+        "still limited",
+        "significant progress",
+        "semantic gap",
+        "related tasks",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "MSCOCO Dataset": [
+        "three sub",
+        "still limited",
+        "significant progress",
+        "semantic gap",
+        "related tasks",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Large-scale Attribute Dataset": [
+        "three sub",
+        "still limited",
+        "significant progress",
+        "semantic gap",
+        "related tasks",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "AwA Dataset": [
+        "three sub",
+        "still limited",
+        "significant progress",
+        "semantic gap",
+        "related tasks",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Caltech-UCSD Birds-200-2011 Dataset": [
+        "three sub",
+        "still limited",
+        "significant progress",
+        "semantic gap",
+        "related tasks",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "HKD Dataset": [
+        "three sub",
+        "still limited",
+        "significant progress",
+        "semantic gap",
+        "related tasks",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "OMR Dataset": [
+        "written music",
+        "small objects",
+        "semantic segmentation",
+        "scene understanding",
+        "relevant challenge",
+        "Computer Vision and Pattern Recognition",
+        "Learning"
+    ],
+    "ImageNet Dataset": [
+        "written music",
+        "small objects",
+        "semantic segmentation",
+        "scene understanding",
+        "relevant challenge",
+        "Computer Vision and Pattern Recognition",
+        "Learning"
+    ],
+    "MuseScore Monophonic MusicXML Dataset": [
+        "written music",
+        "small objects",
+        "semantic segmentation",
+        "scene understanding",
+        "relevant challenge",
+        "Computer Vision and Pattern Recognition",
+        "Learning"
+    ],
+    "HOMUS Dataset": [
+        "written music",
+        "small objects",
+        "semantic segmentation",
+        "scene understanding",
+        "relevant challenge",
+        "Computer Vision and Pattern Recognition",
+        "Learning"
+    ],
+    "SVHN Dataset": [
+        "written music",
+        "small objects",
+        "semantic segmentation",
+        "scene understanding",
+        "relevant challenge",
+        "Computer Vision and Pattern Recognition",
+        "Learning"
+    ],
+    "DeepScores Dataset": [
+        "written music",
+        "small objects",
+        "semantic segmentation",
+        "scene understanding",
+        "relevant challenge",
+        "Computer Vision and Pattern Recognition",
+        "Learning"
+    ],
+    "MUSCIMA++ Dataset": [
+        "written music",
+        "small objects",
+        "semantic segmentation",
+        "scene understanding",
+        "relevant challenge",
+        "Computer Vision and Pattern Recognition",
+        "Learning"
+    ],
+    "Handwritten Online Musical Symbols Dataset": [
+        "written music",
+        "small objects",
+        "semantic segmentation",
+        "scene understanding",
+        "relevant challenge",
+        "Computer Vision and Pattern Recognition",
+        "Learning"
+    ],
+    "UDS-IH2 Dataset": [
+        "substantial expansion",
+        "previous models",
+        "happened portion",
+        "also present",
+        "yielding",
+        "Computation and Language"
+    ],
+    "Uni\ufb01ed Factuality Dataset": [
+        "substantial expansion",
+        "previous models",
+        "happened portion",
+        "also present",
+        "yielding",
+        "Computation and Language"
+    ],
+    "EFP Dataset": [
+        "substantial expansion",
+        "previous models",
+        "happened portion",
+        "also present",
+        "yielding",
+        "Computation and Language"
+    ],
+    "UDS-IH1 Dataset": [
+        "substantial expansion",
+        "previous models",
+        "happened portion",
+        "also present",
+        "yielding",
+        "Computation and Language"
+    ],
+    "UW Dataset": [
+        "substantial expansion",
+        "previous models",
+        "happened portion",
+        "also present",
+        "yielding",
+        "Computation and Language"
+    ],
+    "RDF Dataset": [
+        "world datasets",
+        "suggest directions",
+        "results demonstrate",
+        "related fields",
+        "query intent",
+        "Information Retrieval",
+        "Databases"
+    ],
+    "Illustrative Dataset": [
+        "world datasets",
+        "suggest directions",
+        "results demonstrate",
+        "related fields",
+        "query intent",
+        "Information Retrieval",
+        "Databases"
+    ],
+    "MIMII Dataset": [
+        "significant expenses",
+        "scientific community",
+        "rotating unbalance",
+        "rising interest",
+        "public datasets",
+        "Sound",
+        "Learning",
+        "Machine Learning"
+    ],
+    "M Output: Clean Dataset": [
+        "training data",
+        "tight threshold",
+        "testing dataset",
+        "target domain",
+        "size 223",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "C4S Dataset": [
+        "visual analysis",
+        "video recording",
+        "synchronization achieved",
+        "proposed approach",
+        "pitch analysis",
+        "Multimedia",
+        "Sound"
+    ],
+    "RWC Dataset": [
+        "visual analysis",
+        "video recording",
+        "synchronization achieved",
+        "proposed approach",
+        "pitch analysis",
+        "Multimedia",
+        "Sound"
+    ],
+    "GB Dataset": [
+        "visual analysis",
+        "video recording",
+        "synchronization achieved",
+        "proposed approach",
+        "pitch analysis",
+        "Multimedia",
+        "Sound"
+    ],
+    "Structural Segmentation Multitrack Dataset": [
+        "visual analysis",
+        "video recording",
+        "synchronization achieved",
+        "proposed approach",
+        "pitch analysis",
+        "Multimedia",
+        "Sound"
+    ],
+    "URMP Dataset": [
+        "visual analysis",
+        "video recording",
+        "synchronization achieved",
+        "proposed approach",
+        "pitch analysis",
+        "Multimedia",
+        "Sound"
+    ],
+    "MASS Dataset": [
+        "visual analysis",
+        "video recording",
+        "synchronization achieved",
+        "proposed approach",
+        "pitch analysis",
+        "Multimedia",
+        "Sound"
+    ],
+    "TRIOS Dataset": [
+        "visual analysis",
+        "video recording",
+        "synchronization achieved",
+        "proposed approach",
+        "pitch analysis",
+        "Multimedia",
+        "Sound"
+    ],
+    "Bach10 Dataset": [
+        "visual analysis",
+        "video recording",
+        "synchronization achieved",
+        "proposed approach",
+        "pitch analysis",
+        "Multimedia",
+        "Sound"
+    ],
+    "Mixploration Dataset": [
+        "visual analysis",
+        "video recording",
+        "synchronization achieved",
+        "proposed approach",
+        "pitch analysis",
+        "Multimedia",
+        "Sound"
+    ],
+    "WWQ Dataset": [
+        "visual analysis",
+        "video recording",
+        "synchronization achieved",
+        "proposed approach",
+        "pitch analysis",
+        "Multimedia",
+        "Sound"
+    ],
+    "Guitar Dataset": [
+        "visual analysis",
+        "video recording",
+        "synchronization achieved",
+        "proposed approach",
+        "pitch analysis",
+        "Multimedia",
+        "Sound"
+    ],
+    "Multi-track Classical Music Performance Dataset": [
+        "visual analysis",
+        "video recording",
+        "synchronization achieved",
+        "proposed approach",
+        "pitch analysis",
+        "Multimedia",
+        "Sound"
+    ],
+    "LSLF Dataset": [
+        "unconstrained multi",
+        "unconstrained environments",
+        "small scales",
+        "partially occluded",
+        "lslnf ).",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "LFW Dataset": [
+        "unconstrained multi",
+        "unconstrained environments",
+        "small scales",
+        "partially occluded",
+        "lslnf ).",
+        "Computer Vision and Pattern Recognition",
+        "varied datasets",
+        "similar scales",
+        "publicly available",
+        "private companies",
+        "one key",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "FERET Dataset": [
+        "unconstrained multi",
+        "unconstrained environments",
+        "small scales",
+        "partially occluded",
+        "lslnf ).",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Multi-PIE Dataset": [
+        "unconstrained multi",
+        "unconstrained environments",
+        "small scales",
+        "partially occluded",
+        "lslnf ).",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "CrowdFaces Dataset": [
+        "unconstrained multi",
+        "unconstrained environments",
+        "small scales",
+        "partially occluded",
+        "lslnf ).",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Extended Yale B Dataset": [
+        "unconstrained multi",
+        "unconstrained environments",
+        "small scales",
+        "partially occluded",
+        "lslnf ).",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "WebV-Cele Dataset": [
+        "unconstrained multi",
+        "unconstrained environments",
+        "small scales",
+        "partially occluded",
+        "lslnf ).",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "CrowdNonFaces Dataset": [
+        "unconstrained multi",
+        "unconstrained environments",
+        "small scales",
+        "partially occluded",
+        "lslnf ).",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "CAS-PEAL Dataset": [
+        "unconstrained multi",
+        "unconstrained environments",
+        "small scales",
+        "partially occluded",
+        "lslnf ).",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "FRGC Dataset": [
+        "unconstrained multi",
+        "unconstrained environments",
+        "small scales",
+        "partially occluded",
+        "lslnf ).",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "LSLNF Dataset": [
+        "unconstrained multi",
+        "unconstrained environments",
+        "small scales",
+        "partially occluded",
+        "lslnf ).",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "CrowedNonFaces Dataset": [
+        "unconstrained multi",
+        "unconstrained environments",
+        "small scales",
+        "partially occluded",
+        "lslnf ).",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Twitter Dataset": [
+        "whole dataset",
+        "unique identifiers",
+        "tweet ids",
+        "recollected subset",
+        "originally collected",
+        "Digital Libraries"
+    ],
+    "Jureczko Dataset": [
+        "widely used",
+        "two aspects",
+        "software project",
+        "research focusing",
+        "removing duplicate",
+        "Software ,Engineering"
+    ],
+    "NASA Dataset": [
+        "widely used",
+        "two aspects",
+        "software project",
+        "research focusing",
+        "removing duplicate",
+        "Software ,Engineering"
+    ],
+    "Open-i Dataset": [
+        "visual inspection",
+        "visual content",
+        "values presented",
+        "thorough description",
+        "significant problems",
+        "Computer Vision and Pattern Recognition",
+        "Learning"
+    ],
+    "ChestXray14 Dataset": [
+        "visual inspection",
+        "visual content",
+        "values presented",
+        "thorough description",
+        "significant problems",
+        "Computer Vision and Pattern Recognition",
+        "Learning"
+    ],
+    "CXR14 Dataset": [
+        "visual inspection",
+        "visual content",
+        "values presented",
+        "thorough description",
+        "significant problems",
+        "Computer Vision and Pattern Recognition",
+        "Learning"
+    ],
+    "MURA Dataset": [
+        "visual inspection",
+        "visual content",
+        "values presented",
+        "thorough description",
+        "significant problems",
+        "Computer Vision and Pattern Recognition",
+        "Learning"
+    ],
+    "Synthetic Dataset": [
+        "world dataset",
+        "wild scenarios",
+        "first large",
+        "evaluation set",
+        "dataset generalization",
+        "Computer Vision and Pattern Recognition",
+        "Learning",
+        "Robotics",
+        "propose achieves",
+        "perform experiments",
+        "navigational instructions",
+        "like environment",
+        "good measure",
+        "Computation and Language"
+    ],
+    "RHD Dataset": [
+        "world dataset",
+        "wild scenarios",
+        "first large",
+        "evaluation set",
+        "dataset generalization",
+        "Computer Vision and Pattern Recognition",
+        "Learning",
+        "Robotics"
+    ],
+    "Panoptic Dataset": [
+        "world dataset",
+        "wild scenarios",
+        "first large",
+        "evaluation set",
+        "dataset generalization",
+        "Computer Vision and Pattern Recognition",
+        "Learning",
+        "Robotics"
+    ],
+    "Hand Pose Dataset": [
+        "world dataset",
+        "wild scenarios",
+        "first large",
+        "evaluation set",
+        "dataset generalization",
+        "Computer Vision and Pattern Recognition",
+        "Learning",
+        "Robotics"
+    ],
+    "Shape Dataset": [
+        "world dataset",
+        "wild scenarios",
+        "first large",
+        "evaluation set",
+        "dataset generalization",
+        "Computer Vision and Pattern Recognition",
+        "Learning",
+        "Robotics"
+    ],
+    "FreiHAND Dataset": [
+        "world dataset",
+        "wild scenarios",
+        "first large",
+        "evaluation set",
+        "dataset generalization",
+        "Computer Vision and Pattern Recognition",
+        "Learning",
+        "Robotics"
+    ],
+    "FPA Dataset": [
+        "world dataset",
+        "wild scenarios",
+        "first large",
+        "evaluation set",
+        "dataset generalization",
+        "Computer Vision and Pattern Recognition",
+        "Learning",
+        "Robotics"
+    ],
+    "RGB Dataset": [
+        "world dataset",
+        "wild scenarios",
+        "first large",
+        "evaluation set",
+        "dataset generalization",
+        "Computer Vision and Pattern Recognition",
+        "Learning",
+        "Robotics"
+    ],
+    "Rendered Hand Pose Dataset": [
+        "world dataset",
+        "wild scenarios",
+        "first large",
+        "evaluation set",
+        "dataset generalization",
+        "Computer Vision and Pattern Recognition",
+        "Learning",
+        "Robotics"
+    ],
+    "LiDAR Dataset": [
+        "world setting",
+        "world datasets",
+        "various attributes",
+        "significant diversity",
+        "rgb images",
+        "Computer Vision and Pattern Recognition",
+        "Robotics"
+    ],
+    "A*3D Dataset": [
+        "world setting",
+        "world datasets",
+        "various attributes",
+        "significant diversity",
+        "rgb images",
+        "Computer Vision and Pattern Recognition",
+        "Robotics"
+    ],
+    "Matching Dataset": [
+        "usually stored",
+        "time consuming",
+        "separate places",
+        "published already",
+        "performs well",
+        "Digital Libraries",
+        "Information Retrieval"
+    ],
+    "CASIA WebFace Dataset": [
+        "varied datasets",
+        "similar scales",
+        "publicly available",
+        "private companies",
+        "one key",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Megaface Dataset": [
+        "varied datasets",
+        "similar scales",
+        "publicly available",
+        "private companies",
+        "one key",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "UMDFaces Dataset": [
+        "varied datasets",
+        "similar scales",
+        "publicly available",
+        "private companies",
+        "one key",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "IJB-A Dataset": [
+        "varied datasets",
+        "similar scales",
+        "publicly available",
+        "private companies",
+        "one key",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "VGGFace Dataset": [
+        "varied datasets",
+        "similar scales",
+        "publicly available",
+        "private companies",
+        "one key",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "AFW Dataset": [
+        "varied datasets",
+        "similar scales",
+        "publicly available",
+        "private companies",
+        "one key",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "CelebFaces+ Dataset": [
+        "varied datasets",
+        "similar scales",
+        "publicly available",
+        "private companies",
+        "one key",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "WIDER FACE Dataset": [
+        "varied datasets",
+        "similar scales",
+        "publicly available",
+        "private companies",
+        "one key",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "UMDFaces: An Annotated Face Dataset": [
+        "varied datasets",
+        "similar scales",
+        "publicly available",
+        "private companies",
+        "one key",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "CA- SIA WebFace Dataset": [
+        "varied datasets",
+        "similar scales",
+        "publicly available",
+        "private companies",
+        "one key",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Initial Lung-Cancer Dataset": [
+        "sample domain",
+        "redundant features",
+        "paper combination",
+        "overall accuracy",
+        "majority class",
+        "Learning",
+        "Computational Engineering, Finance, and Science"
+    ],
+    "Lung Cancer Dataset": [
+        "sample domain",
+        "redundant features",
+        "paper combination",
+        "overall accuracy",
+        "majority class",
+        "Learning",
+        "Computational Engineering, Finance, and Science"
+    ],
+    "HandNet Dataset": [
+        "tracking system",
+        "significantly wider",
+        "real datasets",
+        "minimal restriction",
+        "mainly due",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "MSRA15 Dataset": [
+        "tracking system",
+        "significantly wider",
+        "real datasets",
+        "minimal restriction",
+        "mainly due",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "MSRC Dataset": [
+        "tracking system",
+        "significantly wider",
+        "real datasets",
+        "minimal restriction",
+        "mainly due",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Annotation Dataset": [
+        "tracking system",
+        "significantly wider",
+        "real datasets",
+        "minimal restriction",
+        "mainly due",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Graz16 Dataset": [
+        "tracking system",
+        "significantly wider",
+        "real datasets",
+        "minimal restriction",
+        "mainly due",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Benchmark: Hand Pose Dataset": [
+        "tracking system",
+        "significantly wider",
+        "real datasets",
+        "minimal restriction",
+        "mainly due",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "UCI-EGO Dataset": [
+        "tracking system",
+        "significantly wider",
+        "real datasets",
+        "minimal restriction",
+        "mainly due",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Egocentric Dataset": [
+        "tracking system",
+        "significantly wider",
+        "real datasets",
+        "minimal restriction",
+        "mainly due",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "ASTAR Dataset": [
+        "tracking system",
+        "significantly wider",
+        "real datasets",
+        "minimal restriction",
+        "mainly due",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "ICVL Dataset": [
+        "tracking system",
+        "significantly wider",
+        "real datasets",
+        "minimal restriction",
+        "mainly due",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "NYU Dataset": [
+        "tracking system",
+        "significantly wider",
+        "real datasets",
+        "minimal restriction",
+        "mainly due",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "ILSVRC-2012 Dataset": [
+        "supervisory information",
+        "significantly improve",
+        "recent years",
+        "network architectures",
+        "models trained",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "V T Dataset": [
+        "supervisory information",
+        "significantly improve",
+        "recent years",
+        "network architectures",
+        "models trained",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Augmented Dataset": [
+        "supervisory information",
+        "significantly improve",
+        "recent years",
+        "network architectures",
+        "models trained",
+        "Computer Vision and Pattern Recognition"
+    ],
+    "Oakland Dataset": [
+        "two cities",
+        "train deep",
+        "paper introduces",
+        "mls ).",
+        "learning methods",
+        "Learning",
+        "Computer Vision and Pattern Recognition",
+        "Machine Learning"
+    ],
+    "Point Cloud Dataset": [
+        "two cities",
+        "train deep",
+        "paper introduces",
+        "mls ).",
+        "learning methods",
+        "Learning",
+        "Computer Vision and Pattern Recognition",
+        "Machine Learning"
+    ],
+    "Paris Dataset": [
+        "two cities",
+        "train deep",
+        "paper introduces",
+        "mls ).",
+        "learning methods",
+        "Learning",
+        "Computer Vision and Pattern Recognition",
+        "Machine Learning"
+    ],
+    "Rue-Madame Dataset": [
+        "two cities",
+        "train deep",
+        "paper introduces",
+        "mls ).",
+        "learning methods",
+        "Learning",
+        "Computer Vision and Pattern Recognition",
+        "Machine Learning"
+    ],
+    "Oxford Robotcar Dataset": [
+        "two cities",
+        "train deep",
+        "paper introduces",
+        "mls ).",
+        "learning methods",
+        "Learning",
+        "Computer Vision and Pattern Recognition",
+        "Machine Learning"
+    ],
+    "Urban Point Cloud Dataset": [
+        "two cities",
+        "train deep",
+        "paper introduces",
+        "mls ).",
+        "learning methods",
+        "Learning",
+        "Computer Vision and Pattern Recognition",
+        "Machine Learning"
+    ],
+    "Semantic3D Dataset": [
+        "two cities",
+        "train deep",
+        "paper introduces",
+        "mls ).",
+        "learning methods",
+        "Learning",
+        "Computer Vision and Pattern Recognition",
+        "Machine Learning"
+    ],
+    "Recall Dataset": [
+        "two cities",
+        "train deep",
+        "paper introduces",
+        "mls ).",
+        "learning methods",
+        "Learning",
+        "Computer Vision and Pattern Recognition",
+        "Machine Learning"
+    ],
+    "Indian Regional Cinema Dataset": [
+        "wide base",
+        "varying demographics",
+        "release year",
+        "regional movies",
+        "office revenue",
+        "Information Retrieval",
+        "Artificial Intelligence"
+    ],
+    "Indian Regional Movie Dataset": [
+        "wide base",
+        "varying demographics",
+        "release year",
+        "regional movies",
+        "office revenue",
+        "Information Retrieval",
+        "Artificial Intelligence"
+    ],
+    "Movielens Dataset": [
+        "wide base",
+        "varying demographics",
+        "release year",
+        "regional movies",
+        "office revenue",
+        "Information Retrieval",
+        "Artificial Intelligence"
+    ],
+    "Fixed-Sized SAILx Dataset": [
+        "propose achieves",
+        "perform experiments",
+        "navigational instructions",
+        "like environment",
+        "good measure",
+        "Computation and Language"
+    ],
+    "SAILx Dataset": [
+        "propose achieves",
+        "perform experiments",
+        "navigational instructions",
+        "like environment",
+        "good measure",
+        "Computation and Language"
+    ],
+    "Paragraph Dataset": [
+        "propose achieves",
+        "perform experiments",
+        "navigational instructions",
+        "like environment",
+        "good measure",
+        "Computation and Language"
+    ],
+    "SAIL Dataset": [
+        "propose achieves",
+        "perform experiments",
+        "navigational instructions",
+        "like environment",
+        "good measure",
+        "Computation and Language"
+    ]
+}

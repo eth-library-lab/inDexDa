@@ -107,7 +107,12 @@ class ArXivScraper():
         '''
         useless_words = ['The', 'A', 'This', 'Other', 'Most', 'Some', 'All', 'These',
                          'Those', 'These', 'Our', 'Their', 'Several', 'Each', 'Which',
-                         'Thus', 'As', 'Each', 'Suppose', 'Existing', '.']
+                         'Thus', 'As', 'Each', 'Suppose', 'Existing', 'Creating',
+                         'Datasets', 'Dataset', 'Similar', 'Hence', 'Moreover',
+                         'Furthermore', 'State-of-the-art', 'Since', 'Comparing',
+                         'Generated', 'Training', 'Testing', 'Typical', 'An', 'Further',
+                         'Original', 'That', 'Different', 'Both', 'However',
+                         'Similarly', 'With', 'Novel', 'Another', 'Numerous', '.']
 
         # Find instances of the word 'dataset' in the text
         dataset_names = []
