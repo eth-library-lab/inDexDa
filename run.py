@@ -77,20 +77,20 @@ if opt.scrape and not opt.train:
         file containing the specifics of that dataset.
     '''
     # SCRAPE
-    output_msg = "Beginning scraping archives for papers ..."
-    print(colored(output_msg, 'cyan'))
-    try:
-        scrape(archivesToUse, archiveInfo)
-    except Exception:
-        exit()
+    # output_msg = "Beginning scraping archives for papers ..."
+    # print(colored(output_msg, 'cyan'))
+    # try:
+    #     scrape(archivesToUse, archiveInfo)
+    # except Exception:
+    #     exit()
 
     # RUN THROUGH NETWORK
-    output_msg = "Processing acquired papers through the networks ..."
-    print(colored(output_msg, 'cyan'))
-    try:
-        runThroughNetwork(networkParams)
-    except Exception:
-        exit()
+    # output_msg = "Processing acquired papers through the networks ..."
+    # print(colored(output_msg, 'cyan'))
+    # try:
+    #     runThroughNetwork(networkParams)
+    # except Exception:
+    #     exit()
 
     # INDEX DATASETS
     output_msg = "Indexing datasets and acquiring more information ..."

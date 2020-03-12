@@ -3,11 +3,10 @@ import json
 import math
 import ktrain
 import NLP.utils.command_line as progress
-# import command_line as progress
 
 from ktrain import text
 from termcolor import colored
-# from NLP.BERT.lib.utils import blockPrint, enablePrint
+from utils import removeDuplicates
 
 
 def test(datadir, batchSize=6):
@@ -113,6 +112,9 @@ def test(datadir, batchSize=6):
     # ========================================================== #
     # ========================= SAVE =========================== #
     # ========================================================== #
+    # Remove duplicate entries
+    dataset_papers = removeDuplicates(dataset_papers)
+
     output_msg = 'Saving results ...'
     print(colored(output_msg, 'cyan'))
     outputdir = os.path.join(current_dir, '../../../data/results.json')

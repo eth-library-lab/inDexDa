@@ -3,6 +3,7 @@ import os
 import json
 import time
 import requests
+
 from xml.dom import minidom
 from xml.etree import ElementTree
 from termcolor import colored
@@ -16,9 +17,8 @@ class ScienceDirectScraper():
                         topic papers will be found in
         '''
         self.paper = config[0]
-        self.apikey = config[1][1]['apikey']
-        # input(config[1][1].apikey)
-        self.doi = paper['DOI']
+        self.apikey = config[1][1].apikey
+        self.doi = self.paper['DOI']
         self.openaccess = 0
 
     def extract(self):
@@ -49,8 +49,10 @@ class ScienceDirectScraper():
             input(error)
             raise(error)
 
-        paragraphs = []
-        body_paragraphs = []
+        # If no article found, stop
+        if article is None:
+            self.text = None
+            return
 
         with open('test.xml', 'wb') as f:
             mydata = ElementTree.tostring(article)
@@ -61,14 +63,18 @@ class ScienceDirectScraper():
         coredata = article.find('{http://www.elsevier.com/xml/svapi/article/dtd}coredata')
         openaccess = coredata.find('{http://www.elsevier.com/xml/svapi/article/dtd}openaccess')
 
+        # If article is not open-access, we cannot scrape more information about it
         if not int(openaccess.text) or openaccess.text is None:
             self.openaccess = 0
+            self.text = None
+            return
         else:
             self.openaccess = 1
 
-
-        if self.openaccess:
-            # If paper is open access, get body text by parsing xml.
+        try:
+            # We parse the xml such that we can retrieve the relevant information about
+            #   the body text of the paper
+            paragraphs = []
             text = article.find('{http://www.elsevier.com/xml/svapi/article/dtd}originalText')
             doc = text.find('{http://www.elsevier.com/xml/xocs/dtd}doc')
             serial_item = doc.find('{http://www.elsevier.com/xml/xocs/dtd}serial-item')
@@ -100,8 +106,12 @@ class ScienceDirectScraper():
             #   between brackets and double+ spaces.
             self.text = re.sub('<[^<]+>', "", body_text)
             self.text = re.sub(' +', ' ', self.text)
-        else:
+        except:
+            # If XML could not be parsed, set text class variable to None to skip this
+            #   paper.
             self.text = None
+            error_msg = "Was not able to parse paper XML for paper " + paper["Title"]
+            print(colored(error_msg, 'red'))
 
     def analyzeText(self):
         '''

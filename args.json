@@ -3,12 +3,9 @@
     "_comment":"================================================",
 
     "archive_to_scrape":
-                    {
-                      "archives":
-                                [
-                                    {"id": "01", "archive": "sciencedirect"}
-                                ]
-                    },
+                    [
+                        "sciencedirect"
+                    ],
 
     "archive_info":
                     {
@@ -31,7 +28,7 @@
                         "ieeexplore":
                                 {
                                     "query": "dataset",
-                                    "apikey": "8qxqbqcabxt5dqytu7hyr8xt",
+                                    "apikey": "",
                                     "start_year":"",
                                     "end_year":""
                                 }
@@ -47,10 +44,5 @@
     "_comment":"================================================",
 
     "get_name": "true",
-    "get_links": "true",
-
-    "_comment":"================ MONGODB USAGE =================",
-    "_comment":"================================================",
-
-    "use_mongodb": "false"
+    "get_links": "true"
 }

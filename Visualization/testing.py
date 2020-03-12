@@ -87,7 +87,7 @@ if __name__ == '__main__':
     # tester.saveResults()
 
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    datadir = os.path.join(current_dir, 'test_results.json')
+    datadir = os.path.join(current_dir, 'results_arxiv.json')
     tester = indexDatasets(datadir)
     tester.gatherDatasets()
 

@@ -46,11 +46,11 @@ def scrape(archivesToUse, archiveInfo):
 
         all_papers.extend(papers)
 
-        # Moves the papers from the individual archive data folders to the inDexDa/data
-        #  folder. Removes original saved individual archive data files.
-        new_dataset_output = os.path.join(current_dir, '../data', 'results.json')
-        with open(new_dataset_output, 'w') as f:
-            json.dump(all_papers, f, indent=4)
+    # Moves the papers from the individual archive data folders to the inDexDa/data
+    #  folder. Removes original saved individual archive data files.
+    new_dataset_output = os.path.join(current_dir, '../data', 'results.json')
+    with open(new_dataset_output, 'w') as f:
+        json.dump(all_papers, f, indent=4)
 
     for archive in archivesToUse:
         datadir = os.path.join(current_dir, 'data', archive, 'papers.json')

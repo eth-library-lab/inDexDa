@@ -1,4 +1,5 @@
 import json
+from tqdm import tqdm
 from collections import namedtuple
 
 
@@ -6,12 +7,16 @@ Archive = namedtuple("Archive", "name query apikey start_year end_year")
 
 
 def getInfoAboutArchivesToScrape():
+    '''
+    Gets info about which archives to scrape and info about these archives from
+      args.json.
+    '''
     with open("args.json", 'r') as f:
         contents = f.read()
         try:
             input_args = json.loads(contents)
 
-            archives = [item["archive"] for item in input_args["archive_to_scrape"]["archives"]]
+            archives = [item for item in input_args["archive_to_scrape"]]
 
             archive_info = []
             for item in input_args["archive_info"]:
@@ -25,13 +30,12 @@ def getInfoAboutArchivesToScrape():
             print('Not able to parse json file to dictionary.\n')
 
         return archives, archive_info
-class ClassName(object):
-    """docstring for ClassName"""
-    def __init__(self, arg):
-        super(ClassName, self).__init__()
-        self.arg = arg
+
 
 def getInfoAboutNetworkParams():
+    '''
+    Gets info about network parameters to use during training from args.json.
+    '''
     with open("args.json", 'r') as f:
         contents = f.read()
         try:
@@ -45,3 +49,15 @@ def getInfoAboutNetworkParams():
             print('Not able to parse json file to dictionary.\n')
 
         return params
+
+
+def removeDuplicates(list_of_dicts):
+    '''
+    Removes duplicates in a list of long dictionaries
+    '''
+    new_list = []
+    for entry in tqdm(list_of_dicts):
+        if entry not in new_list:
+            new_list.append(entry)
+
+    return new_list

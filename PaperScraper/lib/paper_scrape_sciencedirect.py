@@ -5,7 +5,7 @@ import time
 import requests
 import numpy as np
 from termcolor import colored
-from multiprocessing import Pool
+from tqdm.contrib.concurrent import process_map
 
 import PaperScraper.utils.command_line as progress
 
@@ -121,58 +121,16 @@ class PaperScrapeScienceDirect:
         :params  papers: list of dicts, each dict with info on a specific paper
                  datapath: path to previously saved general scraped data
         '''
-        output_msg = 'Retrieving abstracts for discovered papers ...'
+        output_msg = ('Retrieving abstracts for discovered papers. This may take several' +
+                        ' minutes ...')
         print(colored(output_msg, 'cyan'))
 
-        # TODO: Sometimes the abstract scraper recieves a bad response from the website
-        #       and proceeds to run on an infinite loop, continuously trying to call the
-        #       same page and failing.
-
         length = len(papers)
+        # self.pbar = tqdm(total=length)
 
         current_dir = os.path.dirname(os.path.abspath(__file__))
-        finishedpath = os.path.join(current_dir, '../data/sciencedirect/finished_papers.json')
-        notfinishedpath = os.path.join(current_dir, '../data/sciencedirect/not_finished_papers.json')
 
-        papers_finished = []
-        papers_not_finished = papers
-        for i, paper in enumerate(papers):
-            progress.printProgressBar(i + 1, length, prefix='Progress: ',
-                                      suffix='Complete', length=50)
-            request = Request('retrieval', DOI=paper['DOI'])
-
-            try:
-                # Call API
-                article = self.APIRequest(request)
-            except Exception as error:
-                print(colored(error, 'red'))
-                continue
-
-            if article is not None:
-                try:
-                    abstract = article['full-text-retrieval-response']['coredata']['dc:description']
-                    if "Abstract" in abstract:
-                        abstract = abstract.replace('Abstract ', '')
-                    if "Background" in abstract:
-                        abstract = abstract.replace('Background ', '')
-                except (KeyError, TypeError):
-                    abstract = []
-
-                paper['Abstract'] = abstract
-            else:
-                paper['Abstract'] = []
-                paper['Category'] = []
-
-            papers_finished.append(paper)
-            try:
-                papers_not_finished.remove(paper)
-            except:
-                print('No matching paper')
-
-            with open(finishedpath, 'w') as f:
-                json.dump(papers_finished, f, indent=4)
-            with open(notfinishedpath, 'w') as f:
-                json.dump(papers_not_finished, f, indent=4)
+        papers = process_map(self.multiprocessAPIRequest, papers, max_workers=10)
 
         # Remove any papers without Abstracts, Authors, or Titles
         papers[:] = [d for d in papers if d.get('Abstract') != []]
@@ -216,6 +174,40 @@ class PaperScrapeScienceDirect:
             return start_year
         else:
             return np.arange(start_year, end_year + 1)
+
+    def multiprocessAPIRequest(self, paper):
+        '''
+        We can use multiprocessing to obtain the abstracts of all the papers in the list
+        we scraped earlier to significantly reduce the time requirements of scraping.
+
+        :params  paper: dictionary of info about a paper
+        :return  paper: dictionary of updated info about the paper
+        '''
+        request = Request('retrieval', DOI=paper['DOI'])
+
+        try:
+            # Call API
+            article = self.APIRequest(request)
+        except Exception as error:
+            article = None
+
+        if article is not None:
+            try:
+                abstract = article['full-text-retrieval-response']['coredata']['dc:description']
+                if "Abstract" in abstract:
+                    abstract = abstract.replace('Abstract ', '')
+                if "Background" in abstract:
+                    abstract = abstract.replace('Background ', '')
+            except (KeyError, TypeError):
+                abstract = []
+
+            paper['Abstract'] = abstract
+
+        else:
+            paper['Abstract'] = []
+            paper['Category'] = []
+
+        return paper
 
     def ScienceDirectSearchV2(self, date, issue):
         """
