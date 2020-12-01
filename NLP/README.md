@@ -43,7 +43,7 @@ recently published by researchers in Google's AI Learning division. The complexi
 BERT cannot be explained here, but Google allows you to download the pre-trained network
 and then fine-tuning can be done for the user-specific task.
 
-![](https://miro.medium.com/max/876/0*ViwaI3Vvbnd-CJSQ.png=300x)
+<img src="https://miro.medium.com/max/876/0*ViwaI3Vvbnd-CJSQ.png" height="300" alt="BERT Network Diagram" />
 
 ### Usage
 Our BERT network (using the ktrain front-end) takes as input a list of strings, where
